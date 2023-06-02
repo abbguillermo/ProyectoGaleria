@@ -17,6 +17,7 @@ public class Agarrar : MonoBehaviour
     public Quaternion marcorot;
     public bool puedeagarrar;
     public GameObject puerta;
+
    
 
     public ControlScroll mano;
@@ -74,6 +75,8 @@ public class Agarrar : MonoBehaviour
                     
                 }
             }
+
+            //comentario de prueba :)
 
             if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
             {
