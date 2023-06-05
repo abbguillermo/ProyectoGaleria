@@ -25,7 +25,7 @@ public class LogicaEnemigo01 : MonoBehaviour
             else if (gameObject.transform.position.x > PJ.position.x)
             {
                 gameObject.transform.LookAt(PJ);
-                gameObject.transform.Translate(Vector3.forward * 0.08f);
+                gameObject.transform.Translate(Vector3.forward * 0.08f*Time.deltaTime);
             }
         }
         
