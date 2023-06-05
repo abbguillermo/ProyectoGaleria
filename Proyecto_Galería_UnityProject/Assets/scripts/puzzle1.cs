@@ -26,7 +26,7 @@ public class puzzle1 : MonoBehaviour
             Debug.Log("BIEN");
             if (pared.transform.position.z<=6)
             {
-                pared.transform.Translate(new Vector3(0, 0, 1) * 0.01f*Time.deltaTime);
+                pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f*Time.deltaTime);
             }
             
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class LogicaEnemigo01 : MonoBehaviour
 {
     public Transform PJ;
-    public float velocidad;
+    public float velocidadPersecusion;
     public bool papel=false;
     // Start is called before the first frame update
     void Start()
@@ -20,12 +20,12 @@ public class LogicaEnemigo01 : MonoBehaviour
         {
             if (gameObject.transform.position.x < PJ.position.x)
             {
-                gameObject.transform.Translate(Vector3.forward * velocidad);
+                gameObject.transform.Translate(Vector3.forward * velocidadPersecusion * Time.deltaTime);
             }
             else if (gameObject.transform.position.x > PJ.position.x)
             {
                 gameObject.transform.LookAt(PJ);
-                gameObject.transform.Translate(Vector3.forward * 0.08f*Time.deltaTime);
+                gameObject.transform.Translate(Vector3.forward * 10f*Time.deltaTime);
             }
         }
         
