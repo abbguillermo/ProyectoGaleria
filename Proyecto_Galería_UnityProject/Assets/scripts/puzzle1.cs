@@ -27,6 +27,7 @@ public class puzzle1 : MonoBehaviour
             if (pared.transform.position.z<=6)
             {
                 pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f*Time.deltaTime);
+                FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
             }
             
         }

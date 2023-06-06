@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Agarrar : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class Agarrar : MonoBehaviour
     public bool puedeagarrar;
     public GameObject puerta;
 
-   
+    public GameObject spriteNota;
+
 
     public ControlScroll mano;
     void Start()
@@ -137,6 +139,7 @@ public class Agarrar : MonoBehaviour
                 {
                     Destroy(hit.transform.gameObject);
                     puerta.SetActive(true);
+                    spriteNota.SetActive(true);
                    // ui.papel.Setactive(true);
                     Invoke("Activarpapel", 4f);
                 }
