@@ -139,6 +139,8 @@ public class Agarrar : MonoBehaviour
                 {
                     Destroy(hit.transform.gameObject);
                     puerta.SetActive(true);
+                    //se reproduce el sonido de puerta
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
                     spriteNota.SetActive(true);
                    // ui.papel.Setactive(true);
                     Invoke("Activarpapel", 4f);
