@@ -8,8 +8,13 @@ public class puzzle2 : MonoBehaviour
     public Transform object2;
     public Transform object3;
     public Transform object4;
+    public bool btn1=false;
+    public bool btn2 = false;
+    public bool btn3 = false;
+    public bool btn4 = false;
+    public GameObject pared;
 
-    private bool resuelto = false;
+   
 
     private Quaternion cuadrorot1= Quaternion.Euler(0f, 270f, 180f);
     private Quaternion cuadrorot2 = Quaternion.Euler(0f,270f, 180f);
@@ -19,18 +24,14 @@ public class puzzle2 : MonoBehaviour
 
     private void Update()
     {
-        
+        if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
+        {
+            pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
+        } 
        
 
        
-        if (!resuelto)
-        {
-            if (Solucion())
-            {
-                resuelto = true;
-                Debug.Log("Puzzle resolvido");
-            }
-        }
+       
     }
 
     public void Rotarcuad1()
@@ -53,27 +54,22 @@ public class puzzle2 : MonoBehaviour
     {
         object4.Rotate(new Vector3(0, 0, 22.5f));
     }
-    private bool Solucion()
+   
+    public void boton1()
     {
-        if (object1.rotation== cuadrorot1)
-        {
-            
-            if (object2.rotation== cuadrorot2)
-            {
-              
-                if (object3.rotation== cuadrorot3)
-                {
-
-                    if (object4.rotation == cuadrorot4)
-                    {
-
-                        return true;
-                    }
-                }
-            }
-        }
-        
-        return false;
+        btn1= true;
+    }
+    public void boton2()
+    {
+        btn2 = true;
+    }
+    public void boton3()
+    {
+        btn3 = true;
+    }
+    public void boton4()
+    {
+        btn4 = true;
     }
 
 }
