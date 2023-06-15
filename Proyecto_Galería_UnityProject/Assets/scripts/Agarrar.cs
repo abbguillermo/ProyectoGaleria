@@ -155,6 +155,24 @@ public class Agarrar : MonoBehaviour
                     FindObjectOfType<puzzle2>().boton4();
                 }
                 //hasta aca puzzle 2
+                //puzzle tri
+                if (hit.transform.gameObject.tag == "cuadroP3/marcorot1")
+                {
+                    FindObjectOfType<puzzle3>().Rotarcuad1();
+                }
+                if (hit.transform.gameObject.tag == "cuadroP3/marcorot2")
+                {
+                    FindObjectOfType<puzzle3>().Rotarcuad2();
+                }
+                if (hit.transform.gameObject.tag == "cuadroP3/marcorot3")
+                {
+                    FindObjectOfType<puzzle3>().Rotarcuad3();
+                }
+                if (hit.transform.gameObject.tag == "cuadroP3/marcorot4")
+                {
+                    FindObjectOfType<puzzle3>().Rotarcuad4();
+                }
+                //hasta aca puzzle tri
                 //agarre de papelito
                 if (hit.transform.gameObject.tag=="papel")
                 {
