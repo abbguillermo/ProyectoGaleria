@@ -8,6 +8,10 @@ public class sfxManager : MonoBehaviour
 
     //se carga el sonido 
     public AudioClip sfxPuerta;
+    public AudioClip sfxAgarreCuadro;
+    public AudioClip sfxRotadoCuadro;
+    public AudioClip sfxPuertaDeslizada;
+    public AudioClip sfxInterruptor;
 
     public static sfxManager sfxInstance;
 

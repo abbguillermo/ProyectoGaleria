@@ -86,6 +86,7 @@ public class Agarrar : MonoBehaviour
                 {
                     if (hit.transform.gameObject.tag == "cuadro0" || hit.transform.gameObject.tag == "cuadro1"|| hit.transform.gameObject.tag == "cuadro2"|| hit.transform.gameObject.tag == "cuadro3"|| hit.transform.gameObject.tag == "cuadro4")
                     {
+                        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxAgarreCuadro);
                         GameObject objeto = hit.transform.gameObject;
 
                         objeto.transform.SetParent(puntodeagarre);
@@ -98,6 +99,7 @@ public class Agarrar : MonoBehaviour
                 }
                 if(puedeagarrar=false && hit.transform.gameObject.tag == "cuadro0" || hit.transform.gameObject.tag == "cuadro1" || hit.transform.gameObject.tag == "cuadro2" || hit.transform.gameObject.tag == "cuadro3" || hit.transform.gameObject.tag == "cuadro4")
                 {
+
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
 
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x , hit.transform.position.y, hit.transform.position.z);
@@ -110,6 +112,7 @@ public class Agarrar : MonoBehaviour
                 }
                     if (hit.transform.gameObject.tag == "marco1"|| hit.transform.gameObject.tag == "marco2" || hit.transform.gameObject.tag == "marco3"|| hit.transform.gameObject.tag == "marco4")
                     {
+                        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxAgarreCuadro);
                         GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
                         
                         GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
@@ -124,35 +127,43 @@ public class Agarrar : MonoBehaviour
                 if (hit.transform.gameObject.tag == "marcorot1" )
                 {
                     FindObjectOfType<puzzle2>().Rotarcuad1();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                 }
                 if(hit.transform.gameObject.tag == "marcorot2" )
                 {
                     FindObjectOfType<puzzle2>().Rotarcuad2();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                 }
                 if ( hit.transform.gameObject.tag == "marcorot3")
                 {
                     FindObjectOfType<puzzle2>().Rotarcuad3();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                 }
                 if (hit.transform.gameObject.tag == "marcorot4")
                 {
                     FindObjectOfType<puzzle2>().Rotarcuad4();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                 }
 
                 if (hit.transform.gameObject.tag== "botonespuzzle2/boton1")
                 {
                     FindObjectOfType<puzzle2>().boton1();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 if (hit.transform.gameObject.tag == "botonespuzzle2/boton2")
                 {
                     FindObjectOfType<puzzle2>().boton2();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 if (hit.transform.gameObject.tag == "botonespuzzle2/boton3")
                 {
                     FindObjectOfType<puzzle2>().boton3();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 if (hit.transform.gameObject.tag == "botonespuzzle2/boton4")
                 {
                     FindObjectOfType<puzzle2>().boton4();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 //hasta aca puzzle 2
                 //puzzle tri
