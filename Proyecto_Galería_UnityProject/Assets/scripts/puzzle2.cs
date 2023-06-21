@@ -68,7 +68,7 @@ public class puzzle2 : MonoBehaviour
     public void boton2()
     {
         btn2 = true;
-        interruptor2.transform.Rotate(new Vector3(66, 0, 0));
+        interruptor2.SetActive(true);
     }
     public void boton3()
     {

@@ -79,4 +79,5 @@ public class puzzle3 : MonoBehaviour
         btn4 = true;
         interruptor4.transform.Rotate(new Vector3(66, 0, 0));
     }
+    
 }
