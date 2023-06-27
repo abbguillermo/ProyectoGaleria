@@ -17,18 +17,21 @@ public class puzzle3 : MonoBehaviour
     public GameObject interruptor2;
     public GameObject interruptor3;
     public GameObject interruptor4;
+    public Quaternion startQuaternion;
 
 
 
     private void Update()
     {
-        if (btn1 == true && btn2 == true && btn3 == true && btn4 == true)
+        if (object1.transform.localRotation.y==90 && object2.transform.localRotation.y == 90 && object3.transform.localRotation.y == 90 && object4.transform.localRotation.y == 90)
         {
+            Debug.Log("asdawasdwasd");
             pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
         }
 
 
-
+      
+       
 
     }
 
