@@ -35,8 +35,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 5.6
   focalLength:
-    m_OverrideState: 0
-    m_Value: 50
+    m_OverrideState: 1
+    m_Value: 40
   bladeCount:
     m_OverrideState: 0
     m_Value: 5
@@ -102,22 +102,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   postExposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.8
   contrast:
     m_OverrideState: 0
     m_Value: 0
   colorFilter:
-    m_OverrideState: 1
-    m_Value: {r: 1, g: 0.97639304, b: 0.9669811, a: 1}
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: 180
   saturation:
-    m_OverrideState: 1
-    m_Value: -20
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &-1885478559438615529
 MonoBehaviour:
   m_ObjectHideFlags: 3
