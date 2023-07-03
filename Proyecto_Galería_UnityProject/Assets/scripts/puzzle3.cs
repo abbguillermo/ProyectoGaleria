@@ -23,7 +23,7 @@ public class puzzle3 : MonoBehaviour
 
     private void Update()
     {
-        if (object1.transform.localRotation.y==90 && object2.transform.localRotation.y == 90 && object3.transform.localRotation.y == 90 && object4.transform.localRotation.y == 90)
+        if (object1.transform.rotation.eulerAngles.y== 90 && object2.transform.rotation.eulerAngles.y == 90 && object3.transform.rotation.eulerAngles.y == 90 && object4.transform.rotation.eulerAngles.y == 90)
         {
             Debug.Log("asdawasdwasd");
             pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
