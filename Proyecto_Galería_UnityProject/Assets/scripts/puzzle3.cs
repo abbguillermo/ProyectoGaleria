@@ -18,27 +18,48 @@ public class puzzle3 : MonoBehaviour
     public GameObject interruptor3;
     public GameObject interruptor4;
     public Quaternion startQuaternion;
-
+    public bool cuad1=true;
+    public bool cuad2=false;
+    public bool cuad3=true;
+    public bool cuad4=false;
+    public bool puederotar = false;
 
 
     private void Update()
     {
-        if (object1.transform.rotation.eulerAngles.y== 90 && object2.transform.rotation.eulerAngles.y == 90 && object3.transform.rotation.eulerAngles.y == 90 && object4.transform.rotation.eulerAngles.y == 90)
+        if (cuad1==true&&cuad2==true&&cuad3==true&&cuad4==true)
         {
-            //Debug.Log("asdawasdwasd");
+            Debug.Log("asdawasdwasd");
             pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
         }
 
 
-      
-       
+
+        if (puederotar == true)
+        {
+            object1.transform.Rotate(0f, 180 * Time.deltaTime, 0f, Space.Self);
+
+            Invoke("desactiva", 1.001f);
+        }
 
     }
-
+    public void desactiva()
+    {
+        puederotar = false;
+    }
     public void Rotarcuad1()
     {
 
-        object1.Rotate(new Vector3(0, 180, 0));
+        puederotar = true;
+        if (cuad1 == true)
+        {
+            cuad1 = false;
+        }
+        else
+        {
+            cuad1 = true;
+        }
+       
 
     }
     public void Rotarcuad2()
@@ -46,13 +67,53 @@ public class puzzle3 : MonoBehaviour
 
         object2.Rotate(new Vector3(0, 180, 0));
         object1.Rotate(new Vector3(0, 180, 0));
-
+        if (cuad1 == true)
+        {
+            cuad1 = false;
+        }
+        else
+        {
+            cuad1 = true;
+        }
+        if (cuad2 == true)
+        {
+            cuad2 = false;
+        }
+        else
+        {
+            cuad2 = true;
+        }
     }
     public void Rotarcuad3()
     {
         object2.Rotate(new Vector3(0, 180, 0));
         object1.Rotate(new Vector3(0, 180, 0));
         object3.Rotate(new Vector3(0, 180, 0));
+        if (cuad1 == true)
+        {
+            cuad1 = false;
+        }
+        else
+        {
+            cuad1 = true;
+        }
+        if (cuad2 == true)
+        {
+            cuad2 = false;
+        }
+        else
+        {
+            cuad2 = true;
+        }
+        if (cuad3 == true)
+        {
+            cuad3 = false;
+        }
+        else
+        {
+            cuad3 = true;
+        }
+
     }
     public void Rotarcuad4()
     {
@@ -60,6 +121,39 @@ public class puzzle3 : MonoBehaviour
         object2.Rotate(new Vector3(0, 180, 0));
         object1.Rotate(new Vector3(0, 180, 0));
         object3.Rotate(new Vector3(0, 180, 0));
+        if (cuad1 == true)
+        {
+            cuad1 = false;
+        }
+        else
+        {
+            cuad1 = true;
+        }
+        if (cuad2 == true)
+        {
+            cuad2 = false;
+        }
+        else
+        {
+            cuad2 = true;
+        }
+        if (cuad3 == true)
+        {
+            cuad3 = false;
+        }
+        else
+        {
+            cuad3 = true;
+        }
+        if (cuad4 == true)
+        {
+            cuad4 = false;
+        }
+        else
+        {
+            cuad4 = true;
+        }
+
     }
 
     public void boton1()

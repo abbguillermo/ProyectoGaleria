@@ -59,25 +59,6 @@ public class Agarrar : MonoBehaviour
                 }
             }
 
-            if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
-            {
-               
-                if (hit.transform.gameObject.tag=="botonLuz")
-                {
-
-                    
-                    if (FindObjectOfType<Luces>().ONOFF==true)
-                    {
-                        FindObjectOfType<Luces>().ONOFF = false;
-                    }
-                    else
-                    {
-                        FindObjectOfType<Luces>().ONOFF = true;
-                    }
-                    
-                }
-            }
-
 
             if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
             {
