@@ -16,7 +16,6 @@ public class puzzle1 : MonoBehaviour
       
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -29,11 +28,12 @@ public class puzzle1 : MonoBehaviour
                 pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f*Time.deltaTime);
                 //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
                 FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
+                FindObjectOfType<Trigger>().luces.SetActive(false);
             }
             
         }
       
         
     }
-   
+
 }

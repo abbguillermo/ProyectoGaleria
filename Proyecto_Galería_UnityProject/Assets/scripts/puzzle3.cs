@@ -25,7 +25,7 @@ public class puzzle3 : MonoBehaviour
     {
         if (object1.transform.rotation.eulerAngles.y== 90 && object2.transform.rotation.eulerAngles.y == 90 && object3.transform.rotation.eulerAngles.y == 90 && object4.transform.rotation.eulerAngles.y == 90)
         {
-            Debug.Log("asdawasdwasd");
+            //Debug.Log("asdawasdwasd");
             pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
         }
 

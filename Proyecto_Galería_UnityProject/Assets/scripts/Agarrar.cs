@@ -206,4 +206,6 @@ public class Agarrar : MonoBehaviour
         
         FindObjectOfType<LogicaEnemigo01>().papel = true;
     }
+
+    
 }
