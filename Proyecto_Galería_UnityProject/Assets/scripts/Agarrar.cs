@@ -151,18 +151,22 @@ public class Agarrar : MonoBehaviour
                 if (hit.transform.gameObject.tag == "cuadroP3/marcorot1")
                 {
                     FindObjectOfType<puzzle3>().Rotarcuad1();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 if (hit.transform.gameObject.tag == "cuadroP3/marcorot2")
                 {
                     FindObjectOfType<puzzle3>().Rotarcuad2();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 if (hit.transform.gameObject.tag == "cuadroP3/marcorot3")
                 {
                     FindObjectOfType<puzzle3>().Rotarcuad3();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 if (hit.transform.gameObject.tag == "cuadroP3/marcorot4")
                 {
                     FindObjectOfType<puzzle3>().Rotarcuad4();
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
                 //hasta aca puzzle tri
                 //agarre de papelito
