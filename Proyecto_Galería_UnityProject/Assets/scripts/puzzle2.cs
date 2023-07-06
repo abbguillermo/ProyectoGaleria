@@ -17,9 +17,10 @@ public class puzzle2 : MonoBehaviour
     public GameObject interruptor2;
     public GameObject interruptor3;
     public GameObject interruptor4;
-
-
-
+    public GameObject luz1;
+    public GameObject luz2;
+    public GameObject luz3;
+    public GameObject luz4;
 
     private Quaternion cuadrorot1= Quaternion.Euler(0f, 270f, 180f);
     private Quaternion cuadrorot2 = Quaternion.Euler(0f,270f, 180f);
@@ -64,21 +65,25 @@ public class puzzle2 : MonoBehaviour
     {
         btn1= true;
         interruptor1.transform.Rotate(new Vector3(66, 0, 0));
+        luz1.SetActive(true);
     }
     public void boton2()
     {
         btn2 = true;
-        interruptor2.SetActive(true);
+        interruptor2.transform.Rotate(new Vector3(66, 0, 0));
+        luz2.SetActive(true);
     }
     public void boton3()
     {
         btn3 = true;
         interruptor3.transform.Rotate(new Vector3(66, 0, 0));
+        luz3.SetActive(true);
     }
     public void boton4()
     {
         btn4 = true;
         interruptor4.transform.Rotate(new Vector3(66, 0, 0));
+        luz4.SetActive(true);
     }
 
 }
