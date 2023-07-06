@@ -17,12 +17,11 @@ public class puzzle3 : MonoBehaviour
     public GameObject interruptor2;
     public GameObject interruptor3;
     public GameObject interruptor4;
-    public Quaternion startQuaternion;
+
     public bool cuad1=true;
     public bool cuad2=false;
     public bool cuad3=true;
     public bool cuad4=false;
-    public bool puederotar = false;
 
 
     private void Update()
@@ -33,31 +32,20 @@ public class puzzle3 : MonoBehaviour
             pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
         }
 
-
-
-        if (puederotar == true)
-        {
-            object1.transform.Rotate(0f, 180 * Time.deltaTime, 0f, Space.Self);
-
-            Invoke("desactiva", 1.001f);
-        }
-
     }
-    public void desactiva()
-    {
-        puederotar = false;
-    }
+
     public void Rotarcuad1()
     {
 
-        puederotar = true;
         if (cuad1 == true)
         {
             cuad1 = false;
+            object1.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad1 = true;
+            object1.GetComponent<Animator>().Play("Giro2");
         }
        
 
@@ -67,21 +55,27 @@ public class puzzle3 : MonoBehaviour
 
         object2.Rotate(new Vector3(0, 180, 0));
         object1.Rotate(new Vector3(0, 180, 0));
+
         if (cuad1 == true)
         {
             cuad1 = false;
+            object1.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad1 = true;
+            object1.GetComponent<Animator>().Play("Giro2");
         }
+
         if (cuad2 == true)
         {
             cuad2 = false;
+            object2.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad2 = true;
+            object2.GetComponent<Animator>().Play("Giro2");
         }
     }
     public void Rotarcuad3()
@@ -89,29 +83,38 @@ public class puzzle3 : MonoBehaviour
         object2.Rotate(new Vector3(0, 180, 0));
         object1.Rotate(new Vector3(0, 180, 0));
         object3.Rotate(new Vector3(0, 180, 0));
+
         if (cuad1 == true)
         {
             cuad1 = false;
+            object1.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad1 = true;
+            object1.GetComponent<Animator>().Play("Giro2");
         }
+
         if (cuad2 == true)
         {
             cuad2 = false;
+            object2.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad2 = true;
+            object2.GetComponent<Animator>().Play("Giro2");
         }
+
         if (cuad3 == true)
         {
             cuad3 = false;
+            object3.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad3 = true;
+            object3.GetComponent<Animator>().Play("Giro2");
         }
 
     }
@@ -121,37 +124,49 @@ public class puzzle3 : MonoBehaviour
         object2.Rotate(new Vector3(0, 180, 0));
         object1.Rotate(new Vector3(0, 180, 0));
         object3.Rotate(new Vector3(0, 180, 0));
+
         if (cuad1 == true)
         {
             cuad1 = false;
+            object1.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad1 = true;
+            object1.GetComponent<Animator>().Play("Giro2");
         }
+
         if (cuad2 == true)
         {
             cuad2 = false;
+            object2.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad2 = true;
+            object2.GetComponent<Animator>().Play("Giro2");
         }
+
         if (cuad3 == true)
         {
             cuad3 = false;
+            object3.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad3 = true;
+            object3.GetComponent<Animator>().Play("Giro2");
         }
+
         if (cuad4 == true)
         {
             cuad4 = false;
+            object4.GetComponent<Animator>().Play("Giro");
         }
         else
         {
             cuad4 = true;
+            object4.GetComponent<Animator>().Play("Giro2");
         }
 
     }
