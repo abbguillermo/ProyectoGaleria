@@ -16,7 +16,7 @@ public class puzzle1 : MonoBehaviour
       
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
 
@@ -25,7 +25,8 @@ public class puzzle1 : MonoBehaviour
             Debug.Log("BIEN");
             if (pared.transform.position.z<=6)
             {
-                pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f*Time.deltaTime);
+                //pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f*Time.deltaTime);
+                pared.transform.LeanMoveLocal(new Vector3(0, 0, 7), 5).setEaseInOutSine();
                 //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
                 FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
             }
