@@ -146,6 +146,12 @@ public class Agarrar : MonoBehaviour
                     FindObjectOfType<puzzle2>().boton4();
                     sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
                 }
+
+                if (hit.transform.gameObject.tag == "btnincorrectos")
+                {
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxInterruptor);
+                }
+
                 //hasta aca puzzle 2
                 //puzzle tri
                 if (hit.transform.gameObject.tag == "cuadroP3/marcorot1")
