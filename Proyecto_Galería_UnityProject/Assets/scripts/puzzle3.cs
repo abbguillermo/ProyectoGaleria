@@ -70,12 +70,12 @@ public class puzzle3 : MonoBehaviour
         if (cuad2 == true)
         {
             cuad2 = false;
-            object2.GetComponent<Animator>().Play("Giro");
+            object2.GetComponent<Animator>().Play("Giro2");
         }
         else
         {
             cuad2 = true;
-            object2.GetComponent<Animator>().Play("Giro2");
+            object2.GetComponent<Animator>().Play("Giro");
         }
     }
     public void Rotarcuad3()
@@ -98,12 +98,12 @@ public class puzzle3 : MonoBehaviour
         if (cuad2 == true)
         {
             cuad2 = false;
-            object2.GetComponent<Animator>().Play("Giro");
+            object2.GetComponent<Animator>().Play("Giro2");
         }
         else
         {
             cuad2 = true;
-            object2.GetComponent<Animator>().Play("Giro2");
+            object2.GetComponent<Animator>().Play("Giro");
         }
 
         if (cuad3 == true)
@@ -139,12 +139,12 @@ public class puzzle3 : MonoBehaviour
         if (cuad2 == true)
         {
             cuad2 = false;
-            object2.GetComponent<Animator>().Play("Giro");
+            object2.GetComponent<Animator>().Play("Giro2");
         }
         else
         {
             cuad2 = true;
-            object2.GetComponent<Animator>().Play("Giro2");
+            object2.GetComponent<Animator>().Play("Giro");
         }
 
         if (cuad3 == true)
@@ -161,12 +161,12 @@ public class puzzle3 : MonoBehaviour
         if (cuad4 == true)
         {
             cuad4 = false;
-            object4.GetComponent<Animator>().Play("Giro");
+            object4.GetComponent<Animator>().Play("Giro2");
         }
         else
         {
             cuad4 = true;
-            object4.GetComponent<Animator>().Play("Giro2");
+            object4.GetComponent<Animator>().Play("Giro");
         }
 
     }
