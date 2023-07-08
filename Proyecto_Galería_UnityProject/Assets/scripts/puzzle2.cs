@@ -32,7 +32,7 @@ public class puzzle2 : MonoBehaviour
     {
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
-            pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
+            pared.GetComponent<Animator>().Play("AbrirP2");
         } 
        
 
@@ -63,27 +63,63 @@ public class puzzle2 : MonoBehaviour
    
     public void boton1()
     {
-        btn1= true;
-        interruptor1.transform.Rotate(new Vector3(66, 0, 0));
-        luz1.SetActive(true);
+        if (btn1 == true)
+        {
+            interruptor1.GetComponent<Animator>().Play("TeclaAbajo");
+            luz1.SetActive(false);
+            btn1 = false;
+        }
+        else
+        {
+            btn1 = true;
+            interruptor1.GetComponent<Animator>().Play("TeclaArriba");
+            luz1.SetActive(true);
+        }
     }
     public void boton2()
     {
-        btn2 = true;
-        interruptor2.transform.Rotate(new Vector3(66, 0, 0));
-        luz2.SetActive(true);
+        if (btn2 == true)
+        {
+            interruptor2.GetComponent<Animator>().Play("TeclaAbajo");
+            luz2.SetActive(false);
+            btn2 = false;
+        }
+        else
+        {
+            btn2 = true;
+            interruptor2.GetComponent<Animator>().Play("TeclaArriba");
+            luz2.SetActive(true);
+        }
     }
     public void boton3()
     {
-        btn3 = true;
-        interruptor3.transform.Rotate(new Vector3(66, 0, 0));
-        luz3.SetActive(true);
+        if (btn3 == true)
+        {
+            interruptor3.GetComponent<Animator>().Play("TeclaAbajo");
+            luz3.SetActive(false);
+            btn3 = false;
+        }
+        else
+        {
+            btn3 = true;
+            interruptor3.GetComponent<Animator>().Play("TeclaArriba");
+            luz3.SetActive(true);
+        }
     }
     public void boton4()
     {
-        btn4 = true;
-        interruptor4.transform.Rotate(new Vector3(66, 0, 0));
-        luz4.SetActive(true);
+        if (btn4 == true)
+        {
+            interruptor4.GetComponent<Animator>().Play("TeclaAbajo");
+            luz4.SetActive(false);
+            btn4 = false;
+        }
+        else
+        {
+            btn4 = true;
+            interruptor4.GetComponent<Animator>().Play("TeclaArriba");
+            luz4.SetActive(true);
+        }
     }
 
 }

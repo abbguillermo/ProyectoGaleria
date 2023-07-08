@@ -23,14 +23,10 @@ public class puzzle1 : MonoBehaviour
         if (cuad1==true && cuad2==true && cuad3==true && cuad4==true)
         {
             Debug.Log("BIEN");
-            if (pared.transform.position.z<=6)
-            {
-                //pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f*Time.deltaTime);
-                pared.transform.LeanMoveLocal(new Vector3(0, 0, 7), 5).setEaseInOutSine();
-                //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
-                FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
-            }
-            
+            pared.GetComponent<Animator>().Play("AbrirP");
+            //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
+            FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
+
         }
       
         

@@ -29,7 +29,7 @@ public class puzzle3 : MonoBehaviour
         if (cuad1==true&&cuad2==true&&cuad3==true&&cuad4==true)
         {
             Debug.Log("asdawasdwasd");
-            pared.transform.Translate(new Vector3(0, 0, 1) * 1.02f * Time.deltaTime);
+            pared.GetComponent<Animator>().Play("AbrirP3");
         }
 
     }
