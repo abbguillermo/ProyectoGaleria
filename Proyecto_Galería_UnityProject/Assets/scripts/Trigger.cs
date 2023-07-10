@@ -62,9 +62,9 @@ public class Trigger : MonoBehaviour
     IEnumerator LucesPuzzle1()
     {
         luces.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         luces2.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         luces3.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         luces4.SetActive(true);
@@ -75,18 +75,18 @@ public class Trigger : MonoBehaviour
         luces5.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         luces6.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         luces7.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         luces8.SetActive(true);
     }
 
     IEnumerator LucesPuzzle3()
     {
         luces9.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         luces10.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         luces11.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         luces12.SetActive(true);
