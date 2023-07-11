@@ -41,11 +41,13 @@ public class puzzle3 : MonoBehaviour
         {
             cuad1 = false;
             object1.GetComponent<Animator>().Play("Giro");
+            interruptor1.GetComponent<Animator>().Play("TeclaAbajo");
         }
         else
         {
             cuad1 = true;
             object1.GetComponent<Animator>().Play("Giro2");
+            interruptor1.GetComponent<Animator>().Play("TeclaArriba");
         }
        
 
@@ -60,22 +62,26 @@ public class puzzle3 : MonoBehaviour
         {
             cuad1 = false;
             object1.GetComponent<Animator>().Play("Giro");
+            interruptor1.GetComponent<Animator>().Play("TeclaAbajo");
         }
         else
         {
             cuad1 = true;
             object1.GetComponent<Animator>().Play("Giro2");
+            interruptor1.GetComponent<Animator>().Play("TeclaArriba");
         }
 
         if (cuad2 == true)
         {
             cuad2 = false;
             object2.GetComponent<Animator>().Play("Giro2");
+            interruptor2.GetComponent<Animator>().Play("TeclaArriba");
         }
         else
         {
             cuad2 = true;
             object2.GetComponent<Animator>().Play("Giro");
+            interruptor2.GetComponent<Animator>().Play("TeclaAbajo");
         }
     }
     public void Rotarcuad3()
@@ -88,33 +94,39 @@ public class puzzle3 : MonoBehaviour
         {
             cuad1 = false;
             object1.GetComponent<Animator>().Play("Giro");
+            interruptor1.GetComponent<Animator>().Play("TeclaAbajo");
         }
         else
         {
             cuad1 = true;
             object1.GetComponent<Animator>().Play("Giro2");
+            interruptor1.GetComponent<Animator>().Play("TeclaArriba");
         }
 
         if (cuad2 == true)
         {
             cuad2 = false;
             object2.GetComponent<Animator>().Play("Giro2");
+            interruptor2.GetComponent<Animator>().Play("TeclaArriba");
         }
         else
         {
             cuad2 = true;
             object2.GetComponent<Animator>().Play("Giro");
+            interruptor2.GetComponent<Animator>().Play("TeclaAbajo");
         }
 
         if (cuad3 == true)
         {
             cuad3 = false;
             object3.GetComponent<Animator>().Play("Giro");
+            interruptor3.GetComponent<Animator>().Play("TeclaAbajo");
         }
         else
         {
             cuad3 = true;
             object3.GetComponent<Animator>().Play("Giro2");
+            interruptor3.GetComponent<Animator>().Play("TeclaArriba");
         }
 
     }
@@ -129,44 +141,52 @@ public class puzzle3 : MonoBehaviour
         {
             cuad1 = false;
             object1.GetComponent<Animator>().Play("Giro");
+            interruptor1.GetComponent<Animator>().Play("TeclaAbajo");
         }
         else
         {
             cuad1 = true;
             object1.GetComponent<Animator>().Play("Giro2");
+            interruptor1.GetComponent<Animator>().Play("TeclaArriba");
         }
 
         if (cuad2 == true)
         {
             cuad2 = false;
             object2.GetComponent<Animator>().Play("Giro2");
+            interruptor2.GetComponent<Animator>().Play("TeclaArriba");
         }
         else
         {
             cuad2 = true;
             object2.GetComponent<Animator>().Play("Giro");
+            interruptor2.GetComponent<Animator>().Play("TeclaAbajo");
         }
 
         if (cuad3 == true)
         {
             cuad3 = false;
             object3.GetComponent<Animator>().Play("Giro");
+            interruptor3.GetComponent<Animator>().Play("TeclaAbajo");
         }
         else
         {
             cuad3 = true;
             object3.GetComponent<Animator>().Play("Giro2");
+            interruptor3.GetComponent<Animator>().Play("TeclaArriba");
         }
 
         if (cuad4 == true)
         {
             cuad4 = false;
             object4.GetComponent<Animator>().Play("Giro2");
+            interruptor4.GetComponent<Animator>().Play("TeclaArriba");
         }
         else
         {
             cuad4 = true;
             object4.GetComponent<Animator>().Play("Giro");
+            interruptor4.GetComponent<Animator>().Play("TeclaAbajo");
         }
 
     }
@@ -174,22 +194,18 @@ public class puzzle3 : MonoBehaviour
     public void boton1()
     {
         btn1 = true;
-        interruptor1.transform.Rotate(new Vector3(66, 0, 0));
     }
     public void boton2()
     {
         btn2 = true;
-        interruptor2.transform.Rotate(new Vector3(66, 0, 0));
     }
     public void boton3()
     {
         btn3 = true;
-        interruptor3.transform.Rotate(new Vector3(66, 0, 0));
     }
     public void boton4()
     {
         btn4 = true;
-        interruptor4.transform.Rotate(new Vector3(66, 0, 0));
     }
     
     IEnumerator Abrir()
