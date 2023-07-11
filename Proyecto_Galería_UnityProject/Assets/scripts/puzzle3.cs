@@ -29,7 +29,7 @@ public class puzzle3 : MonoBehaviour
         if (cuad1==true&&cuad2==true&&cuad3==true&&cuad4==true)
         {
             Debug.Log("asdawasdwasd");
-            pared.GetComponent<Animator>().Play("AbrirP3");
+            StartCoroutine(Abrir());
         }
 
     }
@@ -192,4 +192,9 @@ public class puzzle3 : MonoBehaviour
         interruptor4.transform.Rotate(new Vector3(66, 0, 0));
     }
     
+    IEnumerator Abrir()
+    {
+        yield return new WaitForSeconds(1.5f);
+        pared.GetComponent<Animator>().Play("AbrirP3");
+    }
 }

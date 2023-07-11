@@ -23,7 +23,7 @@ public class puzzle1 : MonoBehaviour
         if (cuad1==true && cuad2==true && cuad3==true && cuad4==true)
         {
             Debug.Log("BIEN");
-            pared.GetComponent<Animator>().Play("AbrirP");
+            StartCoroutine(Abrir());
             //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
             FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
 
@@ -32,4 +32,9 @@ public class puzzle1 : MonoBehaviour
         
     }
 
+    IEnumerator Abrir()
+    {
+        yield return new WaitForSeconds(0.3f);
+        pared.GetComponent<Animator>().Play("AbrirP");
+    }
 }
