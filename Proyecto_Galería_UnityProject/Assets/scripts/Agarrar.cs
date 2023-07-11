@@ -33,11 +33,22 @@ public class Agarrar : MonoBehaviour
     {
     
         Debug.DrawLine(transform.position, transform.position + transform.forward * distancia, Color.red, 0.5f);
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+        //notificacion interaccion
+        
+      
 
 
             RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
+        {
+            FindObjectOfType<mensajeInteraccion>().interaccion = true;
+        }
+        else
+        {
+            FindObjectOfType<mensajeInteraccion>().interaccion = false;
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
             if (Physics.Raycast(transform.position, transform.forward, out hit, distancia, capaObjetos))
             { 
                 GameObject objetoRecolectado = hit.transform.gameObject;
