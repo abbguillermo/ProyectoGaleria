@@ -32,7 +32,7 @@ public class puzzle2 : MonoBehaviour
     {
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
-            pared.GetComponent<Animator>().Play("AbrirP2");
+            StartCoroutine(Abrir());
         } 
        
 
@@ -122,4 +122,9 @@ public class puzzle2 : MonoBehaviour
         }
     }
 
+    IEnumerator Abrir()
+    {
+        yield return new WaitForSeconds(0.5f);
+        pared.GetComponent<Animator>().Play("AbrirP2");
+    }
 }
