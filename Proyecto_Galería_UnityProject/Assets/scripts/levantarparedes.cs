@@ -18,7 +18,15 @@ public class levantarparedes : MonoBehaviour
     {
         if (subir == true)
         {
+            FindObjectOfType<FirstPersonController>().playerCanMove = false;
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
+            StartCoroutine(Movimiento());
         }
+    }
+
+    IEnumerator Movimiento()
+    {
+        yield return new WaitForSeconds(5);
+        FindObjectOfType<FirstPersonController>().playerCanMove = true;
     }
 }
