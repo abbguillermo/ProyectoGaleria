@@ -3139,10 +3139,10 @@ GameObject:
   - component: {fileID: 220325634}
   - component: {fileID: 220325633}
   - component: {fileID: 220325632}
-  m_Layer: 0
-  m_Name: Recolectable (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Layer: 7
+  m_Name: Recolectable 4
+  m_TagString: recolectables/rec4
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3222,7 +3222,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &222025172
 PrefabInstance:
@@ -8409,6 +8409,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subir: 0
   Laberinto: {fileID: 1989397948}
+  recolectado1: 0
+  recolectado2: 0
+  recolectado3: 0
+  recolectado4: 0
 --- !u!4 &615922254
 Transform:
   m_ObjectHideFlags: 0
@@ -24801,10 +24805,10 @@ GameObject:
   - component: {fileID: 1665046840}
   - component: {fileID: 1665046839}
   - component: {fileID: 1665046838}
-  m_Layer: 0
-  m_Name: Recolectable (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Layer: 7
+  m_Name: Recolectable 2
+  m_TagString: recolectables/rec2
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24884,7 +24888,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1667389974 stripped
 Transform:
@@ -27122,10 +27126,10 @@ GameObject:
   - component: {fileID: 1813018313}
   - component: {fileID: 1813018312}
   - component: {fileID: 1813018311}
-  m_Layer: 0
-  m_Name: Recolectable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Layer: 7
+  m_Name: Recolectable 1
+  m_TagString: recolectables/rec1
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28504,10 +28508,10 @@ GameObject:
   - component: {fileID: 1899205756}
   - component: {fileID: 1899205755}
   - component: {fileID: 1899205754}
-  m_Layer: 0
-  m_Name: Recolectable (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Layer: 7
+  m_Name: Recolectable 3
+  m_TagString: recolectables/rec3
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28587,7 +28591,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1903125378
 PrefabInstance:

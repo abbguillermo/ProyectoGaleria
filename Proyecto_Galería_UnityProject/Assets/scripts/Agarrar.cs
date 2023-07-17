@@ -203,6 +203,33 @@ public class Agarrar : MonoBehaviour
                 {
                     FindObjectOfType<levantarparedes>().subir = true;
                 }
+
+                if (FindObjectOfType<levantarparedes>().subir == true)
+                {
+                    if (hit.transform.gameObject.tag == "recolectables/rec1")
+                    {
+                        Destroy(hit.transform.gameObject);
+                        FindObjectOfType<levantarparedes>().recolectado1 = true;
+                    }
+
+                    if (hit.transform.gameObject.tag == "recolectables/rec2")
+                    {
+                        Destroy(hit.transform.gameObject);
+                        FindObjectOfType<levantarparedes>().recolectado2 = true;
+                    }
+
+                    if (hit.transform.gameObject.tag == "recolectables/rec3")
+                    {
+                        Destroy(hit.transform.gameObject);
+                        FindObjectOfType<levantarparedes>().recolectado3 = true;
+                    }
+
+                    if (hit.transform.gameObject.tag == "recolectables/rec4")
+                    {
+                        Destroy(hit.transform.gameObject);
+                        FindObjectOfType<levantarparedes>().recolectado4 = true;
+                    }
+                }
             }
 
             

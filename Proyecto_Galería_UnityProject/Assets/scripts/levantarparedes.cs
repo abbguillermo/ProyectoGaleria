@@ -7,13 +7,12 @@ public class levantarparedes : MonoBehaviour
 
     public bool subir = false;
     public GameObject Laberinto;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
+    public bool recolectado1 = false;
+    public bool recolectado2 = false;
+    public bool recolectado3 = false;
+    public bool recolectado4 = false;
 
-    // Update is called once per frame
     void Update()
     {
         if (subir == true)
@@ -21,6 +20,12 @@ public class levantarparedes : MonoBehaviour
             FindObjectOfType<FirstPersonController>().playerCanMove = false;
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
             StartCoroutine(Movimiento());
+        }
+
+        if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)
+        {
+            subir = false;
+            Laberinto.GetComponent<Animator>().Play("BajarLaberinto");
         }
     }
 
