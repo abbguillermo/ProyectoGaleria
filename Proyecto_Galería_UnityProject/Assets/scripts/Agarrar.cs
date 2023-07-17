@@ -197,6 +197,12 @@ public class Agarrar : MonoBehaviour
                    // ui.papel.Setactive(true);
                     Invoke("Activarpapel", 4f);
                 }
+
+                //sala2
+                if (hit.transform.gameObject.tag == "palanca")
+                {
+                    FindObjectOfType<levantarparedes>().subir = true;
+                }
             }
 
             
