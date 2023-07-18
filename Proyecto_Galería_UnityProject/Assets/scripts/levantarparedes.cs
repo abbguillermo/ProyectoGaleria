@@ -12,14 +12,32 @@ public class levantarparedes : MonoBehaviour
     public bool recolectado2 = false;
     public bool recolectado3 = false;
     public bool recolectado4 = false;
+    public GameObject objetorecolectado1;
+    public GameObject objetorecolectado2;
+    public GameObject objetorecolectado3;
+    public GameObject objetorecolectado4;
+
+    private void Start()
+    {
+       
+    }
 
     void Update()
     {
         if (subir == true)
         {
+            
             FindObjectOfType<FirstPersonController>().playerCanMove = false;
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
             StartCoroutine(Movimiento());
+        }
+        else
+        {
+            
+            objetorecolectado1.layer = 0;
+            objetorecolectado2.layer = 0;
+            objetorecolectado3.layer = 0;
+            objetorecolectado4.layer = 0;
         }
 
         if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)
@@ -33,5 +51,9 @@ public class levantarparedes : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         FindObjectOfType<FirstPersonController>().playerCanMove = true;
+        objetorecolectado1.layer = 7;
+        objetorecolectado2.layer = 7;
+        objetorecolectado3.layer = 7;
+        objetorecolectado4.layer = 7;
     }
 }
