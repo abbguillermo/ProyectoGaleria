@@ -19,7 +19,11 @@ public class movCam2 : MonoBehaviour
          float mouseX = Input.GetAxis("Mouse X");
          float mouseY = Input.GetAxis("Mouse Y");
          transform.eulerAngles += new Vector3(-mouseY* sensitivity, mouseX* sensitivity, 0);
-
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            FindObjectOfType<levantarparedes>().pj.SetActive(true);
+            this.gameObject.SetActive(false);
+        }
     }
 }
 

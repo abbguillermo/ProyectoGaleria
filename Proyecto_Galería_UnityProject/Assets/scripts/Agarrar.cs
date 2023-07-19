@@ -18,6 +18,7 @@ public class Agarrar : MonoBehaviour
     public Quaternion marcorot;
     public bool puedeagarrar;
     public GameObject puerta;
+    public GameObject escondite1_sala2;
 
     public GameObject spriteNota;
 
@@ -230,6 +231,16 @@ public class Agarrar : MonoBehaviour
                         FindObjectOfType<levantarparedes>().recolectado4 = true;
                     }
                 }
+
+                if (hit.transform.gameObject.tag == "escondites/escondite1")
+                {
+                    Debug.Log("sadsaw");
+                    hit.transform.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    escondite1_sala2.SetActive(false);
+                    
+                }
+               
+               
             }
 
             

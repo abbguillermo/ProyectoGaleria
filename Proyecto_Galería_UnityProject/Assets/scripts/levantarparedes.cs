@@ -16,6 +16,8 @@ public class levantarparedes : MonoBehaviour
     public GameObject objetorecolectado2;
     public GameObject objetorecolectado3;
     public GameObject objetorecolectado4;
+    public GameObject pj;
+    
 
     private void Start()
     {
