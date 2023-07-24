@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.07
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.023333333
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 6807665198813ed4295e1f42d412b16f, type: 2}
 --- !u!1 &5093746 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -182,6 +182,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -707,6 +715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &55650135 stripped
@@ -768,6 +780,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -925,6 +945,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &63103304
@@ -986,8 +1014,47 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
+--- !u!1 &66426603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66426604}
+  m_Layer: 0
+  m_Name: wp1 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &66426604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66426603}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3064375, y: 7.8527207, z: -0.9432802}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1311666494}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &74280882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1046,6 +1113,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -1108,6 +1183,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &77262947
@@ -1165,6 +1248,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &77979972
@@ -1221,6 +1312,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -1460,6 +1555,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &88346832
@@ -1516,6 +1619,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -1729,6 +1840,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -2053,6 +2172,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &127569515 stripped
@@ -2175,6 +2302,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -2493,6 +2624,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &160791530 stripped
@@ -2643,6 +2782,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &170319341
@@ -2699,6 +2846,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -2815,6 +2970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &177229995 stripped
@@ -2882,6 +3041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &182625439 stripped
@@ -2947,6 +3110,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -3028,6 +3199,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -3130,6 +3305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &197927814 stripped
@@ -3191,6 +3370,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -3314,6 +3501,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -3606,6 +3797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &222025173 stripped
@@ -3742,6 +3937,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -4087,6 +4290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &249284160 stripped
@@ -4372,6 +4579,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &274147391 stripped
@@ -4457,6 +4672,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &280663767
@@ -4514,6 +4737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &280663768 stripped
@@ -4545,6 +4772,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7035690196794747791, guid: e36161292792e8443bdff342ef051b78, type: 3}
+--- !u!1 &281730251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 281730252}
+  m_Layer: 0
+  m_Name: wp1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &281730252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281730251}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6535625, y: 7.8527207, z: 0.46672058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1311666494}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288651247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -4771,6 +5029,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &311286854
@@ -4977,6 +5243,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &327147832
@@ -5168,6 +5442,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &335252844
@@ -5309,6 +5591,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -5663,6 +5953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &387001795 stripped
@@ -5748,6 +6042,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1 &389212310 stripped
@@ -5829,6 +6131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &391251462 stripped
@@ -5904,6 +6210,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -6126,6 +6440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &396069202 stripped
@@ -6259,6 +6577,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &407232450 stripped
@@ -6321,6 +6647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &407656112 stripped
@@ -6382,6 +6712,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -6448,6 +6786,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -6577,6 +6923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &419804514 stripped
@@ -6638,6 +6988,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -6922,6 +7280,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &448085725 stripped
@@ -7122,6 +7488,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &458740678 stripped
@@ -7198,6 +7572,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &460223243
@@ -7258,6 +7640,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -7345,6 +7735,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &464995331
@@ -7401,6 +7799,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -7464,6 +7870,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &481058002 stripped
@@ -7525,6 +7939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -7720,6 +8138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &492570314 stripped
@@ -7857,6 +8279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &502416708 stripped
@@ -7970,6 +8396,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -8122,6 +8556,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -8303,6 +8745,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -8528,6 +8978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &564041641 stripped
@@ -8590,6 +9044,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &567649209
@@ -8646,6 +9108,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -8723,6 +9189,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &572847081
@@ -8779,6 +9253,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -8943,6 +9421,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &577241026 stripped
@@ -9063,6 +9549,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &589487058 stripped
@@ -9124,6 +9618,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -9285,6 +9783,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -9479,6 +9981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &622442893 stripped
@@ -9554,6 +10060,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -9635,6 +10149,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -9729,6 +10247,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -9886,6 +10412,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &651478716
@@ -9942,6 +10476,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -10066,6 +10608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &656681170 stripped
@@ -10127,6 +10673,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -10226,6 +10780,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &689819990
@@ -10282,6 +10844,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -10570,6 +11136,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &702510053
@@ -10626,6 +11200,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -10692,6 +11270,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -10840,6 +11426,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &715159274 stripped
@@ -10939,6 +11533,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -11068,6 +11670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &724288586 stripped
@@ -11163,6 +11769,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1 &734087415 stripped
@@ -11239,6 +11853,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &734477224 stripped
@@ -11304,6 +11926,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -11439,6 +12069,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &742163248 stripped
@@ -11554,6 +12192,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &752149485 stripped
@@ -11619,6 +12265,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -11686,6 +12340,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -11859,6 +12517,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c3ad21bbeb9d08478622fa3c2ea2e52, type: 3}
+--- !u!1 &768663670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 768663671}
+  m_Layer: 0
+  m_Name: wp1
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &768663671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768663670}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4815102, y: 7.8527207, z: 2.5817204}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1311666494}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &770425327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12368,6 +13057,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &789759348 stripped
@@ -12434,6 +13131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &791094397
@@ -12490,6 +13195,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -12648,6 +13357,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &810439382
@@ -12704,6 +13421,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -12828,6 +13553,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &819093209
@@ -12934,6 +13667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &821646252 stripped
@@ -13009,6 +13746,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -13133,6 +13878,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!4 &838786918 stripped
@@ -13255,6 +14008,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -13395,6 +14152,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -13615,6 +14380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &855437399 stripped
@@ -13690,6 +14459,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -13921,6 +14698,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -14172,6 +14957,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -14807,6 +15600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &899406464 stripped
@@ -14882,6 +15679,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -15046,6 +15851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &912298599 stripped
@@ -15111,6 +15920,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -15246,6 +16063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &934342725 stripped
@@ -15327,6 +16148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &936530777 stripped
@@ -15388,6 +16213,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -15464,6 +16293,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -15551,6 +16388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &955303073 stripped
@@ -15612,6 +16453,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -15689,6 +16534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &957980446 stripped
@@ -15756,6 +16605,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &968517907
@@ -15813,6 +16670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &968517908 stripped
@@ -15820,6 +16681,145 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
   m_PrefabInstance: {fileID: 968517907}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &968841870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 968841876}
+  - component: {fileID: 968841875}
+  - component: {fileID: 968841874}
+  - component: {fileID: 968841873}
+  - component: {fileID: 968841872}
+  - component: {fileID: 968841871}
+  m_Layer: 0
+  m_Name: enemigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!195 &968841871
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &968841872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6514e6b7c8a0b547bec74c385c1c14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 768663671}
+  - {fileID: 281730252}
+  - {fileID: 66426604}
+  - {fileID: 1272701975}
+--- !u!136 &968841873
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &968841874
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &968841875
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &968841876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7125993, y: 0.99, z: 3.29}
+  m_LocalScale: {x: 0.65529, y: 0.7044368, z: 0.65529}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970720244 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -15917,6 +16917,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &980786962
@@ -15974,6 +16982,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &986981345
@@ -16030,6 +17046,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -16145,6 +17165,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -16281,6 +17305,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -16507,6 +17539,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1027253727 stripped
@@ -16697,6 +17737,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1037788644 stripped
@@ -16772,6 +17820,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -16854,6 +17910,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &1043637368 stripped
@@ -16916,6 +17980,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1050567171
@@ -16972,6 +18044,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -17058,6 +18138,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -17211,6 +18299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1075077976 stripped
@@ -17357,6 +18449,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1 &1088088172 stripped
@@ -17438,6 +18538,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1089001904 stripped
@@ -17518,6 +18626,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1093189561
@@ -17579,6 +18695,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1093299719
@@ -17639,6 +18763,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -17879,6 +19011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1102307230 stripped
@@ -18063,6 +19199,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!4 &1116797700 stripped
@@ -18124,6 +19268,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -18216,6 +19368,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1127968597 stripped
@@ -18278,6 +19438,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1133610147 stripped
@@ -18339,6 +19507,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -18468,6 +19644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1143944296 stripped
@@ -18559,6 +19739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1150612559 stripped
@@ -18640,6 +19824,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1153825327
@@ -18701,6 +19893,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1158783075
@@ -18757,6 +19957,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -18833,6 +20037,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -18919,6 +20127,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -19068,6 +20280,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -19284,6 +20500,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -19597,6 +20821,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1213703361
@@ -19657,6 +20889,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -19814,6 +21054,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -20056,6 +21304,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -20478,6 +21734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1246432782 stripped
@@ -20558,6 +21818,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -20682,6 +21950,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &1257864301 stripped
@@ -20763,6 +22039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1258775762 stripped
@@ -20829,6 +22109,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -20906,6 +22190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1265135547 stripped
@@ -20972,6 +22260,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1268076615
@@ -21028,6 +22324,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -21105,6 +22409,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1269336246 stripped
@@ -21160,6 +22472,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7035690196794747791, guid: e36161292792e8443bdff342ef051b78, type: 3}
+--- !u!1 &1272701974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272701975}
+  m_Layer: 0
+  m_Name: wp1 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1272701975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272701974}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5935625, y: 7.8527207, z: -5.60328}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1311666494}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275143344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -21319,6 +22662,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -21518,6 +22869,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1291450408
@@ -21578,6 +22937,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -21660,6 +23027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1298137064 stripped
@@ -21710,6 +23081,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1149323947281209166, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+--- !u!1 &1311666493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311666494}
+  m_Layer: 0
+  m_Name: waypointsw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1311666494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311666493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5564375, y: -7.691721, z: 14.38328}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 768663671}
+  - {fileID: 281730252}
+  - {fileID: 66426604}
+  - {fileID: 1272701975}
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1312591321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8c3ad21bbeb9d08478622fa3c2ea2e52, type: 3}
@@ -21876,6 +23282,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1332341092
@@ -21932,6 +23346,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -22050,6 +23472,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -22236,6 +23662,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1359350599 stripped
@@ -22355,6 +23789,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1363838899
@@ -22416,6 +23858,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1369175284
@@ -22472,6 +23922,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -22548,6 +24002,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -22688,6 +24146,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -22890,6 +24356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1378719315 stripped
@@ -23079,6 +24549,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -23319,6 +24797,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1411935870 stripped
@@ -23443,6 +24929,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!4 &1418035944 stripped
@@ -23505,6 +24999,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1418453732 stripped
@@ -23566,6 +25068,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -23642,6 +25152,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -23861,6 +25375,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &1440328065 stripped
@@ -23937,6 +25459,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1446014313
@@ -23993,6 +25523,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -24055,6 +25589,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -24182,6 +25720,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -24390,6 +25936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1479278249 stripped
@@ -24586,6 +26136,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &1487089426 stripped
@@ -24693,6 +26251,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -24831,6 +26397,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1504590798
@@ -24887,6 +26461,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -24949,6 +26527,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -25116,6 +26698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1514307652 stripped
@@ -25195,6 +26781,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -25338,6 +26932,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &1525653519 stripped
@@ -25418,6 +27020,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -25684,6 +27294,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1554488451
@@ -25744,6 +27362,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -25863,6 +27489,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1564187739 stripped
@@ -25944,6 +27578,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1569514212
@@ -26000,6 +27642,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -26096,6 +27742,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -26437,6 +28087,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!4 &1592131047 stripped
@@ -26560,6 +28218,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &1600712880 stripped
@@ -26621,6 +28287,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -26885,6 +28555,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1615869426
@@ -27032,6 +28710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1620420642 stripped
@@ -27173,6 +28855,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1 &1635633658 stripped
@@ -27297,6 +28987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1645781509 stripped
@@ -27383,6 +29077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1653693204 stripped
@@ -27459,6 +29157,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1656228059
@@ -27515,6 +29221,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -27704,6 +29418,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!4 &1662951276 stripped
@@ -27872,6 +29594,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!4 &1670595989 stripped
@@ -27957,6 +29687,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -28164,6 +29898,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -28587,6 +30325,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1704828403
@@ -28643,6 +30389,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -28719,6 +30469,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -28886,6 +30640,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1722735670
@@ -28943,6 +30705,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1728465401
@@ -28999,6 +30769,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -29075,6 +30853,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -29255,6 +31037,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -29455,6 +31245,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -29812,6 +31606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1789668323 stripped
@@ -29888,6 +31686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1790215123 stripped
@@ -29963,6 +31765,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -30044,6 +31850,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1802190797
@@ -30100,6 +31914,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -30482,6 +32300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1825830751 stripped
@@ -30561,6 +32383,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -30685,6 +32515,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
 --- !u!4 &1836285247 stripped
@@ -30746,6 +32584,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -31039,6 +32885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1855440879 stripped
@@ -31180,6 +33030,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!4 &1863848263 stripped
@@ -31246,6 +33104,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -31346,6 +33208,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -31475,6 +33341,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1896156898
@@ -31535,6 +33409,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -31689,6 +33571,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -31905,6 +33791,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &1914120682
@@ -31965,6 +33859,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -32075,6 +33977,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &1919560382
@@ -32131,6 +34041,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -32353,6 +34267,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -32648,6 +34566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1947531823 stripped
@@ -32803,6 +34725,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
       propertyPath: m_Name
       value: columna_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
@@ -32962,6 +34892,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -33124,6 +35062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1970231348 stripped
@@ -33218,6 +35160,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
       propertyPath: m_Name
       value: pared_03 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523e16ab3c2a3b04e91f57a536117d1c, type: 3}
@@ -33332,6 +35282,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -33587,6 +35541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piso_01 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
 --- !u!4 &1993719065 stripped
@@ -33662,6 +35620,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -33911,6 +35873,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &2021076939 stripped
@@ -34077,6 +36047,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &2036370009 stripped
@@ -34214,6 +36192,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &2045310735
@@ -34279,6 +36265,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1001 &2051113695
@@ -34335,6 +36329,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -34515,6 +36513,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: columna_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e36161292792e8443bdff342ef051b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36161292792e8443bdff342ef051b78, type: 3}
 --- !u!1 &2069541887 stripped
@@ -34601,6 +36607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &2081594810
@@ -34657,6 +36671,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -34739,6 +36761,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1001 &2089380161
@@ -34795,6 +36825,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -34881,6 +36919,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -34982,6 +37028,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!1 &2101513976 stripped
@@ -35062,6 +37116,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
       propertyPath: m_Name
       value: piso_01 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -35248,6 +37306,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pared_03_doble (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
 --- !u!4 &2134405820 stripped
@@ -35309,6 +37375,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
       propertyPath: m_Name
       value: pared_03_doble (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
