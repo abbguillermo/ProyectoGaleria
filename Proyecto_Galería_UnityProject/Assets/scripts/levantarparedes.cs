@@ -33,13 +33,10 @@ public class levantarparedes : MonoBehaviour
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
             StartCoroutine(Movimiento());
         }
-        else
+
+        if(recolectado2 == true)
         {
-            
-            objetorecolectado1.layer = 0;
-            objetorecolectado2.layer = 0;
-            objetorecolectado3.layer = 0;
-            objetorecolectado4.layer = 0;
+            FindObjectOfType<Trigger>().encuentro2.SetActive(true);
         }
 
         if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)

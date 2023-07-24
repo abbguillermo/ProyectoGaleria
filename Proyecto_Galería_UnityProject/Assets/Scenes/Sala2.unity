@@ -337,8 +337,8 @@ GameObject:
   - component: {fileID: 21509020}
   m_Layer: 0
   m_Name: ActivarEncuentro3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: trigs2/encuentros
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -632,8 +632,8 @@ GameObject:
   - component: {fileID: 51985743}
   m_Layer: 0
   m_Name: DesactivarEnemigo3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: trigs2/desactivacion
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2610,8 +2610,8 @@ GameObject:
   - component: {fileID: 153101371}
   m_Layer: 0
   m_Name: DesactivarEnemigo1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: trigs2/desactivacion
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3040,8 +3040,8 @@ GameObject:
   - component: {fileID: 170644303}
   m_Layer: 0
   m_Name: DesactivarEnemigo2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: trigs2/desactivacion
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3868,7 +3868,7 @@ GameObject:
   - component: {fileID: 220325634}
   - component: {fileID: 220325633}
   - component: {fileID: 220325632}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Recolectable 4
   m_TagString: recolectables/rec4
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -5732,8 +5732,8 @@ GameObject:
   - component: {fileID: 332526936}
   m_Layer: 0
   m_Name: ActivarEncuentro1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: trigs2/encuentros
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8632,6 +8632,51 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
   m_PrefabInstance: {fileID: 567649209}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &520103888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520103889}
+  - component: {fileID: 520103890}
+  m_Layer: 0
+  m_Name: DesactivarEnemigo4
+  m_TagString: trigs2/desactivacion
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &520103889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520103888}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -9.02, y: 1.3512641, z: 9.83}
+  m_LocalScale: {x: 0.125, y: 1, z: 1.2375}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1045036324}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &520103890
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520103888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &521505045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -10108,6 +10153,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
   m_PrefabInstance: {fileID: 598753304}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &603016622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603016623}
+  - component: {fileID: 603016624}
+  m_Layer: 0
+  m_Name: ActivarAceleracion
+  m_TagString: trigs2/activaceleracion
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603016623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603016622}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.86, y: 1.3512641, z: 3.96}
+  m_LocalScale: {x: 0.125, y: 1, z: 1.2375}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1045036324}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &603016624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603016622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &605746326 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -11724,6 +11814,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c3ad21bbeb9d08478622fa3c2ea2e52, type: 3}
+--- !u!1 &709025442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709025443}
+  - component: {fileID: 709025444}
+  m_Layer: 0
+  m_Name: ActivaDesactivarEnemigo4
+  m_TagString: trigs2/activaDesac4
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &709025443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709025442}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -9.02, y: 1.3512641, z: 14.48}
+  m_LocalScale: {x: 0.125, y: 1, z: 1.2375}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1045036324}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &709025444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709025442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &709976002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a5635fef284e09f45a664c7d55a3da92, type: 3}
@@ -15703,6 +15838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7d6a9410395724eaa3f760a0042a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigo: {fileID: 968841870}
   lucescomp1: {fileID: 0}
   lucescomp2: {fileID: 0}
   lucescomp3: {fileID: 0}
@@ -15718,6 +15854,10 @@ MonoBehaviour:
   luces10: {fileID: 0}
   luces11: {fileID: 0}
   luces12: {fileID: 0}
+  encuentro1: {fileID: 332526934}
+  encuentro2: {fileID: 1644215504}
+  encuentro3: {fileID: 21509018}
+  encuentro4: {fileID: 1785512313}
 --- !u!114 &895016443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17077,6 +17217,8 @@ GameObject:
   - component: {fileID: 968841873}
   - component: {fileID: 968841872}
   - component: {fileID: 968841871}
+  - component: {fileID: 968841877}
+  - component: {fileID: 968841878}
   m_Layer: 0
   m_Name: enemigo
   m_TagString: Untagged
@@ -17204,6 +17346,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &968841877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1623944c26f1a784eb5ee1b6f3a50ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 968841870}
+  agent: {fileID: 0}
+  aceleracion1: {fileID: 1727528132}
+  aceleracion2: {fileID: 1198579972}
+  desactivacion1: {fileID: 153101369}
+  desactivacion2: {fileID: 170644301}
+  desactivacion3: {fileID: 51985741}
+  desactivacion4: {fileID: 520103888}
+--- !u!54 &968841878
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968841870}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &970720244 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b82d989ee87e6af48a6c7e985b833814, type: 3}
@@ -18414,8 +18592,11 @@ Transform:
   - {fileID: 153101370}
   - {fileID: 170644302}
   - {fileID: 51985742}
+  - {fileID: 520103889}
   - {fileID: 1727528133}
   - {fileID: 1198579973}
+  - {fileID: 603016623}
+  - {fileID: 709025443}
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21013,11 +21194,11 @@ GameObject:
   - component: {fileID: 1198579974}
   m_Layer: 0
   m_Name: AcelerarEnemigo2
-  m_TagString: Untagged
+  m_TagString: trigs2/aceleracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1198579973
 Transform:
   m_ObjectHideFlags: 0
@@ -21031,7 +21212,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1045036324}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1198579974
 BoxCollider:
@@ -29451,11 +29632,11 @@ GameObject:
   - component: {fileID: 1644215506}
   m_Layer: 0
   m_Name: ActivarEncuentro2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: trigs2/encuentros
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1644215505
 Transform:
   m_ObjectHideFlags: 0
@@ -29997,7 +30178,7 @@ GameObject:
   - component: {fileID: 1665046840}
   - component: {fileID: 1665046839}
   - component: {fileID: 1665046838}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Recolectable 2
   m_TagString: recolectables/rec2
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -31279,7 +31460,7 @@ GameObject:
   - component: {fileID: 1727528134}
   m_Layer: 0
   m_Name: AcelerarEnemigo1
-  m_TagString: Untagged
+  m_TagString: trigs2/aceleracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31297,7 +31478,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1045036324}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1727528134
 BoxCollider:
@@ -32056,8 +32237,8 @@ GameObject:
   - component: {fileID: 1785512315}
   m_Layer: 0
   m_Name: ActivarEncuentro4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: trigs2/encuentros
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -32628,7 +32809,7 @@ GameObject:
   - component: {fileID: 1813018313}
   - component: {fileID: 1813018312}
   - component: {fileID: 1813018311}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Recolectable 1
   m_TagString: recolectables/rec1
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -34074,7 +34255,7 @@ GameObject:
   - component: {fileID: 1899205756}
   - component: {fileID: 1899205755}
   - component: {fileID: 1899205754}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Recolectable 3
   m_TagString: recolectables/rec3
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}

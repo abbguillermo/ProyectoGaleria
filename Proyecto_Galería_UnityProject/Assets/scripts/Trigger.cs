@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
+    public GameObject enemigo;
+
     //empty luces
     public GameObject lucescomp1;
     public GameObject lucescomp2;
@@ -27,8 +29,28 @@ public class Trigger : MonoBehaviour
     public GameObject luces11;
     public GameObject luces12;
 
+    //activar enemigo
+    public GameObject encuentro1;
+    public GameObject encuentro2;
+    public GameObject encuentro3;
+    public GameObject encuentro4;
+
     private void OnTriggerEnter(Collider other)
     {
+        //sala 2
+        if (other.tag == "trigs2/encuentros")
+        {
+            enemigo.SetActive(true);
+            if(FindObjectOfType<levantarparedes>().recolectado2 == true && FindObjectOfType<levantarparedes>().recolectado3 == false)
+            {
+                FindObjectOfType<triggerS2>().agent.speed = 5;
+            }
+            else
+            {
+                FindObjectOfType<triggerS2>().agent.speed = 1;
+            }
+        }
+
         if (other.tag == "collider/CP1")
         {
             StartCoroutine(LucesPuzzle1());
@@ -56,6 +78,7 @@ public class Trigger : MonoBehaviour
         {
             lucescomp3.SetActive(false);
         }
+
 
     }
 
