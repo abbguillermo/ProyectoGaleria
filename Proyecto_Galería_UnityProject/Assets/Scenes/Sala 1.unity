@@ -465,6 +465,8 @@ MonoBehaviour:
   cuad2: 0
   cuad3: 1
   cuad4: 0
+  MovCam: {fileID: 1479282306}
+  pj: {fileID: 85554142}
 --- !u!1001 &16130320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2299,6 +2301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7d6a9410395724eaa3f760a0042a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigo: {fileID: 0}
   lucescomp1: {fileID: 119296317}
   lucescomp2: {fileID: 53200462}
   lucescomp3: {fileID: 38972883}
@@ -2314,6 +2317,30 @@ MonoBehaviour:
   luces10: {fileID: 984368680}
   luces11: {fileID: 457290437}
   luces12: {fileID: 917284009}
+  encuentro1: {fileID: 0}
+  encuentro2: {fileID: 0}
+  encuentro3: {fileID: 0}
+  encuentro4: {fileID: 0}
+--- !u!95 &85554184
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85554142}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 631993888ba652f43a068bb175eacec6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &89637482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2644,7 +2671,9 @@ MonoBehaviour:
   marcorot: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
   puedeagarrar: 1
   puerta: {fileID: 1416340621}
+  escondite1_sala2: {fileID: 0}
   spriteNota: {fileID: 1484895585}
+  palanca: {fileID: 0}
   mano: {fileID: 1873528075}
 --- !u!114 &108727732
 MonoBehaviour:
@@ -5787,7 +5816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.44
+      value: 22.63
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5843,7 +5872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: sprintFOV
-      value: 85
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: walkSpeed
@@ -16284,6 +16313,8 @@ MonoBehaviour:
   cuad2: 0
   cuad3: 0
   cuad4: 0
+  MovCam: {fileID: 1479282306}
+  pj: {fileID: 85554142}
 --- !u!1 &955164395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 378eb3e07074bc04185a3294eb2c1576, type: 3}
@@ -17628,6 +17659,8 @@ MonoBehaviour:
   luz2: {fileID: 1781709799}
   luz3: {fileID: 634731933}
   luz4: {fileID: 1952328602}
+  MovCam: {fileID: 1479282306}
+  pj: {fileID: 85554142}
 --- !u!4 &1030192313
 Transform:
   m_ObjectHideFlags: 0
@@ -25705,6 +25738,20 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1479282306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578634182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9596f7240dac742a574b3cf14a67ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duracion: 0.1
+  magnitud: 0.15
 --- !u!1001 &1483326637
 PrefabInstance:
   m_ObjectHideFlags: 0

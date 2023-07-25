@@ -23,13 +23,17 @@ public class puzzle3 : MonoBehaviour
     public bool cuad3=true;
     public bool cuad4=false;
 
+    public movCam MovCam;
+    public GameObject pj;
+
 
     private void Update()
     {
         if (cuad1==true&&cuad2==true&&cuad3==true&&cuad4==true)
         {
-            Debug.Log("asdawasdwasd");
+            StartCoroutine(MovCam.Movimiento());
             StartCoroutine(Abrir());
+            pj.GetComponent<Animator>().Play("cambiarfov");
         }
 
     }

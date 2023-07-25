@@ -27,12 +27,16 @@ public class puzzle2 : MonoBehaviour
     private Quaternion cuadrorot3 = Quaternion.Euler(0f, 270f, 180f);
     private Quaternion cuadrorot4 = Quaternion.Euler(0f, 270f, 180f);
 
+    public movCam MovCam;
+    public GameObject pj;
 
     private void Update()
     {
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
+            StartCoroutine(MovCam.Movimiento());
             StartCoroutine(Abrir());
+            pj.GetComponent<Animator>().Play("cambiarfov");
         } 
        
 
