@@ -28,7 +28,7 @@ public class levantarparedes : MonoBehaviour
     {
         if (subir == true)
         {
-            
+            FindObjectOfType<Agarrar>().palanca.layer = 0;
             FindObjectOfType<FirstPersonController>().playerCanMove = false;
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
             StartCoroutine(Movimiento());

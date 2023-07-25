@@ -19,8 +19,8 @@ public class Agarrar : MonoBehaviour
     public bool puedeagarrar;
     public GameObject puerta;
     public GameObject escondite1_sala2;
-
     public GameObject spriteNota;
+    public GameObject palanca;
 
 
     public ControlScroll mano;
@@ -202,6 +202,7 @@ public class Agarrar : MonoBehaviour
                 //sala2
                 if (hit.transform.gameObject.tag == "palanca")
                 {
+                    palanca.GetComponent<Animator>().Play("SubirPalanca");
                     FindObjectOfType<levantarparedes>().subir = true;
                 }
 
