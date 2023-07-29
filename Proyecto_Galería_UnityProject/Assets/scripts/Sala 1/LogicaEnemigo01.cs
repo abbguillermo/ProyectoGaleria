@@ -14,15 +14,16 @@ public class LogicaEnemigo01 : MonoBehaviour
     public Vector3 pos4;
     public Vector3 pos5;
     public Vector3 pos6;
+    public Vector3 pos7;
     // Start is called before the first frame update
     void Start()
     {
-        pos1 = new Vector3(-1.9f, 1.1f, 2.98f);
+        /*pos1 = new Vector3(-1.9f, 1.1f, 2.98f);
         pos2 = new Vector3(2.79f, 1.1f, 4);
         pos3 = new Vector3(0, 0, 0);
         pos4 = new Vector3(0, 0, 0);
         pos5 = new Vector3(0, 0, 0);
-        pos6 = new Vector3(0, 0, 0);
+        pos6 = new Vector3(0, 0, 0);*/
     }
 
     // Update is called once per frame
