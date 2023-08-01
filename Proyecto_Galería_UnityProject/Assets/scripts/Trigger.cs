@@ -41,14 +41,22 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs2/encuentros")
         {
             enemigo.SetActive(true);
-            if(FindObjectOfType<levantarparedes>().recolectado2 == true && FindObjectOfType<levantarparedes>().recolectado3 == false)
+            other.gameObject.SetActive(false);
+            Debug.Log("LACONCHADELALORA");
+           
+            if (FindObjectOfType<levantarparedes>().recolectado2 == true && FindObjectOfType<levantarparedes>().recolectado3 == false)
             {
+               
                 FindObjectOfType<triggerS2>().agent.speed = 5;
+                
             }
             else
             {
+               
                 FindObjectOfType<triggerS2>().agent.speed = 1;
+                
             }
+            
         }
 
         if (other.tag == "collider/CP1")
@@ -80,6 +88,15 @@ public class Trigger : MonoBehaviour
         }
 
 
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "trigs2/encuentros")
+        {
+            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+        }
     }
 
     IEnumerator LucesPuzzle1()

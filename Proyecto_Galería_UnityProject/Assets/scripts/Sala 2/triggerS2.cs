@@ -33,16 +33,20 @@ public class triggerS2 : MonoBehaviour
         {
             Destroy(other.gameObject);
             enemigo.SetActive(false);
+            
         }
 
         if (other.tag == "trigs2/activaceleracion")
         {
             aceleracion2.SetActive(true);
+            
         }
 
         if(other.tag == "trigs2/activaDesac4")
         {
             desactivacion4.SetActive(true);
+            
         }
+        
     }
 }

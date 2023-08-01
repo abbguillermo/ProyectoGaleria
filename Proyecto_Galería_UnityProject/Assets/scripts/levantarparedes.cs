@@ -37,6 +37,7 @@ public class levantarparedes : MonoBehaviour
         if(recolectado2 == true)
         {
             FindObjectOfType<Trigger>().encuentro2.SetActive(true);
+            recolectado2 = false;
         }
 
         if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)
