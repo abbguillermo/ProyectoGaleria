@@ -204,6 +204,8 @@ public class Agarrar : MonoBehaviour
                 {
                     palanca.GetComponent<Animator>().Play("SubirPalanca");
                     FindObjectOfType<levantarparedes>().subir = true;
+                    FindObjectOfType<levantarparedes>().TriggerBoxes.SetActive(true);
+                    FindObjectOfType<levantarparedes>().Maniquies.SetActive(true);
                 }
 
                 if (FindObjectOfType<levantarparedes>().subir == true)
