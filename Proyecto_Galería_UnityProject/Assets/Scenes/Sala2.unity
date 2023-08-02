@@ -14638,6 +14638,8 @@ MonoBehaviour:
   objetorecolectado3: {fileID: 1899205753}
   objetorecolectado4: {fileID: 220325631}
   pj: {fileID: 895016441}
+  TriggerBoxes: {fileID: 1045036323}
+  Maniquies: {fileID: 392316924}
 --- !u!4 &615922254
 Transform:
   m_ObjectHideFlags: 0
@@ -25724,7 +25726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1045036324
 Transform:
   m_ObjectHideFlags: 0
@@ -44060,8 +44062,8 @@ Transform:
   - {fileID: 309776886}
   - {fileID: 698413195}
   - {fileID: 1118356552}
-  - {fileID: 326966923}
   - {fileID: 1729509449}
+  - {fileID: 326966923}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44789,6 +44791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo2_prueba2DeAnim
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 73dd9add25b55754bb7b32a1d72471fa, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 114b25b0188c6d74f9887e3da71f8142, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73dd9add25b55754bb7b32a1d72471fa, type: 3}
 --- !u!1001 &1789668322
@@ -50186,7 +50192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989397948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

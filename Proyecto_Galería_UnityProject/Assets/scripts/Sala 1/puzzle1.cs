@@ -15,20 +15,15 @@ public class puzzle1 : MonoBehaviour
 
     void FixedUpdate()
     {
-
-
         if (cuad1==true && cuad2==true && cuad3==true && cuad4==true)
         {
             Debug.Log("BIEN");
-            //pj.GetComponent<Animator>().SetTrigger("cambiarfov");
+            pj.GetComponent<Animator>().SetTrigger("cambiarfov");
             StartCoroutine(Abrir());
             cam.GetComponent<Animator>().SetTrigger("shake");
             //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
             FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
-
         }
-      
-        
     }
 
     IEnumerator Abrir()
@@ -36,8 +31,10 @@ public class puzzle1 : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         pared.GetComponent<Animator>().Play("AbrirP");
         yield return new WaitForSeconds(0.3f);
+        pj.GetComponent<Animator>().ResetTrigger("cambiarfov");
+        cam.GetComponent<Animator>().ResetTrigger("shake");
         cam.GetComponent<Animator>().SetTrigger("idle");
-        //pj.GetComponent<Animator>().SetTrigger("fovnormal");
+        pj.GetComponent<Animator>().SetTrigger("fovnormal");
         yield return new WaitForSeconds(0.5f);
         cuad1 = false;
     }
