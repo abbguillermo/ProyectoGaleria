@@ -43,7 +43,7 @@ public class Trigger : MonoBehaviour
         {
             enemigo.SetActive(true);
             other.gameObject.SetActive(false);
-            Debug.Log("LACONCHADELALORA");
+            
            
             if (FindObjectOfType<levantarparedes>().recolectado2 == true && FindObjectOfType<levantarparedes>().recolectado3 == false)
             {
@@ -63,16 +63,19 @@ public class Trigger : MonoBehaviour
         if (other.tag == "collider/CP1")
         {
             StartCoroutine(LucesPuzzle1());
+            
         }
 
         if (other.tag == "collider/CP2")
         {
             StartCoroutine(LucesPuzzle2());
+            
         }
 
         if (other.tag == "collider/CP3")
         {
             StartCoroutine(LucesPuzzle3());
+            FindObjectOfType<LogicaEnemigo01>().enemigo.transform.position = FindObjectOfType<LogicaEnemigo01>().pos6;
         }
 
         if (other.tag == "collider/CP1OFF")

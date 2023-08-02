@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.25
@@ -6618,7 +6618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.41
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25009,6 +25009,7 @@ MonoBehaviour:
   pos7: {x: 33, y: 0, z: 2.557}
   camara_jugador: {fileID: 578634182}
   camara_muerte: {fileID: 1012443839}
+  enemigo: {fileID: 0}
 --- !u!1001 &1189738375
 PrefabInstance:
   m_ObjectHideFlags: 0
