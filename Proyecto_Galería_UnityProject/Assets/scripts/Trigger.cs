@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Trigger : MonoBehaviour
 {
@@ -87,6 +88,10 @@ public class Trigger : MonoBehaviour
             lucescomp3.SetActive(false);
         }
 
+        if (other.tag == "collider/CProxEsc")
+        {
+            SceneManager.LoadScene("Sala2");
+        }
 
     }
 
