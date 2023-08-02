@@ -217,8 +217,10 @@ public class puzzle3 : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         pared.GetComponent<Animator>().Play("AbrirP3");
         yield return new WaitForSeconds(0.3f);
+        cam.GetComponent<Animator>().ResetTrigger("shake");
         cam.GetComponent<Animator>().SetTrigger("idle");
         yield return new WaitForSeconds(0.5f);
         cuad1 = false;
+        btn4 = true;
     }
 }

@@ -35,13 +35,9 @@ public class puzzle2 : MonoBehaviour
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
             StartCoroutine(Abrir());
-            //pj.GetComponent<Animator>().SetTrigger("cambiarfov");
+            pj.GetComponent<Animator>().SetTrigger("cambiarfov");
             cam.GetComponent<Animator>().SetTrigger("shake");
-        } 
-       
-
-       
-       
+        }  
     }
 
     public void Rotarcuad1()
@@ -131,8 +127,10 @@ public class puzzle2 : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         pared.GetComponent<Animator>().Play("AbrirP2");
         yield return new WaitForSeconds(0.3f);
+        pj.GetComponent<Animator>().ResetTrigger("cambiarfov");
+        cam.GetComponent<Animator>().ResetTrigger("shake");
         cam.GetComponent<Animator>().SetTrigger("idle");
-        //pj.GetComponent<Animator>().SetTrigger("fovnormal");
+        pj.GetComponent<Animator>().SetTrigger("fovnormal");
         yield return new WaitForSeconds(0.5f);
         btn1 = false;
     }
