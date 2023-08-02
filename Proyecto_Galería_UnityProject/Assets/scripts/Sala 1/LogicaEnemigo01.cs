@@ -48,7 +48,7 @@ public class LogicaEnemigo01 : MonoBehaviour
     IEnumerator posiciones()
     {
         gameObject.transform.position = pos1;
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(10f);
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
         gameObject.transform.GetChild(2).gameObject.SetActive(true);
         gameObject.transform.position = pos2;
