@@ -23,17 +23,17 @@ public class puzzle3 : MonoBehaviour
     public bool cuad3=true;
     public bool cuad4=false;
 
-    public movCam MovCam;
     public GameObject pj;
+    public GameObject cam;
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (cuad1==true&&cuad2==true&&cuad3==true&&cuad4==true)
         {
-            StartCoroutine(MovCam.Movimiento());
             StartCoroutine(Abrir());
-            pj.GetComponent<Animator>().Play("cambiarfov");
+            //pj.GetComponent<Animator>().Play("cambiarfov");
+            cam.GetComponent<Animator>().SetTrigger("shake");
         }
 
     }
@@ -216,5 +216,9 @@ public class puzzle3 : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         pared.GetComponent<Animator>().Play("AbrirP3");
+        yield return new WaitForSeconds(0.3f);
+        cam.GetComponent<Animator>().SetTrigger("idle");
+        yield return new WaitForSeconds(0.5f);
+        cuad1 = false;
     }
 }

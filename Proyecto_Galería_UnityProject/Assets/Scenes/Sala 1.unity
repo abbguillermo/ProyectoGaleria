@@ -465,8 +465,8 @@ MonoBehaviour:
   cuad2: 0
   cuad3: 1
   cuad4: 0
-  MovCam: {fileID: 1479282306}
   pj: {fileID: 85554142}
+  cam: {fileID: 578634182}
 --- !u!1001 &16130320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19706,8 +19706,8 @@ MonoBehaviour:
   cuad2: 0
   cuad3: 0
   cuad4: 0
-  MovCam: {fileID: 1479282306}
   pj: {fileID: 85554142}
+  cam: {fileID: 578634182}
 --- !u!1 &955164395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 378eb3e07074bc04185a3294eb2c1576, type: 3}
@@ -21522,8 +21522,8 @@ MonoBehaviour:
   luz2: {fileID: 1781709799}
   luz3: {fileID: 634731933}
   luz4: {fileID: 1952328602}
-  MovCam: {fileID: 1479282306}
   pj: {fileID: 85554142}
+  cam: {fileID: 578634182}
 --- !u!4 &1030192313
 Transform:
   m_ObjectHideFlags: 0
@@ -30751,20 +30751,26 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &1479282306
-MonoBehaviour:
+--- !u!95 &1479282306
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578634182}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c9596f7240dac742a574b3cf14a67ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duracion: 0.1
-  magnitud: 0.15
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a73373294757794b894815a1569b40f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1483326637
 PrefabInstance:
   m_ObjectHideFlags: 0

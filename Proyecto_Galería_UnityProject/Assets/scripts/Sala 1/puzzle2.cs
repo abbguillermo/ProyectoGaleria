@@ -27,16 +27,16 @@ public class puzzle2 : MonoBehaviour
     private Quaternion cuadrorot3 = Quaternion.Euler(0f, 270f, 180f);
     private Quaternion cuadrorot4 = Quaternion.Euler(0f, 270f, 180f);
 
-    public movCam MovCam;
     public GameObject pj;
+    public GameObject cam;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
-            StartCoroutine(MovCam.Movimiento());
             StartCoroutine(Abrir());
-            pj.GetComponent<Animator>().Play("cambiarfov");
+            //pj.GetComponent<Animator>().SetTrigger("cambiarfov");
+            cam.GetComponent<Animator>().SetTrigger("shake");
         } 
        
 
@@ -130,5 +130,10 @@ public class puzzle2 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         pared.GetComponent<Animator>().Play("AbrirP2");
+        yield return new WaitForSeconds(0.3f);
+        cam.GetComponent<Animator>().SetTrigger("idle");
+        //pj.GetComponent<Animator>().SetTrigger("fovnormal");
+        yield return new WaitForSeconds(0.5f);
+        btn1 = false;
     }
 }
