@@ -64,10 +64,12 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle1());
             
+            
         }
 
         if (other.tag == "collider/CP2")
         {
+            FindObjectOfType<LogicaEnemigo01>().avanzaprimertrigger = true;
             StartCoroutine(LucesPuzzle2());
             
         }

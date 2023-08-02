@@ -18,9 +18,16 @@ public class LogicaEnemigo01 : MonoBehaviour
     public GameObject camara_jugador;
     public GameObject camara_muerte;
     public GameObject enemigo;
+    public float tiempoinicial;
+    public bool estaactivado;
+    public float tiempo;
+    public bool avanzaprimertrigger;
     // Start is called before the first frame update
     void Start()
     {
+        avanzaprimertrigger = false;
+        tiempo = 0;
+        estaactivado = false;
         enemigo = gameObject;
         /*pos1 = new Vector3(-1.9f, 1.1f, 2.98f);
         pos2 = new Vector3(2.79f, 1.1f, 4);
@@ -33,24 +40,36 @@ public class LogicaEnemigo01 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float tiempoinicial = Time.time;
-        float tiempo = Time.time - tiempoinicial;
-        Debug.Log(tiempo);
+        if (estaactivado)
+        {
+            tiempo = Time.time;
+            
+        }
+
+        
         if (papel==true/*&& puedemov==true*/)
         {
             
+            encendertiempo();
             //StartCoroutine(posiciones());
-            if (tiempo >= 10 || PJ.position.x > 12)
+            if ((tiempo >= 10 && tiempo <= 420))
             {
                 posicion2();
             }
-           /* puedemov = false;*/
+            if ((tiempo >= 421 && tiempo <= 600) || avanzaprimertrigger)
+            {
+                posicion3();
+                
+            }
+            /* puedemov = false;*/
         }
-        
 
+       
+
+        Debug.Log(avanzaprimertrigger);
         if (gameObject.transform.position.x>PJ.position.x)
         {
-            Derrota();
+           // Derrota();
         }
        
     }
@@ -105,5 +124,21 @@ public class LogicaEnemigo01 : MonoBehaviour
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
         gameObject.transform.GetChild(2).gameObject.SetActive(true);
         gameObject.transform.position = pos2;
+    }
+    void posicion3()
+    {
+        gameObject.transform.GetChild(2).gameObject.SetActive(false);
+        gameObject.transform.GetChild(3).gameObject.SetActive(true);
+        gameObject.transform.position = pos3;
+    }
+    public void detenertiempo()
+    {
+        estaactivado = false;
+        
+    }
+    public void encendertiempo()
+    {
+        tiempoinicial = Time.time;
+        estaactivado = true;
     }
 }
