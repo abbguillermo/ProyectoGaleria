@@ -18,8 +18,8 @@ public class LogicaEnemigo01 : MonoBehaviour
     public GameObject camara_jugador;
     public GameObject camara_muerte;
     public GameObject enemigo;
-    public float tiempoinicial;
-    public bool estaactivado;
+    /*public float tiempoinicial;
+    public bool estaactivado;*/
     public float tiempo;
     public bool avanzaprimertrigger;
     public bool avanzasegundotrigger;
@@ -35,8 +35,8 @@ public class LogicaEnemigo01 : MonoBehaviour
         avanzatercertrigger = false;
         avanzacuartotrigger = false;
         avanzaquintotrigger = false;
-        tiempo = 0;
-        estaactivado = false;
+        //tiempo;
+        //estaactivado = false;
         enemigo = gameObject;
         /*pos1 = new Vector3(-1.9f, 1.1f, 2.98f);
         pos2 = new Vector3(2.79f, 1.1f, 4);
@@ -46,46 +46,45 @@ public class LogicaEnemigo01 : MonoBehaviour
         pos6 = new Vector3(0, 0, 0);*/
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (estaactivado)
-        {
-            tiempo = Time.time;
-            
-        }
 
-        
+       /* if (estaactivado)
+        {
+            tiempo = Time.time; 
+        }*/
+   
         if (papel==true/*&& puedemov==true*/)
         {
+            tiempo += Time.deltaTime;
             posicion1();
-            encendertiempo();
+            //encendertiempo();
             //StartCoroutine(posiciones());
-            if ((tiempo >= 10 && tiempo <= 420))
+            if ((tiempo >= 20 && tiempo <= 239))
             {
                 posicion2();
             }
-            if ((tiempo >= 421 && tiempo <= 600) || avanzaprimertrigger)
+            if ((tiempo >= 240 && tiempo <= 300) || avanzaprimertrigger) //1MIN
             {
                 posicion3();
                 
             }
-            if ((tiempo >= 601 && tiempo <= 780) || avanzasegundotrigger)
+            if ((tiempo >= 301 && tiempo <= 540) || avanzasegundotrigger) //4MIN
             {
                 posicion4();
 
             }
-            if ((tiempo >= 781 && tiempo <= 960) || avanzatercertrigger)
+            if ((tiempo >= 541 && tiempo <= 600) || avanzatercertrigger)
             {
                 posicion5();
 
             }
-            if ((tiempo >= 961 && tiempo <= 1140) || avanzacuartotrigger)
+            if ((tiempo >= 601 && tiempo <= 840) || avanzacuartotrigger)
             {
                 posicion6();
 
             }
-            if ((tiempo >= 1141 && tiempo <= 1320) || avanzaquintotrigger)
+            if ((tiempo >= 841 && tiempo <= 1000) || avanzaquintotrigger)
             {
                 posicion7();
 
@@ -185,7 +184,7 @@ public class LogicaEnemigo01 : MonoBehaviour
         gameObject.transform.GetChild(6).gameObject.SetActive(true);
         gameObject.transform.position = pos7;
     }
-
+/*
     public void detenertiempo()
     {
         estaactivado = false;
@@ -195,5 +194,5 @@ public class LogicaEnemigo01 : MonoBehaviour
     {
         tiempoinicial = Time.time;
         estaactivado = true;
-    }
+    }*/
 }
