@@ -58,7 +58,7 @@ public class LogicaEnemigo01 : MonoBehaviour
         
         if (papel==true/*&& puedemov==true*/)
         {
-            
+            posicion1();
             encendertiempo();
             //StartCoroutine(posiciones());
             if ((tiempo >= 10 && tiempo <= 420))
@@ -144,8 +144,9 @@ public class LogicaEnemigo01 : MonoBehaviour
         camara_muerte.SetActive(true);
     }
 
-    void posicion1()
+    public void posicion1()
     {
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
         gameObject.transform.position = pos1;
     }
     void posicion2()

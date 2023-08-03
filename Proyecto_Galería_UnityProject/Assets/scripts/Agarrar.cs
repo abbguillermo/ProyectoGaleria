@@ -191,12 +191,8 @@ public class Agarrar : MonoBehaviour
                 if (hit.transform.gameObject.tag=="papel")
                 {
                     Destroy(hit.transform.gameObject);
-                    puerta.SetActive(true);
-                    //se reproduce el sonido de puerta
-                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
                     spriteNota.SetActive(true);
-                   // ui.papel.Setactive(true);
-                    Invoke("Activarpapel", 4f);
+                    Invoke("Activarpapel", 0f);
                 }
 
                 //sala2
@@ -239,22 +235,20 @@ public class Agarrar : MonoBehaviour
 
                 if (hit.transform.gameObject.tag == "escondites/escondite1")
                 {
-                    Debug.Log("sadsaw");
+                    //Debug.Log("sadsaw");
                     hit.transform.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                     escondite1_sala2.SetActive(false);
-                    
                 }
-               
-               
             }
-
-            
         }
     }
 
     void Activarpapel()
     {
-        
+        //animacion y sonido puerta
+        puerta.GetComponent<Animator>().Play("CerrarPuerta");
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
+        //nota
         FindObjectOfType<LogicaEnemigo01>().papel = true;
         FindObjectOfType<LogicaEnemigo01>().puedemov = true;
     }
