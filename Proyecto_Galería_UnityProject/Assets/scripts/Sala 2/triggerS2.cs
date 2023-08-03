@@ -29,6 +29,11 @@ public class triggerS2 : MonoBehaviour
             agent.speed = 10;
         }
 
+        if (other.tag == "trigs2/aceleracion2")
+        {
+            agent.speed = 1;
+        }
+
         if (other.CompareTag("trigs2/desactivacion"))
         {
             Destroy(other.gameObject);

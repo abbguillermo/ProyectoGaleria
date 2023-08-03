@@ -19,7 +19,9 @@ public class levantarparedes : MonoBehaviour
     public GameObject pj;
     public GameObject TriggerBoxes;
     public GameObject Maniquies;
-    
+
+    //VARIABLE PARA ACTIVAR TRIGGER ENCUENTRO 2
+    public bool pieza2 = false;
 
     private void Start()
     {
@@ -36,10 +38,10 @@ public class levantarparedes : MonoBehaviour
             StartCoroutine(Movimiento());
         }
 
-        if(recolectado2 == true)
+        if(pieza2 == true)
         {
             FindObjectOfType<Trigger>().encuentro2.SetActive(true);
-            recolectado2 = false;
+            pieza2 = false;
         }
 
         if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)

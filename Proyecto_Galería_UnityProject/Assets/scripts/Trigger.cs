@@ -36,6 +36,13 @@ public class Trigger : MonoBehaviour
     public GameObject encuentro3;
     public GameObject encuentro4;
 
+    /*//enemigo posiciones
+    public GameObject pos3;
+    public GameObject pos4;
+    public GameObject pos5;
+    public GameObject pos6;
+    public GameObject pos7;*/
+
     private void OnTriggerEnter(Collider other)
     {
         //sala 2
@@ -47,38 +54,28 @@ public class Trigger : MonoBehaviour
            
             if (FindObjectOfType<levantarparedes>().recolectado2 == true && FindObjectOfType<levantarparedes>().recolectado3 == false)
             {
-               
                 FindObjectOfType<triggerS2>().agent.speed = 5;
-                
             }
             else
             {
-               
                 FindObjectOfType<triggerS2>().agent.speed = 1;
-                
             }
-            
         }
 
         if (other.tag == "collider/CP1")
         {
-            StartCoroutine(LucesPuzzle1());
-            
-            
+            StartCoroutine(LucesPuzzle1()); 
         }
 
         if (other.tag == "collider/CP2")
         {
-            FindObjectOfType<LogicaEnemigo01>().avanzaprimertrigger = true;
-            StartCoroutine(LucesPuzzle2());
-            
+            StartCoroutine(LucesPuzzle2());  
         }
 
         if (other.tag == "collider/CP3")
         {
             StartCoroutine(LucesPuzzle3());
             //FindObjectOfType<LogicaEnemigo01>().enemigo.transform.position = FindObjectOfType<LogicaEnemigo01>().pos6;
-            FindObjectOfType<LogicaEnemigo01>().avanzasegundotrigger = true;
         }
 
         if (other.tag == "collider/CP1OFF")
@@ -95,11 +92,39 @@ public class Trigger : MonoBehaviour
             FindObjectOfType<LogicaEnemigo01>().avanzatercertrigger = true;
         }
 
+        //enemigo colliders
+        if (other.tag == "collider/CEnemigoP3")
+        {
+            FindObjectOfType<LogicaEnemigo01>().avanzaprimertrigger = true;
+        }
+
+        if (other.tag == "collider/CEnemigoP4")
+        {
+            FindObjectOfType<LogicaEnemigo01>().avanzasegundotrigger = true;
+        }
+
+        if (other.tag == "collider/CEnemigoP5")
+        {
+            FindObjectOfType<LogicaEnemigo01>().avanzatercertrigger = true;
+        }
+
+        if (other.tag == "collider/CEnemigoP6")
+        {
+            FindObjectOfType<LogicaEnemigo01>().avanzacuartotrigger = true;
+        }
+
+        if (other.tag == "collider/CEnemigoP7")
+        {
+            FindObjectOfType<LogicaEnemigo01>().avanzaquintotrigger = true;
+        }
+
+        //prox escena collider
         if (other.tag == "collider/CProxEsc")
         {
             SceneManager.LoadScene("Sala2");
         }
 
+        
     }
 
     private void OnTriggerExit(Collider other)

@@ -220,6 +220,7 @@ public class Agarrar : MonoBehaviour
                     {
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado2 = true;
+                        FindObjectOfType<levantarparedes>().pieza2 = true;
                     }
 
                     if (hit.transform.gameObject.tag == "recolectables/rec3")
