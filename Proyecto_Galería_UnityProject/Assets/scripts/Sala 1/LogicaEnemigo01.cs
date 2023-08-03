@@ -22,10 +22,19 @@ public class LogicaEnemigo01 : MonoBehaviour
     public bool estaactivado;
     public float tiempo;
     public bool avanzaprimertrigger;
+    public bool avanzasegundotrigger;
+    public bool avanzatercertrigger;
+    public bool avanzacuartotrigger;
+    public bool avanzaquintotrigger;
+
     // Start is called before the first frame update
     void Start()
     {
         avanzaprimertrigger = false;
+        avanzasegundotrigger = false;
+        avanzatercertrigger = false;
+        avanzacuartotrigger = false;
+        avanzaquintotrigger = false;
         tiempo = 0;
         estaactivado = false;
         enemigo = gameObject;
@@ -60,6 +69,26 @@ public class LogicaEnemigo01 : MonoBehaviour
             {
                 posicion3();
                 
+            }
+            if ((tiempo >= 601 && tiempo <= 780) || avanzasegundotrigger)
+            {
+                posicion4();
+
+            }
+            if ((tiempo >= 781 && tiempo <= 960) || avanzatercertrigger)
+            {
+                posicion5();
+
+            }
+            if ((tiempo >= 961 && tiempo <= 1140) || avanzacuartotrigger)
+            {
+                posicion6();
+
+            }
+            if ((tiempo >= 1141 && tiempo <= 1320) || avanzaquintotrigger)
+            {
+                posicion7();
+
             }
             /* puedemov = false;*/
         }
@@ -131,6 +160,31 @@ public class LogicaEnemigo01 : MonoBehaviour
         gameObject.transform.GetChild(3).gameObject.SetActive(true);
         gameObject.transform.position = pos3;
     }
+    void posicion4()
+    {
+        gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        gameObject.transform.GetChild(4).gameObject.SetActive(true);
+        gameObject.transform.position = pos4;
+    }
+    void posicion5()
+    {
+        gameObject.transform.GetChild(4).gameObject.SetActive(false);
+        gameObject.transform.GetChild(3).gameObject.SetActive(true);
+        gameObject.transform.position = pos5;
+    }
+    void posicion6()
+    {
+        gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        gameObject.transform.GetChild(5).gameObject.SetActive(true);
+        gameObject.transform.position = pos6;
+    }
+    void posicion7()
+    {
+        gameObject.transform.GetChild(5).gameObject.SetActive(false);
+        gameObject.transform.GetChild(6).gameObject.SetActive(true);
+        gameObject.transform.position = pos7;
+    }
+
     public void detenertiempo()
     {
         estaactivado = false;

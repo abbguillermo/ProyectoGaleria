@@ -77,7 +77,8 @@ public class Trigger : MonoBehaviour
         if (other.tag == "collider/CP3")
         {
             StartCoroutine(LucesPuzzle3());
-            FindObjectOfType<LogicaEnemigo01>().enemigo.transform.position = FindObjectOfType<LogicaEnemigo01>().pos6;
+            //FindObjectOfType<LogicaEnemigo01>().enemigo.transform.position = FindObjectOfType<LogicaEnemigo01>().pos6;
+            FindObjectOfType<LogicaEnemigo01>().avanzasegundotrigger = true;
         }
 
         if (other.tag == "collider/CP1OFF")
@@ -91,6 +92,7 @@ public class Trigger : MonoBehaviour
         else if (other.tag == "collider/CP3OFF")
         {
             lucescomp3.SetActive(false);
+            FindObjectOfType<LogicaEnemigo01>().avanzatercertrigger = true;
         }
 
         if (other.tag == "collider/CProxEsc")

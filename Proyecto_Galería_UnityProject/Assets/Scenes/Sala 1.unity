@@ -25560,6 +25560,10 @@ MonoBehaviour:
   estaactivado: 0
   tiempo: 0
   avanzaprimertrigger: 0
+  avanzasegundotrigger: 0
+  avanzatercertrigger: 0
+  avanzacuartotrigger: 0
+  avanzaquintotrigger: 0
 --- !u!1001 &1189738375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26292,7 +26296,7 @@ Transform:
   - {fileID: 1900253866}
   - {fileID: 784092186}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1219872699
 PrefabInstance:
@@ -32836,7 +32840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4308170994332864, guid: a16eae0af83edd24a9e7bdf1d02099e3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4308170994332864, guid: a16eae0af83edd24a9e7bdf1d02099e3, type: 3}
       propertyPath: m_LocalScale.y
