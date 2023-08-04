@@ -22,11 +22,15 @@ public class Agarrar : MonoBehaviour
     public GameObject spriteNota;
     public GameObject palanca;
 
+    //Objetos sala inicial
+    public GameObject radio;
+    public GameObject cuadro;
+
 
     public ControlScroll mano;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -74,6 +78,20 @@ public class Agarrar : MonoBehaviour
 
             if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
             {
+                //sala inicial
+                if (hit.transform.gameObject.tag == "salainicial/radio")
+                {
+                    radio.GetComponent<AudioSource>().Play();
+                }
+
+                //escondites
+                if (hit.transform.gameObject.tag == "escondites/escondite1")
+                {
+                    //Debug.Log("sadsaw");
+                    hit.transform.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    escondite1_sala2.SetActive(false);
+                }
+
                 //agarre puzzle 1
                 if (puedeagarrar == true)
                 {
@@ -233,12 +251,6 @@ public class Agarrar : MonoBehaviour
                     }
                 }
 
-                if (hit.transform.gameObject.tag == "escondites/escondite1")
-                {
-                    //Debug.Log("sadsaw");
-                    hit.transform.gameObject.transform.GetChild(0).gameObject.SetActive(true);
-                    escondite1_sala2.SetActive(false);
-                }
             }
         }
     }
