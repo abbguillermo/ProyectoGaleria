@@ -159,6 +159,8 @@ public class LogicaEnemigo01 : MonoBehaviour
         gameObject.transform.GetChild(2).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(true);
         gameObject.transform.position = pos3;
+        tiempo = 299;
+        tiempo += Time.deltaTime;
     }
     void posicion4()
     {
