@@ -43,6 +43,11 @@ public class Trigger : MonoBehaviour
     public GameObject pos6;
     public GameObject pos7;*/
 
+    //parlantes sala1
+    public GameObject parlante1;
+    public GameObject parlante2;
+    public GameObject parlante3;
+
     private void OnTriggerEnter(Collider other)
     {
         //sala 2
@@ -64,17 +69,23 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "collider/CP1")
         {
-            StartCoroutine(LucesPuzzle1()); 
+            StartCoroutine(LucesPuzzle1());
+            parlante1.GetComponent<AudioSource>().Play();
+            Destroy(other);
         }
 
         if (other.tag == "collider/CP2")
         {
-            StartCoroutine(LucesPuzzle2());  
+            StartCoroutine(LucesPuzzle2());
+            parlante2.GetComponent<AudioSource>().Play();
+            Destroy(other);
         }
 
         if (other.tag == "collider/CP3")
         {
             StartCoroutine(LucesPuzzle3());
+            parlante3.GetComponent<AudioSource>().Play();
+            Destroy(other);
             //FindObjectOfType<LogicaEnemigo01>().enemigo.transform.position = FindObjectOfType<LogicaEnemigo01>().pos6;
         }
 
