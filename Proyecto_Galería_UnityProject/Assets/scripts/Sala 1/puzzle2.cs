@@ -35,6 +35,7 @@ public class puzzle2 : MonoBehaviour
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
             StartCoroutine(Abrir());
+            pared.transform.GetChild(0).GetComponent<AudioSource>().Play();
             pj.GetComponent<Animator>().SetTrigger("cambiarfov");
             cam.GetComponent<Animator>().SetTrigger("shake");
         }  

@@ -20,6 +20,7 @@ public class puzzle1 : MonoBehaviour
             Debug.Log("BIEN");
             pj.GetComponent<Animator>().SetTrigger("cambiarfov");
             StartCoroutine(Abrir());
+            pared.transform.GetChild(0).GetComponent<AudioSource>().Play();
             cam.GetComponent<Animator>().SetTrigger("shake");
             //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
             FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
