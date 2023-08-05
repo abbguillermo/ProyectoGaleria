@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class triggerS2 : MonoBehaviour
 {
@@ -72,6 +73,13 @@ public class triggerS2 : MonoBehaviour
     {
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
-        enemigo.SetActive(false);
+        StartCoroutine(pasajeescena());
+       
+    }
+    IEnumerator pasajeescena()
+    {
+        yield return new WaitForSeconds(5f);
+       
+        SceneManager.LoadScene(2);
     }
 }

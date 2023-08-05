@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LogicaEnemigo01 : MonoBehaviour
 {
@@ -97,7 +98,7 @@ public class LogicaEnemigo01 : MonoBehaviour
         Debug.Log(avanzaprimertrigger);
         if (gameObject.transform.position.x>PJ.position.x)
         {
-           // Derrota();
+            Derrota();
         }
        
     }
@@ -141,6 +142,12 @@ public class LogicaEnemigo01 : MonoBehaviour
     {
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
+        StartCoroutine(pasajeescena());
+    }
+    IEnumerator pasajeescena()
+    {
+        yield return new WaitForSeconds(10f);
+        SceneManager.LoadScene(1);
     }
 
     public void posicion1()

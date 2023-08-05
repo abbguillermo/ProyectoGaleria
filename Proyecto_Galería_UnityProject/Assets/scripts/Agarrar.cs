@@ -107,6 +107,7 @@ public class Agarrar : MonoBehaviour
                     //Debug.Log("sadsaw");
                     hit.transform.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                     escondite1_sala2.SetActive(false);
+                    FindObjectOfType<Logicaenemigo_sala2>().puedeatacar = false;
                 }
 
                 //agarre puzzle 1
