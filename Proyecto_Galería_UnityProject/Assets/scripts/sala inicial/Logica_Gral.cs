@@ -10,6 +10,7 @@ public class Logica_Gral : MonoBehaviour
 
     public GameObject puertaSI;
     public AudioSource audioSourcePuerta;
+    public AudioClip audioPuerta;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class Logica_Gral : MonoBehaviour
         {
             gameObject.layer = 0;
             puertaSI.GetComponent<Animator>().Play("AbrirPuerta");
-            audioSourcePuerta.Play();
+            StartCoroutine(audioP());
         }
     }
 
@@ -34,4 +35,10 @@ public class Logica_Gral : MonoBehaviour
         cont += 1;
     }
 
+    IEnumerator audioP()
+    {
+        audioSourcePuerta.PlayOneShot(audioPuerta);
+        cont = 0;
+        yield return new WaitForSeconds(0f);
+    }
 }

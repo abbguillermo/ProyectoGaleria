@@ -859,7 +859,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3db53231538c54e4b8d202b112935584, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3594,6 +3594,7 @@ MonoBehaviour:
   parlante1: {fileID: 0}
   parlante2: {fileID: 0}
   parlante3: {fileID: 0}
+  parlante1s2: {fileID: 0}
   PuertaFinal: {fileID: 0}
 --- !u!114 &547022501
 MonoBehaviour:
@@ -7707,6 +7708,7 @@ MonoBehaviour:
   object1: {fileID: 1011536042}
   puertaSI: {fileID: 130193533}
   audioSourcePuerta: {fileID: 130193540}
+  audioPuerta: {fileID: 8300000, guid: 3db53231538c54e4b8d202b112935584, type: 3}
 --- !u!4 &1015783408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 840cb988f2980d04f88089ec722e3523, type: 3}
