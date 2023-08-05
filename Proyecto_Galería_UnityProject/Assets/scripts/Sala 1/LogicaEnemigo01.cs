@@ -60,7 +60,7 @@ public class LogicaEnemigo01 : MonoBehaviour
             posicion1();
             //encendertiempo();
             //StartCoroutine(posiciones());
-            if ((tiempo >= 20 && tiempo <= 239))
+            if ((tiempo >= 10 && tiempo <= 239))
             {
                 posicion2();
             }
@@ -159,8 +159,6 @@ public class LogicaEnemigo01 : MonoBehaviour
         gameObject.transform.GetChild(2).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(true);
         gameObject.transform.position = pos3;
-        tiempo = 299;
-        tiempo += Time.deltaTime;
     }
     void posicion4()
     {

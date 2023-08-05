@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.25
@@ -2293,7 +2293,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2e832dbb2c7c9ba4e97fd3005fe850b7, type: 3}
   - {fileID: 8300000, guid: 3af6e561e364a274aa306461461c386b, type: 3}
   randomlist: []
-  walkingSpeed: 1
+  walkingSpeed: 0.8
   mixerOutput: {fileID: 0}
 --- !u!114 &85554183
 MonoBehaviour:
@@ -7074,7 +7074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: walkSpeed
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: enableJump
@@ -17551,7 +17551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741061055}
   m_Layer: 0
-  m_Name: 'Orden de poses: 1-3-7-2-7-5-6'
+  m_Name: 'Orden de poses: 1-3-7-4-7-5-6'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26377,7 +26377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189662797}
   m_LocalRotation: {x: 0, y: 0.70735973, z: 0, w: 0.7068538}
-  m_LocalPosition: {x: -30.19, y: -0.211, z: 3}
+  m_LocalPosition: {x: -80, y: 0, z: 3}
   m_LocalScale: {x: 1.0646005, y: 2.3703086, z: 1.050809}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26385,10 +26385,10 @@ Transform:
   - {fileID: 1907664717}
   - {fileID: 750664203}
   - {fileID: 1306951961}
-  - {fileID: 1874725960}
+  - {fileID: 311169318}
   - {fileID: 1784567465}
   - {fileID: 1661883403}
-  - {fileID: 311169318}
+  - {fileID: 1874725960}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90.041, z: 0}
@@ -26408,7 +26408,7 @@ MonoBehaviour:
   velocidadPersecusion: 0.08
   papel: 0
   puedemov: 0
-  pos1: {x: -5, y: 0, z: 3}
+  pos1: {x: -1, y: 0, z: 3}
   pos2: {x: 0.651, y: 0, z: 3}
   pos3: {x: 8.69, y: 0, z: 3.84}
   pos4: {x: 15.62, y: 0, z: 3}
@@ -28937,7 +28937,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9521d3478100e4840ac045bb0e20a89b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9521d3478100e4840ac045bb0e20a89b, type: 3}
       propertyPath: m_LocalScale.x
@@ -34471,7 +34471,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 30
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -42327,7 +42327,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 16d8f06aff7d3884d9764f35b2f19f93, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 16d8f06aff7d3884d9764f35b2f19f93, type: 3}
       propertyPath: m_LocalScale.x
@@ -42886,7 +42886,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0233d7fad69b0b2488e24a10becfcd9b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a830182fc0245f94da29d718eb8a693a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
