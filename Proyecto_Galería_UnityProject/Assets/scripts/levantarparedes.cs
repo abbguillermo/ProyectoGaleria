@@ -19,6 +19,7 @@ public class levantarparedes : MonoBehaviour
     public GameObject pj;
     public GameObject TriggerBoxes;
     public GameObject Maniquies;
+    public GameObject PuertaFinal;
 
     //VARIABLE PARA ACTIVAR TRIGGER ENCUENTRO 2
     public bool pieza2 = false;
@@ -35,6 +36,7 @@ public class levantarparedes : MonoBehaviour
             FindObjectOfType<Agarrar>().palanca.layer = 0;
             FindObjectOfType<FirstPersonController>().playerCanMove = false;
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
+            PuertaFinal.GetComponent<Animator>().Play("AbrirPuertaF");
             StartCoroutine(Movimiento());
         }
 

@@ -1033,6 +1033,7 @@ Transform:
   - {fileID: 895910137}
   - {fileID: 1916859345}
   - {fileID: 228021801}
+  - {fileID: 1512548853}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2316,6 +2317,12 @@ MonoBehaviour:
   lucescomp1: {fileID: 119296317}
   lucescomp2: {fileID: 53200462}
   lucescomp3: {fileID: 38972883}
+  pasilloluz1: {fileID: 1889350972}
+  pasilloluz2: {fileID: 1539348499}
+  pasilloluz3: {fileID: 1329783733}
+  pasilloluz4: {fileID: 476777678}
+  pasilloluz5: {fileID: 889494727}
+  pasilloluz6: {fileID: 1410002895}
   luces: {fileID: 416286864}
   luces2: {fileID: 773206302}
   luces3: {fileID: 1741659195}
@@ -3073,8 +3080,12 @@ MonoBehaviour:
   escondite1_sala2: {fileID: 0}
   spriteNota: {fileID: 1484895585}
   palanca: {fileID: 0}
+  osito: {fileID: 0}
+  cuchillo: {fileID: 0}
+  mecha: {fileID: 0}
   radio: {fileID: 0}
   cuadro: {fileID: 0}
+  personaje: {fileID: 0}
   mano: {fileID: 1873528075}
 --- !u!114 &108727732
 MonoBehaviour:
@@ -11362,12 +11373,12 @@ GameObject:
   - component: {fileID: 476777681}
   - component: {fileID: 476777680}
   m_Layer: 0
-  m_Name: Spot Light (12)
+  m_Name: Pasillo L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &476777679
 Transform:
   m_ObjectHideFlags: 0
@@ -11375,13 +11386,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476777678}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -17.223, y: 0.75900006, z: 0.8497288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023827767}
-  m_RootOrder: 36
+  m_Father: {fileID: 1244218921}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!114 &476777680
 MonoBehaviour:
@@ -20141,12 +20152,12 @@ GameObject:
   - component: {fileID: 889494730}
   - component: {fileID: 889494729}
   m_Layer: 0
-  m_Name: Spot Light (10)
+  m_Name: Pasillo L5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &889494728
 Transform:
   m_ObjectHideFlags: 0
@@ -20154,13 +20165,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889494727}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -13.223, y: 0.75900006, z: 0.8497288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023827767}
-  m_RootOrder: 34
+  m_Father: {fileID: 1244218921}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!114 &889494729
 MonoBehaviour:
@@ -22985,14 +22996,9 @@ Transform:
   - {fileID: 119296318}
   - {fileID: 53200463}
   - {fileID: 38972884}
+  - {fileID: 1244218921}
   - {fileID: 1576617842}
-  - {fileID: 1410002896}
   - {fileID: 1859328201}
-  - {fileID: 1539348500}
-  - {fileID: 1329783734}
-  - {fileID: 889494728}
-  - {fileID: 1889350973}
-  - {fileID: 476777679}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27911,6 +27917,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 840cb988f2980d04f88089ec722e3523, type: 3}
   m_PrefabInstance: {fileID: 852715498}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1244218920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244218921}
+  m_Layer: 0
+  m_Name: LucesPasillo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244218921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244218920}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -9.223, y: 0.75900006, z: 0.8497286}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1889350973}
+  - {fileID: 1539348500}
+  - {fileID: 1329783734}
+  - {fileID: 476777679}
+  - {fileID: 889494728}
+  - {fileID: 1410002896}
+  m_Father: {fileID: 1023827767}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1244650823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29688,12 +29731,12 @@ GameObject:
   - component: {fileID: 1329783736}
   - component: {fileID: 1329783735}
   m_Layer: 0
-  m_Name: Spot Light (9)
+  m_Name: Pasillo L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1329783734
 Transform:
   m_ObjectHideFlags: 0
@@ -29701,13 +29744,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329783733}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -21.223, y: 0.75900006, z: 0.8497288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023827767}
-  m_RootOrder: 33
+  m_Father: {fileID: 1244218921}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!114 &1329783735
 MonoBehaviour:
@@ -31599,12 +31642,12 @@ GameObject:
   - component: {fileID: 1410002898}
   - component: {fileID: 1410002897}
   m_Layer: 0
-  m_Name: Spot Light (5)
+  m_Name: Pasillo L6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1410002896
 Transform:
   m_ObjectHideFlags: 0
@@ -31612,13 +31655,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410002895}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -9.223, y: 0.759, z: 0.8497286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023827767}
-  m_RootOrder: 30
+  m_Father: {fileID: 1244218921}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!114 &1410002897
 MonoBehaviour:
@@ -34041,6 +34084,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840cb988f2980d04f88089ec722e3523, type: 3}
+--- !u!1 &1512548852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512548853}
+  - component: {fileID: 1512548854}
+  m_Layer: 0
+  m_Name: colliderLucesPasilloON
+  m_TagString: collider/CLI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1512548853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512548852}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -127.07, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 38834451}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1512548854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512548852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.188942, y: 8.257862, z: 0.57799727}
+  m_Center: {x: 1.5944709, y: 3.628931, z: 0.0012338759}
 --- !u!1 &1513612783
 GameObject:
   m_ObjectHideFlags: 0
@@ -34686,12 +34774,12 @@ GameObject:
   - component: {fileID: 1539348502}
   - component: {fileID: 1539348501}
   m_Layer: 0
-  m_Name: Spot Light (8)
+  m_Name: Pasillo L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1539348500
 Transform:
   m_ObjectHideFlags: 0
@@ -34699,13 +34787,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539348499}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -25.223, y: 0.75900006, z: 0.8497288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023827767}
-  m_RootOrder: 32
+  m_Father: {fileID: 1244218921}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!114 &1539348501
 MonoBehaviour:
@@ -35454,7 +35542,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1023827767}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 89.517, y: 53.372, z: 231.981}
 --- !u!114 &1576617843
 MonoBehaviour:
@@ -42011,12 +42099,12 @@ GameObject:
   - component: {fileID: 1889350975}
   - component: {fileID: 1889350974}
   m_Layer: 0
-  m_Name: Spot Light (11)
+  m_Name: Pasillo L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1889350973
 Transform:
   m_ObjectHideFlags: 0
@@ -42024,13 +42112,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889350972}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -29.223, y: 0.75900006, z: 0.8497288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1023827767}
-  m_RootOrder: 35
+  m_Father: {fileID: 1244218921}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!114 &1889350974
 MonoBehaviour:

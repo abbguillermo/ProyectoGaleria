@@ -62,7 +62,7 @@ public class footsteps : MonoBehaviour
 
     public void CallFoosteps()
     {
-        if (playerisMoving == true)
+        if (playerisMoving == true && FindObjectOfType<FirstPersonController>().playerCanMove == true)
         {
             PlayRandomSound();
         }

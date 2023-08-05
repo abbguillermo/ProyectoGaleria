@@ -12,6 +12,14 @@ public class Trigger : MonoBehaviour
     public GameObject lucescomp2;
     public GameObject lucescomp3;
 
+    //luces pasillo
+    public GameObject pasilloluz1;
+    public GameObject pasilloluz2;
+    public GameObject pasilloluz3;
+    public GameObject pasilloluz4;
+    public GameObject pasilloluz5;
+    public GameObject pasilloluz6;
+
     //luces P1
     public GameObject luces;
     public GameObject luces2;
@@ -65,6 +73,11 @@ public class Trigger : MonoBehaviour
             {
                 FindObjectOfType<triggerS2>().agent.speed = 1;
             }
+        }
+
+        if (other.tag == "collider/CLI")
+        {
+            StartCoroutine(LucesPasillo());
         }
 
         if (other.tag == "collider/CP1")
@@ -149,6 +162,22 @@ public class Trigger : MonoBehaviour
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
         }
+    }
+
+    IEnumerator LucesPasillo()
+    {
+        yield return new WaitForSeconds(0.2f);
+        pasilloluz1.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        pasilloluz2.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        pasilloluz3.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        pasilloluz4.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        pasilloluz5.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        pasilloluz6.SetActive(true);
     }
 
     IEnumerator LucesPuzzle1()
