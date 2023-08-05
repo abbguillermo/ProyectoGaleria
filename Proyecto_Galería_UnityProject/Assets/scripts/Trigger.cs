@@ -56,6 +56,8 @@ public class Trigger : MonoBehaviour
     public GameObject parlante2;
     public GameObject parlante3;
 
+    public GameObject parlante1s2;
+
     public GameObject PuertaFinal;
 
     private void OnTriggerEnter(Collider other)
@@ -81,6 +83,11 @@ public class Trigger : MonoBehaviour
         {
             PuertaFinal.GetComponent<Animator>().Play("CerrarPuertaF");
             //sonido
+        }
+
+        if (other.tag == "trigs2/voz")
+        {
+            parlante1s2.GetComponent<AudioSource>().Play();
         }
 
         if (other.tag == "collider/CLI")

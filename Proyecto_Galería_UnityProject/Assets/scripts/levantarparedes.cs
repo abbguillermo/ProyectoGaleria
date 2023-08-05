@@ -49,7 +49,7 @@ public class levantarparedes : MonoBehaviour
         if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)
         {
             subir = false;
-            Laberinto.GetComponent<Animator>().Play("BajarLaberinto");
+            //Laberinto.GetComponent<Animator>().Play("BajarLaberinto");
         }
         Debug.Log(recolectado1);
     }
