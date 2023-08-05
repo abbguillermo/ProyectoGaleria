@@ -56,6 +56,8 @@ public class Trigger : MonoBehaviour
     public GameObject parlante2;
     public GameObject parlante3;
 
+    public GameObject PuertaFinal;
+
     private void OnTriggerEnter(Collider other)
     {
         //sala 2
@@ -73,6 +75,12 @@ public class Trigger : MonoBehaviour
             {
                 FindObjectOfType<triggerS2>().agent.speed = 1;
             }
+        }
+
+        if (other.tag == "trigs2/salida")
+        {
+            PuertaFinal.GetComponent<Animator>().Play("CerrarPuertaF");
+            //sonido
         }
 
         if (other.tag == "collider/CLI")

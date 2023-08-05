@@ -33,6 +33,8 @@ public class Agarrar : MonoBehaviour
     public GameObject cuadro;
     public GameObject personaje;
 
+    public AudioSource audioSourceRadio;
+    public AudioSource audioSourceQuejidos;
 
     public ControlScroll mano;
     void Start()
@@ -88,8 +90,8 @@ public class Agarrar : MonoBehaviour
                 //sala inicial
                 if (hit.transform.gameObject.tag == "salainicial/radio")
                 {
-                    radio.GetComponent<AudioSource>().Play();
-                    personaje.GetComponent<AudioSource>().Play();
+                    audioSourceRadio.Play();
+                    audioSourceQuejidos.Play();
                     FindObjectOfType<Logica_Gral>().gameObject.layer = 7;
                     radio.layer = 0;
                 }

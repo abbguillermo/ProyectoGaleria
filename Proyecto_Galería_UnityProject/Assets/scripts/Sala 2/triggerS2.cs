@@ -22,13 +22,14 @@ public class triggerS2 : MonoBehaviour
     public GameObject camara_jugador;
     public GameObject camara_muerte;
 
+    public GameObject PuertaFinal;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
     }
     private void OnTriggerEnter(Collider other)
     {
-
         //MUERTE
         if (other.tag== "Player")
         {
@@ -54,23 +55,18 @@ public class triggerS2 : MonoBehaviour
         {
             Destroy(other.gameObject);
             enemigo.SetActive(false);
-            
         }
 
         if (other.tag == "trigs2/activaceleracion")
         {
             aceleracion2.SetActive(true);
-            
         }
 
         if(other.tag == "trigs2/activaDesac4")
         {
             desactivacion4.SetActive(true);
-            
         }
 
-       
-        
     }
     void Muerte()
     {

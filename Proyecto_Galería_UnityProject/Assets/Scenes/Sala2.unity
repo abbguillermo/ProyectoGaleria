@@ -15289,6 +15289,8 @@ MonoBehaviour:
   radio: {fileID: 0}
   cuadro: {fileID: 0}
   personaje: {fileID: 0}
+  audioSourceRadio: {fileID: 0}
+  audioSourceQuejidos: {fileID: 0}
   mano: {fileID: 137957054}
 --- !u!1001 &577241025
 PrefabInstance:
@@ -24434,6 +24436,7 @@ MonoBehaviour:
   parlante1: {fileID: 0}
   parlante2: {fileID: 0}
   parlante3: {fileID: 0}
+  PuertaFinal: {fileID: 1909019134}
 --- !u!114 &895016443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26304,6 +26307,7 @@ MonoBehaviour:
   desactivacion4: {fileID: 520103888}
   camara_jugador: {fileID: 895016441}
   camara_muerte: {fileID: 978906771}
+  PuertaFinal: {fileID: 0}
 --- !u!54 &968841878
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56362,7 +56366,7 @@ GameObject:
   - component: {fileID: 2027023134}
   m_Layer: 0
   m_Name: CerrarPuertaFinal
-  m_TagString: Untagged
+  m_TagString: trigs2/salida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

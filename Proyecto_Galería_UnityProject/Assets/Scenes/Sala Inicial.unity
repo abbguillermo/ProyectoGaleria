@@ -870,7 +870,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -914,7 +914,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3569,6 +3569,12 @@ MonoBehaviour:
   lucescomp1: {fileID: 0}
   lucescomp2: {fileID: 0}
   lucescomp3: {fileID: 0}
+  pasilloluz1: {fileID: 0}
+  pasilloluz2: {fileID: 0}
+  pasilloluz3: {fileID: 0}
+  pasilloluz4: {fileID: 0}
+  pasilloluz5: {fileID: 0}
+  pasilloluz6: {fileID: 0}
   luces: {fileID: 0}
   luces2: {fileID: 0}
   luces3: {fileID: 0}
@@ -7699,6 +7705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   object1: {fileID: 1011536042}
   puertaSI: {fileID: 130193533}
+  audioSourcePuerta: {fileID: 130193540}
 --- !u!4 &1015783408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 840cb988f2980d04f88089ec722e3523, type: 3}
@@ -12454,6 +12461,8 @@ MonoBehaviour:
   radio: {fileID: 452295293}
   cuadro: {fileID: 1011536039}
   personaje: {fileID: 547022499}
+  audioSourceRadio: {fileID: 452295303}
+  audioSourceQuejidos: {fileID: 547022505}
   mano: {fileID: 1010066941}
 --- !u!1 &1943784555 stripped
 GameObject:
