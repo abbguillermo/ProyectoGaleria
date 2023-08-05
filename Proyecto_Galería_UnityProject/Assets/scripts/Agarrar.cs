@@ -88,12 +88,13 @@ public class Agarrar : MonoBehaviour
                 if (hit.transform.gameObject.tag == "salainicial/radio")
                 {
                     radio.GetComponent<AudioSource>().Play();
+                    FindObjectOfType<Logica_Gral>().gameObject.layer = 7;
                     radio.layer = 0;
                 }
                 if (hit.transform.gameObject.tag == "salainicial/cuadro")
                 {
                     FindObjectOfType<Logica_Gral>().Rotarcuad1();
-                    
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                 }
 
                 //escondites
@@ -150,7 +151,6 @@ public class Agarrar : MonoBehaviour
                 if (hit.transform.gameObject.tag == "marcorot1" )
                 {
                     FindObjectOfType<puzzle2>().Rotarcuad1();
-                    
                     sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                 }
                 if(hit.transform.gameObject.tag == "marcorot2" )
