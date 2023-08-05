@@ -60,7 +60,7 @@ public class LogicaEnemigo01 : MonoBehaviour
             posicion1();
             //encendertiempo();
             //StartCoroutine(posiciones());
-            if ((tiempo >= 10 && tiempo <= 239))
+            if ((tiempo >= 20 && tiempo <= 239))
             {
                 posicion2();
             }
