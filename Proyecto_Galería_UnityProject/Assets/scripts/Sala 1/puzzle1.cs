@@ -9,6 +9,14 @@ public class puzzle1 : MonoBehaviour
     public bool cuad2=false;
     public bool cuad3=false;
     public bool cuad4=false;
+    public GameObject cuadro1;
+    public GameObject cuadro2;
+    public GameObject cuadro3;
+    public GameObject cuadro4;
+    public GameObject marco1;
+    public GameObject marco2;
+    public GameObject marco3;
+    public GameObject marco4;
 
     public GameObject pj;
     public GameObject cam;
@@ -36,6 +44,14 @@ public class puzzle1 : MonoBehaviour
         cam.GetComponent<Animator>().ResetTrigger("shake");
         cam.GetComponent<Animator>().SetTrigger("idle");
         pj.GetComponent<Animator>().SetTrigger("fovnormal");
+        cuadro1.layer = 0;
+        cuadro2.layer = 0;
+        cuadro3.layer = 0;
+        cuadro4.layer = 0;
+        marco1.layer = 0;
+        marco2.layer = 0;
+        marco3.layer = 0;
+        marco4.layer = 0;
         yield return new WaitForSeconds(0.5f);
         cuad1 = false;
     }

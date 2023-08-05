@@ -135,7 +135,11 @@ public class Trigger : MonoBehaviour
             SceneManager.LoadScene("Sala2");
         }
 
-        
+        if (other.tag == "collider/CProxEsc1")
+        {
+            SceneManager.LoadScene(1);
+        }
+
     }
 
     private void OnTriggerExit(Collider other)
