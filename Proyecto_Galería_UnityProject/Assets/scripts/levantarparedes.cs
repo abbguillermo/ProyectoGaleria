@@ -49,6 +49,7 @@ public class levantarparedes : MonoBehaviour
             subir = false;
             Laberinto.GetComponent<Animator>().Play("BajarLaberinto");
         }
+        Debug.Log(recolectado1);
     }
 
     IEnumerator Movimiento()

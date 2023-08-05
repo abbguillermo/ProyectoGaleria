@@ -21,6 +21,12 @@ public class Agarrar : MonoBehaviour
     public GameObject escondite1_sala2;
     public GameObject spriteNota;
     public GameObject palanca;
+    public GameObject osito;
+    public GameObject cuchillo;
+    public GameObject mecha;
+    private GameObject hitmaniqui1;
+    private GameObject hitmaniqui2;
+    private GameObject hitmaniqui3;
 
     //Objetos sala inicial
     public GameObject radio;
@@ -256,6 +262,22 @@ public class Agarrar : MonoBehaviour
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado4 = true;
                     }
+
+                    if (FindObjectOfType<levantarparedes>().recolectado1 == true&&hit.transform.tag=="maniquibloq/1")
+                    {
+                         hitmaniqui1 = hit.transform.gameObject;
+                        StartCoroutine(primerafase());
+                    }
+                    if (FindObjectOfType<levantarparedes>().recolectado2 == true && hit.transform.tag == "maniquibloq/2")
+                    {
+                        hitmaniqui2 = hit.transform.gameObject;
+                        StartCoroutine(segundafase());
+                    }
+                    if (FindObjectOfType<levantarparedes>().recolectado3 == true && hit.transform.tag == "maniquibloq/3")
+                    {
+                        hitmaniqui3 = hit.transform.gameObject;
+                        StartCoroutine(tercerafase());
+                    }
                 }
 
             }
@@ -271,6 +293,23 @@ public class Agarrar : MonoBehaviour
         FindObjectOfType<LogicaEnemigo01>().papel = true;
         FindObjectOfType<LogicaEnemigo01>().puedemov = true;
     }
+    IEnumerator primerafase()
+    {
+        osito.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        hitmaniqui1.transform.gameObject.SetActive(false);
+    }
+    IEnumerator segundafase()
+    {
+        cuchillo.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        hitmaniqui2.transform.gameObject.SetActive(false);
+    }
+    IEnumerator tercerafase()
+    {
+        mecha.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        hitmaniqui3.transform.gameObject.SetActive(false);
+    }
 
-    
 }

@@ -18,12 +18,28 @@ public class triggerS2 : MonoBehaviour
     public GameObject desactivacion3;
     public GameObject desactivacion4;
 
+    //cam muerte
+    public GameObject camara_jugador;
+    public GameObject camara_muerte;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
     }
     private void OnTriggerEnter(Collider other)
     {
+
+        //MUERTE
+        if (other.tag== "Player")
+        {
+            Muerte();
+        }
+
+        if (other.tag == "WP")
+        {
+            FindObjectOfType<Logicaenemigo_sala2>().cambiarWP = true;
+        }
+
         if (other.tag == "trigs2/aceleracion")
         {
             agent.speed = 10;
@@ -52,6 +68,14 @@ public class triggerS2 : MonoBehaviour
             desactivacion4.SetActive(true);
             
         }
+
+       
         
+    }
+    void Muerte()
+    {
+        camara_jugador.SetActive(false);
+        camara_muerte.SetActive(true);
+        enemigo.SetActive(false);
     }
 }
