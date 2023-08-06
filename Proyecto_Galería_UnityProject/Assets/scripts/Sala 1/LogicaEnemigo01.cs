@@ -32,6 +32,10 @@ public class LogicaEnemigo01 : MonoBehaviour
     public AudioClip audioEnemigov1;
     public AudioClip audioEnemigov2;
 
+    public GameObject colliderpos2;
+
+    public bool sonidito = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,11 +57,6 @@ public class LogicaEnemigo01 : MonoBehaviour
 
     void Update()
     {
-
-       /* if (estaactivado)
-        {
-            tiempo = Time.time; 
-        }*/
    
         if (papel==true/*&& puedemov==true*/)
         {
@@ -70,7 +69,7 @@ public class LogicaEnemigo01 : MonoBehaviour
             {
                 posicion2();
             }
-            if ((tiempo >= 240 && tiempo <= 300) || avanzaprimertrigger) //1MIN
+            if (((tiempo >= 240 && tiempo <= 300) || avanzaprimertrigger)) //1MIN
             {
                 posicion3();
                 
@@ -108,35 +107,16 @@ public class LogicaEnemigo01 : MonoBehaviour
        
     }
 
-   /* IEnumerator posiciones()
+    private void OnTriggerEnter(Collider other)
     {
-        gameObject.transform.position = pos1;
-        yield return new WaitForSeconds(10f);
-        gameObject.transform.GetChild(1).gameObject.SetActive(false);
-        gameObject.transform.GetChild(2).gameObject.SetActive(true);
-        gameObject.transform.position = pos2;
-        yield return new WaitForSeconds(240);
-        gameObject.transform.GetChild(2).gameObject.SetActive(false);
-        gameObject.transform.GetChild(3).gameObject.SetActive(true);
-        gameObject.transform.position = pos3;
-        yield return new WaitForSeconds(45);
-        gameObject.transform.GetChild(3).gameObject.SetActive(false);
-        gameObject.transform.GetChild(4).gameObject.SetActive(true);
-        gameObject.transform.position = pos4;
-        yield return new WaitForSeconds(200);
-        gameObject.transform.GetChild(4).gameObject.SetActive(false);
-        gameObject.transform.GetChild(3).gameObject.SetActive(true);
-        gameObject.transform.position = pos5;
-        yield return new WaitForSeconds(45);
-        gameObject.transform.GetChild(3).gameObject.SetActive(false);
-        gameObject.transform.GetChild(5).gameObject.SetActive(true);
-        gameObject.transform.position = pos6;
-        yield return new WaitForSeconds(200);
-        gameObject.transform.GetChild(5).gameObject.SetActive(false);
-        gameObject.transform.GetChild(6).gameObject.SetActive(true);
-        gameObject.transform.position = pos7;
-    }*/
-    private void OnCollisionEnter(Collision collision)
+        if (other.tag == "trigenemigo/pos2")
+        {
+            colliderpos2.GetComponent<AudioSource>().Play();
+            Destroy(other);
+        }
+    }
+
+        private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag=="Player" && papel==true)
         {
@@ -149,6 +129,7 @@ public class LogicaEnemigo01 : MonoBehaviour
         camara_muerte.SetActive(true);
         StartCoroutine(pasajeescena());
     }
+
     IEnumerator pasajeescena()
     {
         yield return new WaitForSeconds(10f);
@@ -165,7 +146,6 @@ public class LogicaEnemigo01 : MonoBehaviour
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
         gameObject.transform.GetChild(2).gameObject.SetActive(true);
         gameObject.transform.position = pos2;
-        audioSourceEnemigo.PlayOneShot(audioEnemigov2);
     }
     void posicion3()
     {
@@ -197,15 +177,16 @@ public class LogicaEnemigo01 : MonoBehaviour
         gameObject.transform.GetChild(6).gameObject.SetActive(true);
         gameObject.transform.position = pos7;
     }
-/*
-    public void detenertiempo()
-    {
-        estaactivado = false;
-        
-    }
-    public void encendertiempo()
-    {
-        tiempoinicial = Time.time;
-        estaactivado = true;
-    }*/
+
+    /*
+        public void detenertiempo()
+        {
+            estaactivado = false;
+
+        }
+        public void encendertiempo()
+        {
+            tiempoinicial = Time.time;
+            estaactivado = true;
+        }*/
 }
