@@ -88,6 +88,7 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs2/voz")
         {
             parlante1s2.GetComponent<AudioSource>().Play();
+            Destroy(other);
         }
 
         if (other.tag == "collider/CLI")
