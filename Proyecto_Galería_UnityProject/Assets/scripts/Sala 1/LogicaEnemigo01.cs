@@ -28,8 +28,9 @@ public class LogicaEnemigo01 : MonoBehaviour
     public bool avanzacuartotrigger;
     public bool avanzaquintotrigger;
 
-    public AudioSource audioSourceEnemigov1;
-    public AudioSource audioSourceEnemigov2;
+    public AudioSource audioSourceEnemigo;
+    public AudioClip audioEnemigov1;
+    public AudioClip audioEnemigov2;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +66,7 @@ public class LogicaEnemigo01 : MonoBehaviour
 
             //encendertiempo();
             //StartCoroutine(posiciones());
-            if ((tiempo >= 20 && tiempo <= 239))
+            if ((tiempo >= 15 && tiempo <= 239))
             {
                 posicion2();
             }
@@ -158,14 +159,13 @@ public class LogicaEnemigo01 : MonoBehaviour
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         gameObject.transform.position = pos1;
-        audioSourceEnemigov1.Play();
     }
     void posicion2()
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
         gameObject.transform.GetChild(2).gameObject.SetActive(true);
         gameObject.transform.position = pos2;
-        audioSourceEnemigov2.Play();
+        audioSourceEnemigo.PlayOneShot(audioEnemigov2);
     }
     void posicion3()
     {
