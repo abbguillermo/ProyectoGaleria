@@ -136,30 +136,35 @@ public class Trigger : MonoBehaviour
         {
             FindObjectOfType<LogicaEnemigo01>().avanzaprimertrigger = true;
             FindObjectOfType<LogicaEnemigo01>().sonidito = true;
+            Destroy(other.gameObject);
         }
 
         if (other.tag == "collider/CEnemigoP4")
         {
             FindObjectOfType<LogicaEnemigo01>().avanzasegundotrigger = true;
             FindObjectOfType<LogicaEnemigo01>().sonidito = true;
+            Destroy(other.gameObject);
         }
 
         if (other.tag == "collider/CEnemigoP5")
         {
             FindObjectOfType<LogicaEnemigo01>().avanzatercertrigger = true;
             FindObjectOfType<LogicaEnemigo01>().sonidito = true;
+            Destroy(other.gameObject);
         }
 
         if (other.tag == "collider/CEnemigoP6")
         {
             FindObjectOfType<LogicaEnemigo01>().avanzacuartotrigger = true;
             FindObjectOfType<LogicaEnemigo01>().sonidito = true;
+            Destroy(other.gameObject);
         }
 
         if (other.tag == "collider/CEnemigoP7")
         {
             FindObjectOfType<LogicaEnemigo01>().avanzaquintotrigger = true;
             FindObjectOfType<LogicaEnemigo01>().sonidito = true;
+            Destroy(other.gameObject);
         }
 
         //prox escena collider

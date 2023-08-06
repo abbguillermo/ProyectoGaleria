@@ -21,6 +21,7 @@ public class LogicaEnemigo01 : MonoBehaviour
     public GameObject enemigo;
     /*public float tiempoinicial;
     public bool estaactivado;*/
+    public GameObject personaje;
     public float tiempo;
     public bool avanzaprimertrigger;
     public bool avanzasegundotrigger;
@@ -142,6 +143,7 @@ public class LogicaEnemigo01 : MonoBehaviour
     {
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
+        personaje.SetActive(false);
         StartCoroutine(pasajeescena());
     }
 
