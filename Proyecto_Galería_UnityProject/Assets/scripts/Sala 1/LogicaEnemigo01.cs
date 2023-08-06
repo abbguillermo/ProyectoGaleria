@@ -34,11 +34,12 @@ public class LogicaEnemigo01 : MonoBehaviour
 
     public GameObject colliderpos2;
 
-    public bool sonidito = true;
+    public bool sonidito;
 
     // Start is called before the first frame update
     void Start()
     {
+        sonidito = false;
         avanzaprimertrigger = false;
         avanzasegundotrigger = false;
         avanzatercertrigger = false;
@@ -62,17 +63,25 @@ public class LogicaEnemigo01 : MonoBehaviour
         {
             tiempo += Time.deltaTime;
             posicion1();
-
+           
             //encendertiempo();
             //StartCoroutine(posiciones());
             if ((tiempo >= 15 && tiempo <= 239))
             {
                 posicion2();
+                if(tiempo >= 15&&tiempo <=15.02f)
+                {
+                    sonidito = true;
+                }
             }
             if (((tiempo >= 240 && tiempo <= 300) || avanzaprimertrigger)) //1MIN
             {
                 posicion3();
-                
+                if (tiempo >= 240 && tiempo <= 240.02f)
+                {
+                    sonidito = true;
+                }
+
             }
             if ((tiempo >= 301 && tiempo <= 540) || avanzasegundotrigger) //4MIN
             {
@@ -93,6 +102,12 @@ public class LogicaEnemigo01 : MonoBehaviour
             {
                 posicion7();
 
+            }
+            if (sonidito == true)
+            {
+              
+                audioSourceEnemigo.PlayOneShot(audioEnemigov1);
+                sonidito = false;
             }
             /* puedemov = false;*/
         }
@@ -140,42 +155,50 @@ public class LogicaEnemigo01 : MonoBehaviour
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         gameObject.transform.position = pos1;
+            
     }
     void posicion2()
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
         gameObject.transform.GetChild(2).gameObject.SetActive(true);
         gameObject.transform.position = pos2;
+       
+        
     }
     void posicion3()
     {
         gameObject.transform.GetChild(2).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(true);
         gameObject.transform.position = pos3;
+    
     }
     void posicion4()
     {
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(4).gameObject.SetActive(true);
         gameObject.transform.position = pos4;
+      
     }
     void posicion5()
     {
         gameObject.transform.GetChild(4).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(true);
         gameObject.transform.position = pos5;
+      
     }
     void posicion6()
     {
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(5).gameObject.SetActive(true);
         gameObject.transform.position = pos6;
+      
     }
     void posicion7()
     {
         gameObject.transform.GetChild(5).gameObject.SetActive(false);
         gameObject.transform.GetChild(6).gameObject.SetActive(true);
         gameObject.transform.position = pos7;
+       
     }
 
     /*
