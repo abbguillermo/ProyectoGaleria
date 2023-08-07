@@ -240,7 +240,7 @@ public class Agarrar : MonoBehaviour
                     FindObjectOfType<levantarparedes>().Maniquies.SetActive(true);
                 }
 
-                if (FindObjectOfType<levantarparedes>().subir == true)
+                if (FindObjectOfType<levantarparedes>().recolectables == true)
                 {
                     if (hit.transform.gameObject.tag == "recolectables/rec1")
                     {

@@ -82,7 +82,8 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs2/salida")
         {
             PuertaFinal.GetComponent<Animator>().Play("CerrarPuertaF");
-            //sonido
+            PuertaFinal.GetComponent<AudioSource>().Play();
+            //sonido de los golpes
         }
 
         if (other.tag == "trigs2/voz")

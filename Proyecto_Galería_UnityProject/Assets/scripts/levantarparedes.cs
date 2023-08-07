@@ -6,6 +6,7 @@ public class levantarparedes : MonoBehaviour
 {
 
     public bool subir = false;
+    public bool recolectables = false;
     public GameObject Laberinto;
 
     public bool recolectado1 = false;
@@ -34,6 +35,7 @@ public class levantarparedes : MonoBehaviour
     {
         if (subir == true)
         {
+            recolectables = true;
             FindObjectOfType<Agarrar>().palanca.layer = 0;
             FindObjectOfType<FirstPersonController>().playerCanMove = false;
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
