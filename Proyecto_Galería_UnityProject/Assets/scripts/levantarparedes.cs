@@ -20,6 +20,7 @@ public class levantarparedes : MonoBehaviour
     public GameObject TriggerBoxes;
     public GameObject Maniquies;
     public GameObject PuertaFinal;
+    public GameObject PuertaInicio;
 
     //VARIABLE PARA ACTIVAR TRIGGER ENCUENTRO 2
     public bool pieza2 = false;
@@ -36,6 +37,7 @@ public class levantarparedes : MonoBehaviour
             FindObjectOfType<Agarrar>().palanca.layer = 0;
             FindObjectOfType<FirstPersonController>().playerCanMove = false;
             Laberinto.GetComponent<Animator>().Play("SubirLaberinto");
+            PuertaInicio.GetComponent<Animator>().Play("CerrarPuerta");
             PuertaFinal.GetComponent<Animator>().Play("AbrirPuertaF");
             StartCoroutine(Movimiento());
         }
@@ -56,6 +58,8 @@ public class levantarparedes : MonoBehaviour
 
     IEnumerator Movimiento()
     {
+        Laberinto.transform.GetChild(0).GetComponent<AudioSource>().Play();
+        subir = false;
         yield return new WaitForSeconds(5);
         FindObjectOfType<FirstPersonController>().playerCanMove = true;
         objetorecolectado1.layer = 7;
