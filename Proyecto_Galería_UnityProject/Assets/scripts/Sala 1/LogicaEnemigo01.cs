@@ -30,12 +30,14 @@ public class LogicaEnemigo01 : MonoBehaviour
     public bool avanzaquintotrigger;
 
     public AudioSource audioSourceEnemigo;
+    public AudioSource audiomuerte;
     public AudioClip audioEnemigov1;
     public AudioClip audioEnemigov2;
-
+    public AudioClip grito;
     public GameObject colliderpos2;
 
     public bool sonidito;
+    private int entro = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -143,7 +145,18 @@ public class LogicaEnemigo01 : MonoBehaviour
     {
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
+        camara_muerte.GetComponent<Animator>().SetTrigger("shake");
         personaje.SetActive(false);
+        
+        if (entro==0)
+        {
+            
+            audiomuerte.PlayOneShot(grito);
+            
+            entro += 1;
+          
+        }
+        
         StartCoroutine(pasajeescena());
     }
 

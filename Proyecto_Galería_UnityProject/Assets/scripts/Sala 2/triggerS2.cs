@@ -22,6 +22,9 @@ public class triggerS2 : MonoBehaviour
     //cam muerte
     public GameObject camara_jugador;
     public GameObject camara_muerte;
+    public AudioSource sonidomuerte;
+    public AudioClip grito;
+    private int entro = 0;
 
     public GameObject PuertaFinal;
 
@@ -73,6 +76,12 @@ public class triggerS2 : MonoBehaviour
     {
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
+        camara_muerte.GetComponent<Animator>().SetTrigger("shake");
+        if (entro == 0)
+        {
+            sonidomuerte.PlayOneShot(grito);
+            entro += 1;
+        }
         StartCoroutine(pasajeescena());
        
     }
