@@ -123,16 +123,16 @@ public class LogicaEnemigo01 : MonoBehaviour
        
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "trigenemigo/pos2")
         {
             colliderpos2.GetComponent<AudioSource>().Play();
             Destroy(other);
         }
-    }
+    }*/
 
-        private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag=="Player" && papel==true)
         {
@@ -150,7 +150,7 @@ public class LogicaEnemigo01 : MonoBehaviour
     IEnumerator pasajeescena()
     {
         yield return new WaitForSeconds(10f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Sala 1");
     }
 
     public void posicion1()

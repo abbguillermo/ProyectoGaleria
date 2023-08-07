@@ -26,10 +26,10 @@ public class Logicaenemigo_sala2 : MonoBehaviour
     {
         Debug.Log(Index);
         
-        if (puedeatacar==true)
-        {
-            agente.destination = PJ.position;
-        }
+       if (puedeatacar==true)
+       {
+           agente.destination = PJ.position;
+       }
        else if (!agente.pathPending && agente.remainingDistance < 0.5f)
         {
             MoveToNextWaypoint();

@@ -7,27 +7,27 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void Continuar()
     {
-        //SceneManager.LoadScene(.);
+        //SceneManager.LoadScene("");
     }
 
     public void NuevaPartida()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Sala Inicial");
     }
 
     public void Logros()
     {
-        //SceneManager.LoadScene(.);
+        //SceneManager.LoadScene("");
     }
 
     public void Opciones()
     {
-        //SceneManager.LoadScene(.);
+        //SceneManager.LoadScene("");
     }
 
     public void Creditos()
     {
-        //SceneManager.LoadScene(.);
+        //SceneManager.LoadScene("");
     }
 
     public void Salir()

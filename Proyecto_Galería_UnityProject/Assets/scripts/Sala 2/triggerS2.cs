@@ -80,6 +80,6 @@ public class triggerS2 : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
        
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Sala2");
     }
 }
