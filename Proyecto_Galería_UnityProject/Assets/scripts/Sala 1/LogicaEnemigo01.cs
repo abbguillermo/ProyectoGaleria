@@ -169,6 +169,7 @@ public class LogicaEnemigo01 : MonoBehaviour
     }
     void posicion3()
     {
+        gameObject.transform.GetChild(1).gameObject.SetActive(false);
         gameObject.transform.GetChild(2).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(true);
         gameObject.transform.position = pos3;

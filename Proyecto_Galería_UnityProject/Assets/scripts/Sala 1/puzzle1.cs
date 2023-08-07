@@ -25,6 +25,7 @@ public class puzzle1 : MonoBehaviour
     {
         if (cuad1==true && cuad2==true && cuad3==true && cuad4==true)
         {
+            FindObjectOfType<LogicaEnemigo01>().papel = true;
             Debug.Log("BIEN");
             pj.GetComponent<Animator>().SetTrigger("cambiarfov");
             StartCoroutine(Abrir());
