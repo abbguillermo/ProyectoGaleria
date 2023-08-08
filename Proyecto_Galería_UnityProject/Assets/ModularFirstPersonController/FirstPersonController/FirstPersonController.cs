@@ -361,6 +361,11 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         #region Movement
 
         if (playerCanMove)

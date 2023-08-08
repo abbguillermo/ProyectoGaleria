@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Agarrar : MonoBehaviour
 {
     public GameObject pared;
@@ -45,7 +46,7 @@ public class Agarrar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+
         Debug.DrawLine(transform.position, transform.position + transform.forward * distancia, Color.red, 0.5f);
         //notificacion interaccion
         
