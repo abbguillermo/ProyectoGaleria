@@ -1,0 +1,40 @@
+newmtl blinn2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd radio_albedo.png
+bump radio_normal.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd radio_albedo.png
+bump radio_normal.png -bm 0.290323
+Ni 1.00
+newmtl lambert29SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 0.14 0.14 0.14
+Ni 1.00
+newmtl lambert37SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd radio_albedo.png
+bump radio_normal.png -bm 1
+Ni 1.00
+newmtl radio_blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd radio_albedo.png
+bump radio_normal.png -bm 0.03
+Ni 1.00
+Ks 0.84 0.84 0.84
