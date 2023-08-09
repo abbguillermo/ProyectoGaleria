@@ -18,7 +18,6 @@ public class Agarrar : MonoBehaviour
     public Vector3 marcopos4;
     public Quaternion marcorot;
     public bool puedeagarrar;
-    public GameObject puerta;
     public GameObject escondite1_sala2;
     public GameObject spriteNota;
     public GameObject palanca;
@@ -292,9 +291,6 @@ public class Agarrar : MonoBehaviour
 
     void Activarpapel()
     {
-        //animacion y sonido puerta
-        puerta.GetComponent<Animator>().Play("CerrarPuerta");
-        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
         //nota
         FindObjectOfType<LogicaEnemigo01>().papel = true;
         FindObjectOfType<LogicaEnemigo01>().puedemov = true;
