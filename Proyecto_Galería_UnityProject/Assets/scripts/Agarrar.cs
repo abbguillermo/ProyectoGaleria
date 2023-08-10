@@ -28,6 +28,13 @@ public class Agarrar : MonoBehaviour
     private GameObject hitmaniqui2;
     private GameObject hitmaniqui3;
 
+    public GameObject spriteOsito;
+    public GameObject spriteOsitoSilueta;
+    public GameObject spriteCuchillo;
+    public GameObject spriteCuchilloSilueta;
+    public GameObject spriteEncendedor;
+    public GameObject spriteEncendedorSilueta;
+
     //Objetos sala inicial
     public GameObject radio;
     public GameObject cuadro;
@@ -246,6 +253,8 @@ public class Agarrar : MonoBehaviour
                     {
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado1 = true;
+                        spriteOsitoSilueta.SetActive(false);
+                        spriteOsito.SetActive(true);
                     }
 
                     if (hit.transform.gameObject.tag == "recolectables/rec2")
@@ -253,6 +262,8 @@ public class Agarrar : MonoBehaviour
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado2 = true;
                         FindObjectOfType<levantarparedes>().pieza2 = true;
+                        spriteCuchilloSilueta.SetActive(false);
+                        spriteCuchillo.SetActive(true);
                     }
 
                     if (hit.transform.gameObject.tag == "recolectables/rec3")
@@ -260,6 +271,8 @@ public class Agarrar : MonoBehaviour
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado3 = true;
                         FindObjectOfType<levantarparedes>().recolectado2 = true;
+                        spriteEncendedorSilueta.SetActive(false);
+                        spriteEncendedor.SetActive(true);
                     }
 
                     if (hit.transform.gameObject.tag == "recolectables/rec4")
@@ -270,18 +283,38 @@ public class Agarrar : MonoBehaviour
 
                     if (FindObjectOfType<levantarparedes>().recolectado1 == true&&hit.transform.tag=="maniquibloq/1")
                     {
-                         hitmaniqui1 = hit.transform.gameObject;
+                        hitmaniqui1 = hit.transform.gameObject;
+                        spriteOsito.SetActive(false);
                         StartCoroutine(primerafase());
                     }
+                    else if (FindObjectOfType<levantarparedes>().recolectado1 == false && hit.transform.tag == "maniquibloq/1")
+                    {
+                        hitmaniqui1 = hit.transform.gameObject;
+                        spriteOsitoSilueta.SetActive(true);
+                    }
+
                     if (FindObjectOfType<levantarparedes>().recolectado2 == true && hit.transform.tag == "maniquibloq/2")
                     {
                         hitmaniqui2 = hit.transform.gameObject;
+                        spriteCuchillo.SetActive(false);
                         StartCoroutine(segundafase());
                     }
+                    else if (FindObjectOfType<levantarparedes>().recolectado2 == false && hit.transform.tag == "maniquibloq/2")
+                    {
+                        hitmaniqui2 = hit.transform.gameObject;
+                        spriteCuchilloSilueta.SetActive(true);
+                    }
+
                     if (FindObjectOfType<levantarparedes>().recolectado3 == true && hit.transform.tag == "maniquibloq/3")
                     {
                         hitmaniqui3 = hit.transform.gameObject;
+                        spriteEncendedor.SetActive(false);
                         StartCoroutine(tercerafase());
+                    }
+                    else if (FindObjectOfType<levantarparedes>().recolectado3 == false && hit.transform.tag == "maniquibloq/3")
+                    {
+                        hitmaniqui3 = hit.transform.gameObject;
+                        spriteEncendedorSilueta.SetActive(true);
                     }
                 }
 
