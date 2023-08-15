@@ -94,6 +94,11 @@ public class Trigger : MonoBehaviour
             Destroy(other);
         }
 
+        if (other.tag == "trigs2/CProxEsc3")
+        {
+            SceneManager.LoadScene("Sala 3");
+        }
+
         if (other.tag == "collider/puertaS1")
         {
             //animacion y sonido puerta
