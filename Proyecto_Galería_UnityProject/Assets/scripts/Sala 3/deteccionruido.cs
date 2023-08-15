@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class deteccionruido : MonoBehaviour
 {
-    public bool ruidito = false; 
+    public bool ruidito = false;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-    
-       ruidito = true;
+        if (other.tag == "piso")
+        {
+            ruidito = true;
+        }
     }
 }
