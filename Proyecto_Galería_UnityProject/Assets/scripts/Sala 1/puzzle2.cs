@@ -44,22 +44,22 @@ public class puzzle2 : MonoBehaviour
     public void Rotarcuad1()
     {
       
-        object1.Rotate(new Vector3(0,0,22.5f));
+        object1.Rotate(new Vector3(0,0, 45f));
         
     }
     public void Rotarcuad2()
     {
 
-        object2.Rotate(new Vector3(0, 0, 22.5f));
+        object2.Rotate(new Vector3(0, 0, 45f));
         
     }
     public void Rotarcuad3()
     {
-        object3.Rotate(new Vector3(0, 0, 22.5f));
+        object3.Rotate(new Vector3(0, 0, 45f));
     }
     public void Rotarcuad4()
     {
-        object4.Rotate(new Vector3(0, 0, 22.5f));
+        object4.Rotate(new Vector3(0, 0, 45f));
     }
    
     public void boton1()

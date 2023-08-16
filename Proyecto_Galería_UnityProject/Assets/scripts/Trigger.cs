@@ -44,13 +44,6 @@ public class Trigger : MonoBehaviour
     public GameObject encuentro3;
     public GameObject encuentro4;
 
-    /*//enemigo posiciones
-    public GameObject pos3;
-    public GameObject pos4;
-    public GameObject pos5;
-    public GameObject pos6;
-    public GameObject pos7;*/
-
     //parlantes sala1
     public GameObject parlante1;
     public GameObject parlante2;
@@ -61,6 +54,8 @@ public class Trigger : MonoBehaviour
     public GameObject PuertaFinal;
     //puerta sala 1
     public GameObject puerta;
+
+    public GameObject piezasenemigo;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -115,6 +110,7 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle1());
             parlante1.GetComponent<AudioSource>().Play();
+            piezasenemigo.SetActive(false);
             Destroy(other);
         }
 
