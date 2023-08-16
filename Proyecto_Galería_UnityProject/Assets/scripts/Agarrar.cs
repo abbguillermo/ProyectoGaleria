@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 
 public class Agarrar : MonoBehaviour
@@ -42,6 +44,9 @@ public class Agarrar : MonoBehaviour
 
     public AudioSource audioSourceRadio;
     public AudioSource audioSourceQuejidos;
+
+    public Volume m_Volume;
+    public ColorAdjustments ca;
 
     public ControlScroll mano;
     void Start()
@@ -285,6 +290,11 @@ public class Agarrar : MonoBehaviour
                     {
                         hitmaniqui1 = hit.transform.gameObject;
                         spriteOsito.SetActive(false);
+                        m_Volume.profile.TryGet(out ca);
+                        if (ca.postExposure.value > -5f)
+                        {
+                            StartCoroutine(bajarExposure());
+                        }
                         StartCoroutine(primerafase());
                     }
                     else if (FindObjectOfType<levantarparedes>().recolectado1 == false && hit.transform.tag == "maniquibloq/1")
@@ -297,6 +307,11 @@ public class Agarrar : MonoBehaviour
                     {
                         hitmaniqui2 = hit.transform.gameObject;
                         spriteCuchillo.SetActive(false);
+                        m_Volume.profile.TryGet(out ca);
+                        if (ca.postExposure.value > -5f)
+                        {
+                            StartCoroutine(bajarExposure());
+                        }
                         StartCoroutine(segundafase());
                     }
                     else if (FindObjectOfType<levantarparedes>().recolectado2 == false && hit.transform.tag == "maniquibloq/2")
@@ -309,6 +324,11 @@ public class Agarrar : MonoBehaviour
                     {
                         hitmaniqui3 = hit.transform.gameObject;
                         spriteEncendedor.SetActive(false);
+                        m_Volume.profile.TryGet(out ca);
+                        if (ca.postExposure.value > -5f)
+                        {
+                            StartCoroutine(bajarExposure());
+                        }
                         StartCoroutine(tercerafase());
                     }
                     else if (FindObjectOfType<levantarparedes>().recolectado3 == false && hit.transform.tag == "maniquibloq/3")
@@ -333,18 +353,57 @@ public class Agarrar : MonoBehaviour
         osito.SetActive(true);
         yield return new WaitForSeconds(2f);
         hitmaniqui1.transform.gameObject.SetActive(false);
+        m_Volume.profile.TryGet(out ca);
+        ca.postExposure.value = 2.5f;
     }
     IEnumerator segundafase()
     {
         cuchillo.SetActive(true);
         yield return new WaitForSeconds(2f);
         hitmaniqui2.transform.gameObject.SetActive(false);
+        m_Volume.profile.TryGet(out ca);
+        ca.postExposure.value = 2.5f;
     }
     IEnumerator tercerafase()
     {
         mecha.SetActive(true);
         yield return new WaitForSeconds(2f);
         hitmaniqui3.transform.gameObject.SetActive(false);
+        m_Volume.profile.TryGet(out ca);
+        ca.postExposure.value = 2.5f;
+    }
+
+    IEnumerator bajarExposure()
+    {
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
+        yield return new WaitForSeconds(0.01f);
+        ca.postExposure.value -= 0.5f;
     }
 
 }
