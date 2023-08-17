@@ -49,7 +49,7 @@ public class id : MonoBehaviour
     {
         if (other.tag == "cuadro1")
         {
-            Debug.Log("sidhasda");
+          
             FindObjectOfType<puzzle1>().cuad1 = false;
         }
         if (other.tag == "cuadro2")

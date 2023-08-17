@@ -251,6 +251,16 @@ public class Agarrar : MonoBehaviour
                     FindObjectOfType<levantarparedes>().TriggerBoxes.SetActive(true);
                     FindObjectOfType<levantarparedes>().Maniquies.SetActive(true);
                 }
+                //SALA3
+                if (hit.transform.tag == "Sala3/objeto1")
+                {
+                    FindObjectOfType<puzzlesala3>().objeto1.SetActive(false);
+                }
+                if (hit.transform.tag == "Sala3/atril1")
+                {
+                    FindObjectOfType<puzzlesala3>().objeto2.SetActive(true);
+                }
+
 
                 if (FindObjectOfType<levantarparedes>().recolectables == true)
                 {
@@ -337,7 +347,7 @@ public class Agarrar : MonoBehaviour
                         spriteEncendedorSilueta.SetActive(true);
                     }
                 }
-
+              
             }
         }
     }
