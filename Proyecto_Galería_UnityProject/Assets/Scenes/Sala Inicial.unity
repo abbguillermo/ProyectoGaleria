@@ -4105,6 +4105,7 @@ MonoBehaviour:
   parlante1s2: {fileID: 0}
   PuertaFinal: {fileID: 0}
   puerta: {fileID: 0}
+  piezasenemigo: {fileID: 0}
 --- !u!114 &547022501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11693,7 +11694,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '[E]'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea90b8c957695f348a44e74ec470c412, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11713,7 +11714,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -11757,7 +11758,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1625347849
@@ -13545,6 +13546,8 @@ MonoBehaviour:
   personaje: {fileID: 547022499}
   audioSourceRadio: {fileID: 452295303}
   audioSourceQuejidos: {fileID: 547022505}
+  m_Volume: {fileID: 0}
+  ca: {fileID: 0}
   mano: {fileID: 1010066941}
 --- !u!1 &1943784555 stripped
 GameObject:

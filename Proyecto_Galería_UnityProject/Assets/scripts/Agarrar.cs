@@ -243,14 +243,6 @@ public class Agarrar : MonoBehaviour
                     Invoke("Activarpapel", 0f);
                 }
 
-                //sala2
-                if (hit.transform.gameObject.tag == "palanca")
-                {
-                    palanca.GetComponent<Animator>().Play("SubirPalanca");
-                    FindObjectOfType<levantarparedes>().subir = true;
-                    FindObjectOfType<levantarparedes>().TriggerBoxes.SetActive(true);
-                    FindObjectOfType<levantarparedes>().Maniquies.SetActive(true);
-                }
                 //SALA3
                 if (hit.transform.tag == "Sala3/objeto1")
                 {
@@ -261,6 +253,15 @@ public class Agarrar : MonoBehaviour
                     FindObjectOfType<puzzlesala3>().objeto2.SetActive(true);
                 }
 
+
+                //sala2
+                if (hit.transform.gameObject.tag == "palanca")
+                {
+                    palanca.GetComponent<Animator>().Play("SubirPalanca");
+                    FindObjectOfType<levantarparedes>().subir = true;
+                    FindObjectOfType<levantarparedes>().TriggerBoxes.SetActive(true);
+                    FindObjectOfType<levantarparedes>().Maniquies.SetActive(true);
+                }
 
                 if (FindObjectOfType<levantarparedes>().recolectables == true)
                 {
