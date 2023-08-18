@@ -99,6 +99,17 @@ public class Agarrar : MonoBehaviour
 
             if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
             {
+                //SALA3
+                if (hit.transform.tag == "Sala3/objeto1")
+                {
+                    FindObjectOfType<puzzlesala3>().objeto1.SetActive(false);
+                }
+                if (hit.transform.tag == "Sala3/atril1")
+                {
+                    FindObjectOfType<puzzlesala3>().objeto2.SetActive(true);
+                }
+
+
                 //sala inicial
                 if (hit.transform.gameObject.tag == "salainicial/radio")
                 {
@@ -243,15 +254,7 @@ public class Agarrar : MonoBehaviour
                     Invoke("Activarpapel", 0f);
                 }
 
-                //SALA3
-                if (hit.transform.tag == "Sala3/objeto1")
-                {
-                    FindObjectOfType<puzzlesala3>().objeto1.SetActive(false);
-                }
-                if (hit.transform.tag == "Sala3/atril1")
-                {
-                    FindObjectOfType<puzzlesala3>().objeto2.SetActive(true);
-                }
+              
 
 
                 //sala2
