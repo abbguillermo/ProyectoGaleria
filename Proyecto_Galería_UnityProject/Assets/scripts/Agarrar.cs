@@ -272,6 +272,7 @@ public class Agarrar : MonoBehaviour
                     {
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado1 = true;
+                        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                         spriteOsitoSilueta.SetActive(false);
                         spriteOsito.SetActive(true);
                     }
@@ -281,6 +282,7 @@ public class Agarrar : MonoBehaviour
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado2 = true;
                         FindObjectOfType<levantarparedes>().pieza2 = true;
+                        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                         spriteCuchilloSilueta.SetActive(false);
                         spriteCuchillo.SetActive(true);
                     }
@@ -290,15 +292,16 @@ public class Agarrar : MonoBehaviour
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado3 = true;
                         FindObjectOfType<levantarparedes>().recolectado2 = true;
+                        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                         spriteEncendedorSilueta.SetActive(false);
                         spriteEncendedor.SetActive(true);
                     }
 
-                    if (hit.transform.gameObject.tag == "recolectables/rec4")
+                    /*if (hit.transform.gameObject.tag == "recolectables/rec4")
                     {
                         Destroy(hit.transform.gameObject);
                         FindObjectOfType<levantarparedes>().recolectado4 = true;
-                    }
+                    }*/
 
                     if (FindObjectOfType<levantarparedes>().recolectado1 == true&&hit.transform.tag=="maniquibloq/1")
                     {
@@ -367,6 +370,7 @@ public class Agarrar : MonoBehaviour
         osito.SetActive(true);
         yield return new WaitForSeconds(2f);
         hitmaniqui1.transform.gameObject.SetActive(false);
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         m_Volume.profile.TryGet(out ca);
         ca.postExposure.value = 2.5f;
     }
@@ -375,6 +379,7 @@ public class Agarrar : MonoBehaviour
         cuchillo.SetActive(true);
         yield return new WaitForSeconds(2f);
         hitmaniqui2.transform.gameObject.SetActive(false);
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         m_Volume.profile.TryGet(out ca);
         ca.postExposure.value = 2.5f;
     }
@@ -383,6 +388,7 @@ public class Agarrar : MonoBehaviour
         mecha.SetActive(true);
         yield return new WaitForSeconds(2f);
         hitmaniqui3.transform.gameObject.SetActive(false);
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         m_Volume.profile.TryGet(out ca);
         ca.postExposure.value = 2.5f;
     }

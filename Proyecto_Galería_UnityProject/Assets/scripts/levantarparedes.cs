@@ -12,11 +12,11 @@ public class levantarparedes : MonoBehaviour
     public bool recolectado1 = false;
     public bool recolectado2 = false;
     public bool recolectado3 = false;
-    public bool recolectado4 = false;
+    //public bool recolectado4 = false;
     public GameObject objetorecolectado1;
     public GameObject objetorecolectado2;
     public GameObject objetorecolectado3;
-    public GameObject objetorecolectado4;
+    //public GameObject objetorecolectado4;
     public GameObject pj;
     public GameObject TriggerBoxes;
     public GameObject Maniquies;
@@ -50,11 +50,11 @@ public class levantarparedes : MonoBehaviour
             pieza2 = false;
         }
 
-        if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)
+        /*if (recolectado1 == true && recolectado2 == true && recolectado3 == true && recolectado4 == true)
         {
             subir = false;
             //Laberinto.GetComponent<Animator>().Play("BajarLaberinto");
-        }
+        }*/
         Debug.Log(recolectado1);
     }
 
@@ -67,6 +67,6 @@ public class levantarparedes : MonoBehaviour
         objetorecolectado1.layer = 7;
         objetorecolectado2.layer = 7;
         objetorecolectado3.layer = 7;
-        objetorecolectado4.layer = 7;
+        //objetorecolectado4.layer = 7;
     }
 }

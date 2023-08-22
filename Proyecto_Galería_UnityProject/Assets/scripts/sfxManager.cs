@@ -12,6 +12,8 @@ public class sfxManager : MonoBehaviour
     public AudioClip sfxRotadoCuadro;
     //public AudioClip sfxPuertaDeslizada;
     public AudioClip sfxInterruptor;
+    public AudioClip sfxDesaparicionManiquies;
+    public AudioClip sfxObjetoS2;
 
     public static sfxManager sfxInstance;
 
