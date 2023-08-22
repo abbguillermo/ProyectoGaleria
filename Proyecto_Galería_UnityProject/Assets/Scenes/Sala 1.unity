@@ -21902,7 +21902,7 @@ MonoBehaviour:
   sfxRotadoCuadro: {fileID: 8300000, guid: 29b9cbe4dd9b79748abd302aaf975213, type: 3}
   sfxInterruptor: {fileID: 8300000, guid: 6a092e15893cda04a8d78858be9ebc8c, type: 3}
   sfxDesaparicionManiquies: {fileID: 0}
-  sfxObjetoS2: {fileID: 0}
+  sfxObjetoS2: {fileID: 8300000, guid: 21f8f6a628b10774eb21b7d7f304cfce, type: 3}
 --- !u!82 &961845779
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27153,6 +27153,7 @@ GameObject:
   - component: {fileID: 1189662800}
   - component: {fileID: 1189662804}
   - component: {fileID: 1189662806}
+  - component: {fileID: 1189662807}
   m_Layer: 0
   m_Name: Estatua
   m_TagString: Untagged
@@ -27280,9 +27281,11 @@ MonoBehaviour:
   avanzacuartotrigger: 0
   avanzaquintotrigger: 0
   audioSourceEnemigo: {fileID: 1189662806}
+  audioSourcePEnemigo: {fileID: 1189662807}
   audiomuerte: {fileID: 1328162628}
   audioEnemigov1: {fileID: 8300000, guid: b6d5c32647a612240ab3e147a38fec65, type: 3}
   audioEnemigov2: {fileID: 8300000, guid: 60bba394c06936d4bb5ed23f2b7c0d4e, type: 3}
+  pasosEnemigo: {fileID: 8300000, guid: 67cbd5fd30afcee43a5cce4e6f7b8128, type: 3}
   grito: {fileID: 8300000, guid: 43797c4eee2e11c4f9eb58ef9eba17d4, type: 3}
   colliderpos2: {fileID: 594921840}
   sonidito: 1
@@ -27299,6 +27302,111 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 20
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.20611086
+      value: 0.46464556
+      inSlope: -1.4855666
+      outSlope: -1.4855666
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1189662807
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189662797}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -30286,7 +30394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 16d8f06aff7d3884d9764f35b2f19f93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.441
+      value: -1.238
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 16d8f06aff7d3884d9764f35b2f19f93, type: 3}
       propertyPath: m_LocalPosition.z

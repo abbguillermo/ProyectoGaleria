@@ -30,9 +30,11 @@ public class LogicaEnemigo01 : MonoBehaviour
     public bool avanzaquintotrigger;
 
     public AudioSource audioSourceEnemigo;
+    public AudioSource audioSourcePEnemigo;
     public AudioSource audiomuerte;
     public AudioClip audioEnemigov1;
     public AudioClip audioEnemigov2;
+    public AudioClip pasosEnemigo;
     public AudioClip grito;
     public GameObject colliderpos2;
 
@@ -109,7 +111,8 @@ public class LogicaEnemigo01 : MonoBehaviour
             if (sonidito == true)
             {
               
-                audioSourceEnemigo.PlayOneShot(audioEnemigov1);
+                //audioSourceEnemigo.PlayOneShot(audioEnemigov1);
+                audioSourcePEnemigo.PlayOneShot(pasosEnemigo);
                 sonidito = false;
             }
             /* puedemov = false;*/
