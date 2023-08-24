@@ -100,14 +100,41 @@ public class Agarrar : MonoBehaviour
             if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
             {
                 //SALA3
-                if (hit.transform.tag == "Sala3/objeto1")
+                if (puedeagarrar)
                 {
-                    FindObjectOfType<puzzlesala3>().objeto1.SetActive(false);
+                    if (hit.transform.tag == "Sala3/objeto1")
+                    {
+                        GameObject objeto = hit.transform.gameObject;
+
+                        objeto.transform.SetParent(puntodeagarre);
+                        objeto.transform.localPosition = Vector3.zero;
+                        objeto.transform.localRotation = Quaternion.identity;
+                        puedeagarrar = false;
+                    }
+                }
+               if(!puedeagarrar&&hit.transform.tag== "Sala3/objeto1")
+                {
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
+
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.rotation = marcorot;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(pared.transform);
+                    hit.transform.SetParent(puntodeagarre);
+                    hit.transform.localPosition = Vector3.zero;
+                    hit.transform.localRotation = Quaternion.identity;
+                    puedeagarrar = false;
                 }
                 if (hit.transform.tag == "Sala3/atril1")
                 {
-                    FindObjectOfType<puzzlesala3>().objeto2.SetActive(true);
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
+
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.rotation = marcorot;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(pared.transform);
+                    puedeagarrar = true;
                 }
+                
+               
 
 
                 //sala inicial
@@ -127,7 +154,7 @@ public class Agarrar : MonoBehaviour
                 //escondites
                 if (hit.transform.gameObject.tag == "escondites/escondite1")
                 {
-                    //Debug.Log("sadsaw");
+             
                     hit.transform.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                     escondite1_sala2.SetActive(false);
                     FindObjectOfType<Logicaenemigo_sala2>().puedeatacar = false;
