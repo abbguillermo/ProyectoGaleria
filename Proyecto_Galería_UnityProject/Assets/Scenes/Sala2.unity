@@ -36058,8 +36058,6 @@ GameObject:
   - component: {fileID: 968841877}
   - component: {fileID: 968841878}
   - component: {fileID: 968841879}
-  - component: {fileID: 968841881}
-  - component: {fileID: 968841880}
   m_Layer: 0
   m_Name: enemigo
   m_TagString: Untagged
@@ -36337,32 +36335,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &968841880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968841870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49719961bc7574d4296e8c93ac713208, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LatidoRapido: {fileID: 8300000, guid: 29cfee6bc0fae104bb63659192d2bb4d, type: 3}
---- !u!135 &968841881
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968841870}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &970508595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 048df995165d8564893a7987a7cabbff, type: 3}
@@ -42244,6 +42216,7 @@ GameObject:
   - component: {fileID: 1131301761}
   - component: {fileID: 1131301763}
   - component: {fileID: 1131301762}
+  - component: {fileID: 1131301764}
   m_Layer: 0
   m_Name: collider_esfera
   m_TagString: Untagged
@@ -42292,6 +42265,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1131301764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131301760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49719961bc7574d4296e8c93ac713208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LatidoRapido: {fileID: 8300000, guid: 29cfee6bc0fae104bb63659192d2bb4d, type: 3}
 --- !u!1001 &1132098034
 PrefabInstance:
   m_ObjectHideFlags: 0
