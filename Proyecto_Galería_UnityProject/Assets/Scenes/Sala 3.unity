@@ -15255,6 +15255,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ruidito: 0
+--- !u!114 &1511042336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511042317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad536a11f77dea144ad945f242c426fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  latidoNormal: {fileID: 8300000, guid: 63bbaaa45fb204744a4de3cf5235ac14, type: 3}
 --- !u!1 &1514953201
 GameObject:
   m_ObjectHideFlags: 0
@@ -19003,6 +19016,8 @@ GameObject:
   - component: {fileID: 1990562420}
   - component: {fileID: 1990562419}
   - component: {fileID: 1990562425}
+  - component: {fileID: 1990562427}
+  - component: {fileID: 1990562426}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -19148,6 +19163,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &1990562426
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990562418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1990562427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990562418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49719961bc7574d4296e8c93ac713208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LatidoRapido: {fileID: 8300000, guid: 29cfee6bc0fae104bb63659192d2bb4d, type: 3}
 --- !u!1001 &1992766269
 PrefabInstance:
   m_ObjectHideFlags: 0
