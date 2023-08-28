@@ -22103,8 +22103,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 961845780}
-  - component: {fileID: 961845779}
   - component: {fileID: 961845778}
+  - component: {fileID: 961845781}
   m_Layer: 0
   m_Name: SFXManager
   m_TagString: Untagged
@@ -22124,14 +22124,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c912123ab25914ea857c2f0c00d766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Audio: {fileID: 961845779}
+  Audio: {fileID: 961845781}
   sfxPuerta: {fileID: 8300000, guid: 9c8f1209c74754b4db240121a1fc927c, type: 3}
   sfxAgarreCuadro: {fileID: 8300000, guid: 4b2af3b1fd6214d499be078b685dbf31, type: 3}
   sfxRotadoCuadro: {fileID: 8300000, guid: 29b9cbe4dd9b79748abd302aaf975213, type: 3}
   sfxInterruptor: {fileID: 8300000, guid: 6a092e15893cda04a8d78858be9ebc8c, type: 3}
-  sfxDesaparicionManiquies: {fileID: 0}
+  sfxDesaparicionManiquies: {fileID: 8300000, guid: f5db30e4bda822b4b9cbdd57f44c76f0, type: 3}
   sfxObjetoS2: {fileID: 8300000, guid: 21f8f6a628b10774eb21b7d7f304cfce, type: 3}
---- !u!82 &961845779
+--- !u!4 &961845780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961845777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &961845781
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22142,7 +22157,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -22227,21 +22242,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &961845780
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961845777}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &963180738
 PrefabInstance:
   m_ObjectHideFlags: 0

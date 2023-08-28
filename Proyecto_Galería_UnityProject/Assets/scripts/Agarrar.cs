@@ -277,9 +277,9 @@ public class Agarrar : MonoBehaviour
                 if (hit.transform.gameObject.tag=="papel")
                 {
                     Destroy(hit.transform.gameObject);
-                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                     spriteNota.SetActive(true);
                     Invoke("Activarpapel", 0f);
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                 }
 
               
