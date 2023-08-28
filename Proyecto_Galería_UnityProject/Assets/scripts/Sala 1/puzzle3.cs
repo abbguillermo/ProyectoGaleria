@@ -31,6 +31,7 @@ public class puzzle3 : MonoBehaviour
     {
         if (cuad1==true&&cuad2==true&&cuad3==true&&cuad4==true)
         {
+            logrosManager.logro01Contador += 1;
             StartCoroutine(Abrir());
             pared.transform.GetChild(0).GetComponent<AudioSource>().Play();
             //pj.GetComponent<Animator>().Play("cambiarfov");
