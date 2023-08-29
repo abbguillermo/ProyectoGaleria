@@ -19,10 +19,11 @@ public class logrosManager : MonoBehaviour
     public int logro01Trigger = 1;
     public int logro01Codigo;
 
-    void Start()
+    /*void Start()
     {
         PlayerPrefs.DeleteKey("logro01");
-    }
+        logro01Contador = 0;
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -41,8 +42,8 @@ public class logrosManager : MonoBehaviour
         PlayerPrefs.SetInt("logro01", logro01Codigo);
         //logroSonido.Play();
         logro01Img.SetActive(true);
-        logroTitulo.GetComponent<TextMeshProUGUI>().text = "LOGRO 1 CAPO";
-        logroDescripcion.GetComponent<TextMeshProUGUI>().text = "DESCRIP LOGRO 1";
+        logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
+        logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 1";
         logroNota.SetActive(true);
         yield return new WaitForSeconds(7);
 
