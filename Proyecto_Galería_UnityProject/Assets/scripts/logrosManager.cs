@@ -19,11 +19,11 @@ public class logrosManager : MonoBehaviour
     public int logro01Trigger = 1;
     public int logro01Codigo;
 
-    /*void Start()
+    void Start()
     {
         PlayerPrefs.DeleteKey("logro01");
         logro01Contador = 0;
-    }*/
+    }
 
     // Update is called once per frame
     void Update()
