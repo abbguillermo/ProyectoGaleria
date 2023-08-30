@@ -35,4 +35,19 @@ public class MenuPrincipal : MonoBehaviour
         Application.Quit();
         Debug.Log("Se cierra");
     }
+
+    public void Sala1()
+    {
+        SceneManager.LoadScene("Sala 1");
+    }
+
+    public void Sala2()
+    {
+        SceneManager.LoadScene("Sala2respawn");
+    }
+
+    public void Sala3()
+    {
+        SceneManager.LoadScene("Sala 3");
+    }
 }
