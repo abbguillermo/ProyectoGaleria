@@ -132,6 +132,10 @@ public class Trigger : MonoBehaviour
         if (other.tag == "collider/CP1OFF")
         {
             lucescomp1.SetActive(false);
+            if (FindObjectOfType<Agarrar>().spriteNota)
+            {
+                FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
+            }
         }
         else if (other.tag == "collider/CP2OFF")
         {
