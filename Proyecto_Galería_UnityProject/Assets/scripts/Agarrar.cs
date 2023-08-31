@@ -19,7 +19,8 @@ public class Agarrar : MonoBehaviour
     public Vector3 marcopos3;
     public Vector3 marcopos4;
     public Quaternion marcorot;
-    public bool puedeagarrar;
+    public bool puedeagarrar=true;
+    public bool puedeagarrar2 = true;
     public GameObject escondite1_sala2;
     public GameObject spriteNota;
     public GameObject palanca;
@@ -57,7 +58,7 @@ public class Agarrar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(puedeagarrar2);
         Debug.DrawLine(transform.position, transform.position + transform.forward * distancia, Color.red, 0.5f);
         //notificacion interaccion
         
@@ -99,39 +100,42 @@ public class Agarrar : MonoBehaviour
 
             if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
             {
+               
                 //SALA3
-                if (puedeagarrar)
+                if (puedeagarrar2==true)
                 {
-                    if (hit.transform.tag == "Sala3/objeto1")
+                    if (hit.transform.gameObject.tag == "Sala3/objeto1"|| hit.transform.gameObject.tag == "Sala3/objeto2"|| hit.transform.gameObject.tag == "Sala3/objeto3"|| hit.transform.gameObject.tag == "Sala3/objeto4"|| hit.transform.gameObject.tag == "Sala3/objeto5"|| hit.transform.gameObject.tag == "Sala3/objeto6")
                     {
                         GameObject objeto = hit.transform.gameObject;
 
                         objeto.transform.SetParent(puntodeagarre);
                         objeto.transform.localPosition = Vector3.zero;
                         objeto.transform.localRotation = Quaternion.identity;
-                        puedeagarrar = false;
+                        puedeagarrar2 = false;
                     }
                 }
-               if(!puedeagarrar&&hit.transform.tag== "Sala3/objeto1")
+               if(puedeagarrar2==false&&(hit.transform.gameObject.tag == "Sala3/objeto1" || hit.transform.gameObject.tag == "Sala3/objeto2" || hit.transform.gameObject.tag == "Sala3/objeto3" || hit.transform.gameObject.tag == "Sala3/objeto4" || hit.transform.gameObject.tag == "Sala3/objeto5" || hit.transform.gameObject.tag == "Sala3/objeto6"))
                 {
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
 
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.rotation = marcorot;
-                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(pared.transform);
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(null);
                     hit.transform.SetParent(puntodeagarre);
                     hit.transform.localPosition = Vector3.zero;
                     hit.transform.localRotation = Quaternion.identity;
-                    puedeagarrar = false;
+                    puedeagarrar2 = false;
                 }
-                if (hit.transform.tag == "Sala3/atril1")
+                if (hit.transform.gameObject.tag == "Sala3/atril1")
                 {
+                   
+                   
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
 
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.rotation = marcorot;
-                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(pared.transform);
-                    puedeagarrar = true;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(null);
+                    puedeagarrar2 = true;
                 }
                 
                

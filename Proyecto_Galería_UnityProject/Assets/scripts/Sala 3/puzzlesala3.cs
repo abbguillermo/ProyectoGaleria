@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class puzzlesala3 : MonoBehaviour
 {
-    public GameObject objeto1;
+    /*public GameObject objeto1;
     public GameObject objeto2;
     public GameObject objeto3;
     public GameObject objeto4;
     public GameObject objeto5;
-    public GameObject objeto6;
+    public GameObject objeto6;*/
     public bool Objeto1bool;
     public bool Objeto2bool;
     public bool Objeto3bool;
@@ -30,5 +30,11 @@ public class puzzlesala3 : MonoBehaviour
         {
             Debug.Log("bien");
         }
+        Debug.Log(Objeto1bool);
+        Debug.Log(Objeto2bool);
+        Debug.Log(Objeto3bool);
+        Debug.Log(Objeto4bool);
+        Debug.Log(Objeto5bool);
+        Debug.Log(Objeto6bool);
     }
 }
