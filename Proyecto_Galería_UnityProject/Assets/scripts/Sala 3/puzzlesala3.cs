@@ -17,6 +17,10 @@ public class puzzlesala3 : MonoBehaviour
     public bool Objeto5bool;
     public bool Objeto6bool;
 
+    public bool c1activo = false;
+    public bool c2activo = false;
+    public bool c3activo = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,13 @@ public class puzzlesala3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (c1activo == true && c2activo == true && c3activo == true)
+        {
+            //enemigoQuieto.SetActive(false);
+            //enemigo.SetActive(true);
+            Debug.Log("deberia activarse enemig");
+        }
+
         if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool && Objeto5bool && Objeto6bool)
         {
             Debug.Log("bien");

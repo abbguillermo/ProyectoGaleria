@@ -59,6 +59,23 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //sala3
+
+        if(other.tag == "trigs3/colliderinicio1")
+        {
+            FindObjectOfType<puzzlesala3>().c1activo = true;
+        }
+
+        if (other.tag == "trigs3/colliderinicio2")
+        {
+            FindObjectOfType<puzzlesala3>().c2activo = true;
+        }
+
+        if (other.tag == "trigs3/colliderinicio3")
+        {
+            FindObjectOfType<puzzlesala3>().c3activo = true;
+        }
+
         //sala 2
         if (other.tag == "trigs2/encuentros")
         {

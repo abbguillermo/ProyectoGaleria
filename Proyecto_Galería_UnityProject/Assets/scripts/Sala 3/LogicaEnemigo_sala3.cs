@@ -13,10 +13,11 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     public bool cambiarWP = false;
     public bool puedemoverse;
 
+    public GameObject enemigo;
+
     // Start is called before the first frame update
     void Start()
     {
-
         agente = GetComponent<NavMeshAgent>();
         MoveToNextWaypoint();
     }
@@ -32,6 +33,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         {
             if (!agente.pathPending && agente.remainingDistance < 0.5f)
             {
+                enemigo.GetComponent<Animator>().SetTrigger("Walk");
                 MoveToNextWaypoint();
             }
         }
@@ -41,6 +43,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftShift)||FindObjectOfType<deteccionruido>().ruidito)
         {
+            enemigo.GetComponent<Animator>().SetTrigger("Run");
             agente.destination = PJ.position;
         }
         else if (!agente.pathPending && agente.remainingDistance < 0.5f)
