@@ -8,9 +8,16 @@ public class deteccionruido : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "piso")
+        if (other.tag == "Player")
         {
             ruidito = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            ruidito = false;
         }
     }
 }

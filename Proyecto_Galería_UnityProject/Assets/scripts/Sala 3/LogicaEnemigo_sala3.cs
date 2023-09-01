@@ -11,6 +11,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     private NavMeshAgent agente;
     public bool puedeatacar = false;
     public bool cambiarWP = false;
+    public bool puedemoverse;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +24,21 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Index);
+        /*if (puedemoverse)
+        {
 
+        }*/
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (!agente.pathPending && agente.remainingDistance < 0.5f)
+            {
+                MoveToNextWaypoint();
+            }
+        }
+        else
+        {
+            agente.destination = PJ.position;
+        }
         if (Input.GetKey(KeyCode.LeftShift)||FindObjectOfType<deteccionruido>().ruidito)
         {
             agente.destination = PJ.position;
@@ -35,7 +49,13 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         }
     }
 
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("MORISTE");
+        }
+    }
 
     private void MoveToNextWaypoint()
     {
