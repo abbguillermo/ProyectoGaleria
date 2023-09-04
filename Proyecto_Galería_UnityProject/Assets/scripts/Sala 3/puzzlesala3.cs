@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class puzzlesala3 : MonoBehaviour
 {
-    /*public GameObject objeto1;
+    //maniquies
+    public GameObject objeto1;
     public GameObject objeto2;
     public GameObject objeto3;
     public GameObject objeto4;
     public GameObject objeto5;
-    public GameObject objeto6;*/
+    public GameObject objeto6;
+    //trigger objetos
+    public GameObject intobjeto1;
+    public GameObject intobjeto2;
+    public GameObject intobjeto3;
+    public GameObject intobjeto4;
+    public GameObject intobjeto5;
+    public GameObject intobjeto6;
+
     public bool Objeto1bool;
     public bool Objeto2bool;
     public bool Objeto3bool;
@@ -35,6 +44,18 @@ public class puzzlesala3 : MonoBehaviour
     {
         if (c1activo == true && c2activo == true && c3activo == true)
         {
+            objeto1.layer = 7;
+            objeto2.layer = 7;
+            objeto3.layer = 7;
+            objeto4.layer = 7;
+            objeto5.layer = 7;
+            objeto6.layer = 7;
+            intobjeto1.layer = 7;
+            intobjeto2.layer = 7;
+            intobjeto3.layer = 7;
+            intobjeto4.layer = 7;
+            intobjeto5.layer = 7;
+            intobjeto6.layer = 7;
             //enemigoQuieto.SetActive(false);
             //enemigo.SetActive(true);
             Debug.Log("deberia activarse enemig");
