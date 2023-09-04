@@ -31,12 +31,12 @@ public class puzzlesala3 : MonoBehaviour
     public bool c3activo = false;
 
     public GameObject rejas;
-    public AudioSource audioRejas;
+    public GameObject pedestales;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -60,7 +60,7 @@ public class puzzlesala3 : MonoBehaviour
             //enemigo.SetActive(true);
             Debug.Log("deberia activarse enemig");
             rejas.GetComponent<Animator>().Play("AbrirRejas");
-            audioRejas.Play();
+            StartCoroutine(Apertura());
         }
 
         if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool && Objeto5bool && Objeto6bool)
@@ -73,5 +73,12 @@ public class puzzlesala3 : MonoBehaviour
         Debug.Log(Objeto4bool);
         Debug.Log(Objeto5bool);
         Debug.Log(Objeto6bool);
+
+        IEnumerator Apertura()
+        {
+            pedestales.transform.GetChild(0).GetComponent<AudioSource>().Play();
+            c2activo = false;
+            yield return new WaitForSeconds(0);
+        }
     }
 }

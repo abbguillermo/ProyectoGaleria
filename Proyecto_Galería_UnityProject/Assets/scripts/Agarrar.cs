@@ -106,6 +106,7 @@ public class Agarrar : MonoBehaviour
                 {
                     if (hit.transform.gameObject.tag == "Sala3/objeto1"|| hit.transform.gameObject.tag == "Sala3/objeto2"|| hit.transform.gameObject.tag == "Sala3/objeto3"|| hit.transform.gameObject.tag == "Sala3/objeto4"|| hit.transform.gameObject.tag == "Sala3/objeto5"|| hit.transform.gameObject.tag == "Sala3/objeto6")
                     {
+                        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                         GameObject objeto = hit.transform.gameObject;
 
                         objeto.transform.SetParent(puntodeagarre);
@@ -114,8 +115,10 @@ public class Agarrar : MonoBehaviour
                         puedeagarrar2 = false;
                     }
                 }
-               if(puedeagarrar2==false&&(hit.transform.gameObject.tag == "Sala3/objeto1" || hit.transform.gameObject.tag == "Sala3/objeto2" || hit.transform.gameObject.tag == "Sala3/objeto3" || hit.transform.gameObject.tag == "Sala3/objeto4" || hit.transform.gameObject.tag == "Sala3/objeto5" || hit.transform.gameObject.tag == "Sala3/objeto6"))
+
+                if(puedeagarrar2==false&&(hit.transform.gameObject.tag == "Sala3/objeto1" || hit.transform.gameObject.tag == "Sala3/objeto2" || hit.transform.gameObject.tag == "Sala3/objeto3" || hit.transform.gameObject.tag == "Sala3/objeto4" || hit.transform.gameObject.tag == "Sala3/objeto5" || hit.transform.gameObject.tag == "Sala3/objeto6"))
                 {
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
 
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
@@ -126,6 +129,7 @@ public class Agarrar : MonoBehaviour
                     hit.transform.localRotation = Quaternion.identity;
                     puedeagarrar2 = false;
                 }
+
                 if (hit.transform.gameObject.tag == "Sala3/atril1")
                 {
                    
