@@ -21,6 +21,9 @@ public class puzzlesala3 : MonoBehaviour
     public bool c2activo = false;
     public bool c3activo = false;
 
+    public GameObject rejas;
+    public AudioSource audioRejas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,8 @@ public class puzzlesala3 : MonoBehaviour
             //enemigoQuieto.SetActive(false);
             //enemigo.SetActive(true);
             Debug.Log("deberia activarse enemig");
+            rejas.GetComponent<Animator>().Play("AbrirRejas");
+            audioRejas.Play();
         }
 
         if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool && Objeto5bool && Objeto6bool)

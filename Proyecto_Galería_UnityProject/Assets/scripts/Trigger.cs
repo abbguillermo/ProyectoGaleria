@@ -76,6 +76,13 @@ public class Trigger : MonoBehaviour
             FindObjectOfType<puzzlesala3>().c3activo = true;
         }
 
+        if (other.tag == "trigs3/voz")
+        {
+            /*parlante1s3.GetComponent<AudioSource>().Play();
+            Destroy(other);*/
+        }
+
+
         //sala 2
         if (other.tag == "trigs2/encuentros")
         {
