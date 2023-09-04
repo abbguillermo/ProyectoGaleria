@@ -49,7 +49,11 @@ public class Trigger : MonoBehaviour
     public GameObject parlante2;
     public GameObject parlante3;
 
+    //parlantes sala2
     public GameObject parlante1s2;
+
+    //parlantes sala3
+    public GameObject parlante1s3;
 
     public GameObject PuertaFinal;
     //puerta sala 1
