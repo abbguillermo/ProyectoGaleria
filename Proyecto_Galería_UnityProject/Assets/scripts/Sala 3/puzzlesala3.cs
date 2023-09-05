@@ -60,6 +60,7 @@ public class puzzlesala3 : MonoBehaviour
             //enemigo.SetActive(true);
             Debug.Log("deberia activarse enemig");
             rejas.GetComponent<Animator>().Play("AbrirRejas");
+            FindObjectOfType<LogicaEnemigo_sala3>().puedemoverse = true;
             StartCoroutine(Apertura());
         }
 

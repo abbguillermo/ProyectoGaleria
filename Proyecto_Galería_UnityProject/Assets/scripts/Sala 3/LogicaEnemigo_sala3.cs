@@ -19,37 +19,36 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //enemigo.GetComponent<Animator>().SetTrigger("Idle");
         agente = GetComponent<NavMeshAgent>();
-        MoveToNextWaypoint();
+        //MoveToNextWaypoint();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if (puedemoverse)
+        if (puedemoverse)
         {
-
-        }*/
-       
-        if (puedeatacar == true && !Input.GetKey(KeyCode.LeftControl))
-        {
-            enemigo.GetComponent<Animator>().SetTrigger("Run");
-            agente.destination = PJ.position;
-            Debug.Log("sjdiadjdsadsadsadsadas");
-        }
-        else
-        {
-            estacerca = false;
-        }
-        if (Input.GetKey(KeyCode.LeftShift)||FindObjectOfType<deteccionruido>().ruidito)
-        {
-            enemigo.GetComponent<Animator>().SetTrigger("Run");
-            agente.destination = PJ.position;
-        }
-        else if (!agente.pathPending && agente.remainingDistance < 0.5f)
-        {
-            MoveToNextWaypoint();
+            if (puedeatacar == true && !Input.GetKey(KeyCode.LeftControl))
+            {
+                enemigo.GetComponent<Animator>().SetTrigger("Run");
+                agente.destination = PJ.position;
+                Debug.Log("sjdiadjdsadsadsadsadas");
+            }
+            else
+            {
+                estacerca = false;
+            }
+            if (Input.GetKey(KeyCode.LeftShift) || FindObjectOfType<deteccionruido>().ruidito)
+            {
+                enemigo.GetComponent<Animator>().SetTrigger("Run");
+                agente.destination = PJ.position;
+            }
+            else if (!agente.pathPending && agente.remainingDistance < 0.5f)
+            {
+                MoveToNextWaypoint();
+            }
         }
     }
 

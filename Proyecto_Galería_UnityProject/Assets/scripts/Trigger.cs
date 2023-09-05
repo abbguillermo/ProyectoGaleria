@@ -61,6 +61,9 @@ public class Trigger : MonoBehaviour
 
     public GameObject piezasenemigo;
 
+    //maniqui sala2
+    public GameObject ManiquiFinal;
+
     private void OnTriggerEnter(Collider other)
     {
         //sala3
@@ -68,16 +71,19 @@ public class Trigger : MonoBehaviour
         if(other.tag == "trigs3/colliderinicio1")
         {
             FindObjectOfType<puzzlesala3>().c1activo = true;
+            Destroy(other);
         }
 
         if (other.tag == "trigs3/colliderinicio2")
         {
             FindObjectOfType<puzzlesala3>().c2activo = true;
+            Destroy(other);
         }
 
         if (other.tag == "trigs3/colliderinicio3")
         {
             FindObjectOfType<puzzlesala3>().c3activo = true;
+            Destroy(other);
         }
 
         if (other.tag == "trigs3/voz")
@@ -102,6 +108,12 @@ public class Trigger : MonoBehaviour
             {
                 FindObjectOfType<triggerS2>().agent.speed = 1;
             }
+        }
+
+        if (other.tag == "trigs2/animacion")
+        {
+            ManiquiFinal.SetActive(true);
+            ManiquiFinal.GetComponent<Animator>().Play("Caida");
         }
 
         if (other.tag == "trigs2/salida")

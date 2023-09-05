@@ -28,6 +28,8 @@ public class triggerS2 : MonoBehaviour
 
     public GameObject PuertaFinal;
 
+    public GameObject maniquiesfinal;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -69,6 +71,7 @@ public class triggerS2 : MonoBehaviour
         if(other.tag == "trigs2/activaDesac4")
         {
             desactivacion4.SetActive(true);
+            maniquiesfinal.SetActive(true);
         }
 
     }
