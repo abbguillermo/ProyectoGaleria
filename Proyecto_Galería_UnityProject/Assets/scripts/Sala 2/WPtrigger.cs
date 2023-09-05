@@ -20,7 +20,8 @@ public class WPtrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-      
+            Debug.Log("meactivo");
+            FindObjectOfType<LogicaEnemigo_sala3>().puedeatacar = true;
             FindObjectOfType<Logicaenemigo_sala2>().puedeatacar = true;
         }
 
@@ -32,6 +33,7 @@ public class WPtrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("aca llega");
+            FindObjectOfType<LogicaEnemigo_sala3>().puedeatacar = false;
             FindObjectOfType<Logicaenemigo_sala2>().puedeatacar = false;
         }
        /* if (other.tag == "WP")

@@ -12,6 +12,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     public bool puedeatacar = false;
     public bool cambiarWP = false;
     public bool puedemoverse;
+    public bool estacerca=false;
 
     public GameObject enemigo;
 
@@ -20,6 +21,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     {
         agente = GetComponent<NavMeshAgent>();
         MoveToNextWaypoint();
+        
     }
 
     // Update is called once per frame
@@ -29,17 +31,16 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         {
 
         }*/
-        if (Input.GetKey(KeyCode.LeftControl))
+       
+        if (puedeatacar == true && !Input.GetKey(KeyCode.LeftControl))
         {
-            if (!agente.pathPending && agente.remainingDistance < 0.5f)
-            {
-                enemigo.GetComponent<Animator>().SetTrigger("Walk");
-                MoveToNextWaypoint();
-            }
+            enemigo.GetComponent<Animator>().SetTrigger("Run");
+            agente.destination = PJ.position;
+            Debug.Log("sjdiadjdsadsadsadsadas");
         }
         else
         {
-            agente.destination = PJ.position;
+            estacerca = false;
         }
         if (Input.GetKey(KeyCode.LeftShift)||FindObjectOfType<deteccionruido>().ruidito)
         {
@@ -54,6 +55,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("MORISTE");

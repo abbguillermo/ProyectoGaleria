@@ -67,12 +67,7 @@ public class puzzlesala3 : MonoBehaviour
         {
             Debug.Log("bien");
         }
-        Debug.Log(Objeto1bool);
-        Debug.Log(Objeto2bool);
-        Debug.Log(Objeto3bool);
-        Debug.Log(Objeto4bool);
-        Debug.Log(Objeto5bool);
-        Debug.Log(Objeto6bool);
+       
 
         IEnumerator Apertura()
         {
