@@ -36,7 +36,8 @@ public class puzzlesala3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        FindObjectOfType<Agarrar>().distancia = 1f;
+        //Debug.Log(FindObjectOfType<Agarrar>().distancia);
     }
 
     // Update is called once per frame
@@ -66,7 +67,8 @@ public class puzzlesala3 : MonoBehaviour
 
         if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool && Objeto5bool && Objeto6bool)
         {
-            Debug.Log("bien");
+            Debug.Log("bien ya resuelto");
+            //animacion puerta abierta
         }
        
 

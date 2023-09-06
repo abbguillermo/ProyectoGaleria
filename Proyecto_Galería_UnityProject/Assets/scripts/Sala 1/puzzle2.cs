@@ -21,6 +21,10 @@ public class puzzle2 : MonoBehaviour
     public GameObject luz2;
     public GameObject luz3;
     public GameObject luz4;
+    public GameObject marco1;
+    public GameObject marco2;
+    public GameObject marco3;
+    public GameObject marco4;
 
     private Quaternion cuadrorot1= Quaternion.Euler(0f, 270f, 180f);
     private Quaternion cuadrorot2 = Quaternion.Euler(0f,270f, 180f);
@@ -30,22 +34,25 @@ public class puzzle2 : MonoBehaviour
     public GameObject pj;
     public GameObject cam;
 
+
     private void FixedUpdate()
     {
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
+            interruptor1.layer = 0;
+            interruptor2.layer = 0;
+            interruptor3.layer = 0;
+            interruptor4.layer = 0;
             StartCoroutine(Abrir());
             pared.transform.GetChild(0).GetComponent<AudioSource>().Play();
             pj.GetComponent<Animator>().SetTrigger("cambiarfov");
             cam.GetComponent<Animator>().SetTrigger("shake");
-        }  
+        }
     }
 
     public void Rotarcuad1()
     {
-      
         object1.Rotate(new Vector3(0,0, 45f));
-        
     }
     public void Rotarcuad2()
     {

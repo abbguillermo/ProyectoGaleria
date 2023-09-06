@@ -19,7 +19,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //enemigo.GetComponent<Animator>().SetTrigger("Idle");
+        
         agente = GetComponent<NavMeshAgent>();
         //MoveToNextWaypoint();
         
@@ -28,6 +28,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemigo.GetComponent<Animator>().SetTrigger("Idle");
         if (puedemoverse)
         {
             if (puedeatacar == true && !Input.GetKey(KeyCode.LeftControl))
