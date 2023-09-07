@@ -23,7 +23,7 @@ public class FirstPersonController : MonoBehaviour
     public float maxLookAngle = 50f;
 
     // Crosshair
-    public bool lockCursor = true;
+    public bool lockCursor = false;
     public bool crosshair = true;
     public Sprite crosshairImage;
     public Color crosshairColor = Color.white;
@@ -200,7 +200,7 @@ public class FirstPersonController : MonoBehaviour
         #region Camera
 
         // Control camera movement
-        if(cameraCanMove)
+        if(cameraCanMove && !menuPausa.pausado)
         {
             yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
 
@@ -361,10 +361,10 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
-        }
+        }*/
 
         #region Movement
 

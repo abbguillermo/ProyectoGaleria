@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
+    void Start()
+    {
+        //FindObjectOfType<FirstPersonController>().lockCursor = false;
+    }
+
     public void Continuar()
     {
         //SceneManager.LoadScene("");
