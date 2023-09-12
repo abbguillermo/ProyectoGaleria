@@ -28,7 +28,7 @@ public class levantarparedes : MonoBehaviour
 
     private void Start()
     {
-       
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()

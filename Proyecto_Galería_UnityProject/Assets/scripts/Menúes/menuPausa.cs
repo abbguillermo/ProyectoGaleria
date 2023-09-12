@@ -9,32 +9,13 @@ public class menuPausa : MonoBehaviour
     public GameObject MenuPausa;
 
     public static bool pausado;
-    /*public Button volverMenu;
-
-    void Start()
-    {
-        volverMenu.onClick.AddListener(MenuPrincipal);
-    }*/
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (pausado)
-            {
-                Reanudar();
-            }
-            else
-            {
-                PausarJuego();
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene("Menú");
-            pausado = false;
+            Cursor.lockState = CursorLockMode.None;
+            PausarJuego();
         }
     }
 
@@ -50,13 +31,13 @@ public class menuPausa : MonoBehaviour
         MenuPausa.SetActive(false);
         Time.timeScale = 1f;
         pausado = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void MenuPrincipal()
     {
-        Debug.Log("ENTRO AL MENU");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menú");
-
+        pausado = false;
     }
 }

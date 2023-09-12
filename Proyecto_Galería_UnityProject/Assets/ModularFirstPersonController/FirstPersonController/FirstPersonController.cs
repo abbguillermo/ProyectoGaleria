@@ -23,7 +23,7 @@ public class FirstPersonController : MonoBehaviour
     public float maxLookAngle = 50f;
 
     // Crosshair
-    public bool lockCursor = false;
+    public bool lockCursor = true;
     public bool crosshair = true;
     public Sprite crosshairImage;
     public Color crosshairColor = Color.white;
