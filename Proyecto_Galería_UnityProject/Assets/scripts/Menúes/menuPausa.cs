@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class menuPausa : MonoBehaviour
 {
     public GameObject MenuPausa;
+    public GameObject MenuOpciones;
 
     public static bool pausado;
 
@@ -34,10 +35,26 @@ public class menuPausa : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    public void Opciones()
+    {
+        MenuPausa.SetActive(false);
+        MenuOpciones.SetActive(true);
+    }
+
     public void MenuPrincipal()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menú");
         pausado = false;
+    }
+
+    public void Créditos()
+    {
+
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
     }
 }

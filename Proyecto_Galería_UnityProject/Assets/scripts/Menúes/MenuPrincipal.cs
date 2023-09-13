@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
+    public GameObject BotonesMenu;
+    public GameObject MenuOpciones;
+    public GameObject MenuCreditos;
+
     void Start()
     {
-        //FindObjectOfType<FirstPersonController>().lockCursor = false;
+
     }
 
     public void Continuar()
@@ -27,18 +31,19 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Opciones()
     {
-        //SceneManager.LoadScene("");
+        BotonesMenu.SetActive(false);
+        MenuOpciones.SetActive(true);
     }
 
     public void Creditos()
     {
-        //SceneManager.LoadScene("");
+        BotonesMenu.SetActive(false);
+        MenuCreditos.SetActive(true);
     }
 
     public void Salir()
     {
         Application.Quit();
-        Debug.Log("Se cierra");
     }
 
     public void Sala1()
