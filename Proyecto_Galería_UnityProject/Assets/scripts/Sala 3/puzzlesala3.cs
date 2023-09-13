@@ -43,6 +43,12 @@ public class puzzlesala3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Objeto1bool);
+        Debug.Log(Objeto2bool);
+        Debug.Log(Objeto3bool);
+        Debug.Log(Objeto4bool);
+        Debug.Log(Objeto5bool);
+        Debug.Log(Objeto6bool);
         if (c1activo == true && c2activo == true && c3activo == true)
         {
             objeto1.layer = 7;

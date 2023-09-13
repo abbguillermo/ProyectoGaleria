@@ -110,8 +110,10 @@ public class Agarrar : MonoBehaviour
                         GameObject objeto = hit.transform.gameObject;
 
                         objeto.transform.SetParent(puntodeagarre);
+                      
                         objeto.transform.localPosition = Vector3.zero;
                         objeto.transform.localRotation = Quaternion.identity;
+                        objeto.transform.gameObject.GetComponent<BoxCollider>().enabled = false;
                         puedeagarrar2 = false;
                     }
                 }
@@ -120,13 +122,15 @@ public class Agarrar : MonoBehaviour
                 {
                     sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
-
+                   
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.rotation = marcorot;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>().enabled = true;
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(null);
                     hit.transform.SetParent(puntodeagarre);
                     hit.transform.localPosition = Vector3.zero;
                     hit.transform.localRotation = Quaternion.identity;
+                    hit.transform.gameObject.GetComponent<BoxCollider>().enabled = false;
                     puedeagarrar2 = false;
                 }
 
@@ -135,9 +139,10 @@ public class Agarrar : MonoBehaviour
                    
                    
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
-
+                    
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.rotation = marcorot;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>().enabled = true;
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(null);
                     puedeagarrar2 = true;
                 }
