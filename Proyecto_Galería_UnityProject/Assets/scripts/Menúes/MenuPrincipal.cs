@@ -8,6 +8,7 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject BotonesMenu;
     public GameObject MenuOpciones;
     public GameObject MenuCreditos;
+    public GameObject MenuLogros;
 
     void Start()
     {
@@ -26,7 +27,8 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Logros()
     {
-        //SceneManager.LoadScene("");
+        BotonesMenu.SetActive(false);
+        MenuLogros.SetActive(true);
     }
 
     public void Opciones()

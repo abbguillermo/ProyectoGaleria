@@ -7,6 +7,7 @@ public class menuOpciones : MonoBehaviour
     public GameObject MenuPausa;
     public GameObject MenuOpciones;
     public GameObject MenuCreditos;
+    public GameObject MenuLogros;
     public GameObject BotonesMenu;
 
     void Start()
@@ -60,6 +61,12 @@ public class menuOpciones : MonoBehaviour
     public void AtrasCreditos()
     {
         MenuCreditos.SetActive(false);
+        BotonesMenu.SetActive(true);
+    }
+
+    public void AtrasLogros()
+    {
+        MenuLogros.SetActive(false);
         BotonesMenu.SetActive(true);
     }
 
