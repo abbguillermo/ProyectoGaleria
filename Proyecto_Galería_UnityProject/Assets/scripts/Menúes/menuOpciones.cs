@@ -39,9 +39,15 @@ public class menuOpciones : MonoBehaviour
 
     }
 
-    public void Atras()
+    public void AtrasOpcionesEscenas()
     {
         MenuOpciones.SetActive(false);
+        MenuPausa.SetActive(true);
+    }
+
+    public void AtrasCreditosEscenas()
+    {
+        MenuCreditos.SetActive(false);
         MenuPausa.SetActive(true);
     }
 
@@ -56,4 +62,6 @@ public class menuOpciones : MonoBehaviour
         MenuCreditos.SetActive(false);
         BotonesMenu.SetActive(true);
     }
+
+
 }

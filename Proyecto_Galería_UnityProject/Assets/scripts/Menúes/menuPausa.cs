@@ -8,6 +8,7 @@ public class menuPausa : MonoBehaviour
 {
     public GameObject MenuPausa;
     public GameObject MenuOpciones;
+    public GameObject MenuCreditos;
 
     public static bool pausado;
 
@@ -50,7 +51,8 @@ public class menuPausa : MonoBehaviour
 
     public void Créditos()
     {
-
+        MenuPausa.SetActive(false);
+        MenuCreditos.SetActive(true);
     }
 
     public void Salir()
