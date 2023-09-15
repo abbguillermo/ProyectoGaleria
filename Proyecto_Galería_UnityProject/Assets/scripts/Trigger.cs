@@ -63,6 +63,7 @@ public class Trigger : MonoBehaviour
 
     //maniqui sala2
     public GameObject ManiquiFinal;
+    public GameObject ManiquiArmario;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -114,6 +115,11 @@ public class Trigger : MonoBehaviour
         {
             ManiquiFinal.SetActive(true);
             ManiquiFinal.GetComponent<Animator>().Play("Caida");
+        }
+
+        if (other.tag == "trigs2/animacionArmario")
+        {
+            ManiquiArmario.GetComponent<Animator>().Play("Asomado");
         }
 
         if (other.tag == "trigs2/salida")
