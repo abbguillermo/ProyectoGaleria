@@ -25,6 +25,7 @@ public class menuPausa : MonoBehaviour
     {
         MenuPausa.SetActive(true);
         Time.timeScale = 0f;
+        AudioListener.pause = true;
         pausado = true;
     }
 
@@ -32,6 +33,7 @@ public class menuPausa : MonoBehaviour
     {
         MenuPausa.SetActive(false);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         pausado = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
