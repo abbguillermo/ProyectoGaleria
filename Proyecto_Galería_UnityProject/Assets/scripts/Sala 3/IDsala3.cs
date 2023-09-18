@@ -5,9 +5,12 @@ using UnityEngine;
 public class IDsala3 : MonoBehaviour
 {
     public int num;
-  
-    
-  
+
+    private void Start()
+    {
+        FindObjectOfType<WPtrigger>().s3 = true;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<IDsala3>().num == gameObject.GetComponent<IDsala3>().num)

@@ -9,7 +9,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     public Transform PJ;
     private int Index = 0;
     private NavMeshAgent agente;
-    public bool puedeatacar = false;
+    public bool puedeatacars3 = false;
     public bool cambiarWP = false;
     public bool puedemoverse;
     public bool sePuedeParar;
@@ -38,7 +38,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         {
             enemigo.GetComponent<Animator>().SetBool("isWalking", true);
 
-            if (puedeatacar == true && !Input.GetKey(KeyCode.LeftControl))
+            if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl))
             {
                 enemigo.GetComponent<Animator>().SetBool("isRunning", true);
                 agente.destination = PJ.position;
