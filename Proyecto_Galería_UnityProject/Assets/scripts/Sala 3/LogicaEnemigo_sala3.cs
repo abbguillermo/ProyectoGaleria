@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class LogicaEnemigo_sala3 : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     public bool puedemoverse;
     public bool sePuedeParar;
     public bool estacerca=false;
+    public GameObject camara_jugador;
+    public GameObject camara_muerte;
+    int entro=0;
+    public AudioSource sonidomuerte;
+    public AudioClip grito;
 
     public GameObject enemigo;
 
@@ -64,7 +70,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("MORISTE");
+            Muerte();
         }
     }
 
@@ -82,6 +88,25 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
             cambiarWP = false;
         }
 
+    }
+    void Muerte()
+    {
+        camara_jugador.SetActive(false);
+        camara_muerte.SetActive(true);
+        camara_muerte.GetComponent<Animator>().SetTrigger("shake");
+        if (entro == 0)
+        {
+            sonidomuerte.PlayOneShot(grito);
+            entro += 1;
+        }
+        StartCoroutine(pasajeescena());
+
+    }
+    IEnumerator pasajeescena()
+    {
+        yield return new WaitForSeconds(5f);
+
+        SceneManager.LoadScene("Sala 3");
     }
 
     IEnumerator Moverse()

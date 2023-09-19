@@ -29,6 +29,7 @@ public class puzzlesala3 : MonoBehaviour
 
     public GameObject rejas;
     public GameObject pedestales;
+    public GameObject puerta;
 
     void Start()
     {
@@ -41,6 +42,12 @@ public class puzzlesala3 : MonoBehaviour
         Debug.Log(Objeto2bool);
         Debug.Log(Objeto3bool);
         Debug.Log(Objeto4bool);
+        if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool)
+        {
+            Debug.Log("asdjhiawhjndjkasndjkansdjnadsw");
+            puerta.GetComponent<Animator>().Play("AbrirPuertaF");
+
+        }
 
         if (c1activo == true && c2activo == true)
         {
@@ -61,11 +68,7 @@ public class puzzlesala3 : MonoBehaviour
             }
         }
 
-        if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool)
-        {
-            Debug.Log("bien ya resuelto");
-            //animacion puerta abierta
-        }
+        
 
         IEnumerator Apertura()
         {
