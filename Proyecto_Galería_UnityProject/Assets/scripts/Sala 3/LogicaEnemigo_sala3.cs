@@ -46,11 +46,13 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
             if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl))
             {
+                agente.speed = 1.15f;
                 enemigo.GetComponent<Animator>().SetBool("isRunning", true);
                 agente.destination = PJ.position;
             }
             else
             {
+                agente.speed = 1f;
                 enemigo.GetComponent<Animator>().SetBool("isRunning", false);
                 estacerca = false;
             }

@@ -56,6 +56,7 @@ public class Trigger : MonoBehaviour
     public GameObject parlante1s3;
 
     public GameObject PuertaFinal;
+    public GameObject PuertaFinals3;
     //puerta sala 1
     public GameObject puerta;
 
@@ -93,6 +94,12 @@ public class Trigger : MonoBehaviour
             Destroy(other);*/
         }
 
+        /*if (other.tag == "trigs3/salida")
+        {
+            PuertaFinals3.GetComponent<Animator>().Play("CerrarPuertaF");
+            PuertaFinals3.GetComponent<AudioSource>().Play();
+            Destroy(other);
+        }*/
 
         //sala 2
         if (other.tag == "trigs2/encuentros")
