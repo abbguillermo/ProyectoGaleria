@@ -69,7 +69,7 @@ public class Trigger : MonoBehaviour
     {
         //sala3
 
-        if(other.tag == "trigs3/colliderinicio1")
+        if (other.tag == "trigs3/colliderinicio1")
         {
             FindObjectOfType<puzzlesala3>().c1activo = true;
             Destroy(other);
@@ -127,6 +127,9 @@ public class Trigger : MonoBehaviour
             PuertaFinal.GetComponent<Animator>().Play("CerrarPuertaF");
             PuertaFinal.GetComponent<AudioSource>().Play();
             //sonido de los golpes
+            //logro 2
+            logrosManager.triggerLogro02 = true;
+            Destroy(other);
         }
 
         if (other.tag == "trigs2/voz")
@@ -190,6 +193,8 @@ public class Trigger : MonoBehaviour
         else if (other.tag == "collider/CP3OFF")
         {
             lucescomp3.SetActive(false);
+            //logro 1
+            logrosManager.triggerLogro01 = true;
             FindObjectOfType<LogicaEnemigo01>().avanzatercertrigger = true;
         }
 

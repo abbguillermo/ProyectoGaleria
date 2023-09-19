@@ -6264,6 +6264,7 @@ MonoBehaviour:
   puerta: {fileID: 0}
   piezasenemigo: {fileID: 0}
   ManiquiFinal: {fileID: 0}
+  ManiquiArmario: {fileID: 0}
 --- !u!114 &547022501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6882,7 +6883,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 595660039}
   m_OnClick:
     m_PersistentCalls:
@@ -6963,8 +6964,8 @@ RectTransform:
   m_Father: {fileID: 2146194293}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7162,7 +7163,7 @@ AudioSource:
   m_GameObject: {fileID: 635581783}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: b91cab0b09cbb6d4cbbcaaa7c5a03ed3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 811994bff1002234c976e24e951f5db2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.391
@@ -7432,14 +7433,26 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1342016076}
   m_FillRect: {fileID: 621261556}
   m_HandleRect: {fileID: 1342016075}
-  m_Direction: 1
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_Direction: 0
+  m_MinValue: -80
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1354475658}
+        m_TargetAssemblyTypeName: menuOpciones, Assembly-CSharp
+        m_MethodName: Musica
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &646167701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14797,7 +14810,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1213357158}
   m_OnClick:
     m_PersistentCalls:
@@ -15710,8 +15723,8 @@ RectTransform:
   m_Father: {fileID: 1550107574}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15865,6 +15878,8 @@ MonoBehaviour:
   MenuCreditos: {fileID: 1058607073}
   MenuLogros: {fileID: 0}
   BotonesMenu: {fileID: 0}
+  audioMixerMusica: {fileID: 24100000, guid: b91cab0b09cbb6d4cbbcaaa7c5a03ed3, type: 2}
+  audioMixerSFX: {fileID: 24100000, guid: fda5605aaead36549a97370a31e79cf8, type: 2}
 --- !u!4 &1354475659
 Transform:
   m_ObjectHideFlags: 0
@@ -22419,7 +22434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 5, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &4102594818898013891

@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
+    //Menus
     public GameObject BotonesMenu;
     public GameObject MenuOpciones;
     public GameObject MenuCreditos;
     public GameObject MenuLogros;
+
 
     void Start()
     {

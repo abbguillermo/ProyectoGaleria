@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class menuOpciones : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class menuOpciones : MonoBehaviour
     public GameObject MenuCreditos;
     public GameObject MenuLogros;
     public GameObject BotonesMenu;
+
+    public AudioMixer audioMixerMusica;
+    public AudioMixer audioMixerSFX;
 
     void Start()
     {
@@ -20,14 +24,14 @@ public class menuOpciones : MonoBehaviour
         
     }
 
-    public void Musica()
+    public void Musica(float volumen)
     {
-
+        audioMixerMusica.SetFloat("volumenMusica", volumen);
     }
 
-    public void Audio()
+    public void Audio(float volumenSFX)
     {
-
+        audioMixerSFX.SetFloat("volumenSFX", volumenSFX);
     }
 
     public void Idioma()

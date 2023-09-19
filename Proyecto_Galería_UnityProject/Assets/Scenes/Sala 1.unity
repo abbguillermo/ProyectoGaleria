@@ -1715,6 +1715,8 @@ MonoBehaviour:
   MenuCreditos: {fileID: 1853233470}
   MenuLogros: {fileID: 0}
   BotonesMenu: {fileID: 0}
+  audioMixerMusica: {fileID: 24100000, guid: b91cab0b09cbb6d4cbbcaaa7c5a03ed3, type: 2}
+  audioMixerSFX: {fileID: 24100000, guid: fda5605aaead36549a97370a31e79cf8, type: 2}
 --- !u!1001 &49037972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39138,8 +39140,9 @@ MonoBehaviour:
   logroTitulo: {fileID: 1263447035}
   logroDescripcion: {fileID: 496359398}
   logro01Img: {fileID: 2048590629}
-  logro01Trigger: 1
   logro01Codigo: 0
+  logro02Img: {fileID: 0}
+  logro02Codigo: 0
 --- !u!1001 &1286021308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61958,7 +61961,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a48e99f55151454fb6c361e467ef5af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 306063c623e11ab4a859178e62bee5fa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
