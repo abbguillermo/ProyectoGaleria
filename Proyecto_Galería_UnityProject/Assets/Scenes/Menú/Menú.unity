@@ -12979,9 +12979,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1378404113}
     m_Modifications:
+    - target: {fileID: 3559610990192559762, guid: bb77622b9e71aaf4e87615ba8214e9d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3559610990574924624, guid: bb77622b9e71aaf4e87615ba8214e9d8, type: 3}
       propertyPath: m_Name
       value: CargaEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559610990574924624, guid: bb77622b9e71aaf4e87615ba8214e9d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3559610990574924631, guid: bb77622b9e71aaf4e87615ba8214e9d8, type: 3}
       propertyPath: m_Pivot.x
@@ -13065,6 +13073,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3559610990574924631, guid: bb77622b9e71aaf4e87615ba8214e9d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559610991288986638, guid: bb77622b9e71aaf4e87615ba8214e9d8, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

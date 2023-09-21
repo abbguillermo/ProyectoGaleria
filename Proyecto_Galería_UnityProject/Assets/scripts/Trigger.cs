@@ -147,7 +147,7 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "trigs2/CProxEsc3")
         {
-            SceneManager.LoadScene("Sala 3");
+            Invoke("EscenitaS3", 0f);
         }
 
         if (other.tag == "collider/puertaS1")
@@ -242,27 +242,50 @@ public class Trigger : MonoBehaviour
         }
 
         //prox escena collider
-        if (other.tag == "collider/CProxEsc")
-        {
-            SceneManager.LoadScene("Sala2");
-        }
 
         if (other.tag == "collider/CProxEsc1")
         {
-            Invoke("Escenita", 0f);
+            Debug.Log("toque collider pa cambiar de sala a la 1");
+            Invoke("EscenitaS1", 0f);
         }
 
+        if (other.tag == "collider/CProxEsc")
+        {
+            Debug.Log("toque collider pa cambiar de sala a la 2");
+            Invoke("EscenitaS2", 0f);
+        }
     }
 
-    public void Escenita()
+    public void EscenitaS1()
     {
-        CambiarEscena("Sala 1");
+        CambiarEscena1("Sala 1");
     }
 
-    public void CambiarEscena(string nombreEscena)
+    public void CambiarEscena1(string nombreEscena)
     {
         nivelesManager.instance.LoadScene(nombreEscena);
     }
+
+    public void EscenitaS2()
+    {
+        CambiarEscena2("Sala2");
+    }
+
+    public void CambiarEscena2(string nombreEscena)
+    {
+        nivelesManager.instance.LoadScene(nombreEscena);
+    }
+
+    public void EscenitaS3()
+    {
+        CambiarEscena3("Sala 3");
+    }
+
+    public void CambiarEscena3(string nombreEscena)
+    {
+        nivelesManager.instance.LoadScene(nombreEscena);
+    }
+
 
     private void OnTriggerExit(Collider other)
     {
