@@ -249,7 +249,8 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "collider/CProxEsc1")
         {
-            SceneManager.LoadScene("Sala 1");
+           
+            SceneManager.LoadScene("PantallaDeCarga");
         }
 
     }

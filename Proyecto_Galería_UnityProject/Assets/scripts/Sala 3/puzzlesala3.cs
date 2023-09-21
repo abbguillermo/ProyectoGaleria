@@ -44,7 +44,7 @@ public class puzzlesala3 : MonoBehaviour
         Debug.Log(Objeto4bool);
         if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool)
         {
-            Debug.Log("asdjhiawhjndjkasndjkansdjnadsw");
+           
             puerta.GetComponent<Animator>().Play("AbrirPuertaF");
 
         }
@@ -64,6 +64,7 @@ public class puzzlesala3 : MonoBehaviour
                 intobjeto4.layer = 7;
                 rejas.GetComponent<Animator>().Play("AbrirRejas");
                 FindObjectOfType<LogicaEnemigo_sala3>().sePuedeParar = true;
+                
                 StartCoroutine(Apertura());
             }
         }

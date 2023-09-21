@@ -44,7 +44,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         {
             enemigo.GetComponent<Animator>().SetBool("isWalking", true);
 
-            if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl))
+            if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl) && (PJ.position.x >= -6 && PJ.position.x <= 8))
             {
                 agente.speed = 1.15f;
                 enemigo.GetComponent<Animator>().SetBool("isRunning", true);
@@ -56,7 +56,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
                 enemigo.GetComponent<Animator>().SetBool("isRunning", false);
                 estacerca = false;
             }
-            if (Input.GetKey(KeyCode.LeftShift) || FindObjectOfType<deteccionruido>().ruidito)
+            if ((Input.GetKey(KeyCode.LeftShift) || FindObjectOfType<deteccionruido>().ruidito) && (PJ.position.x >= -6 && PJ.position.x<=8))
             {
                 enemigo.GetComponent<Animator>().SetBool("isRunning", true);
                 agente.destination = PJ.position;
@@ -70,7 +70,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && sePuedeParar)
         {
             Muerte();
         }

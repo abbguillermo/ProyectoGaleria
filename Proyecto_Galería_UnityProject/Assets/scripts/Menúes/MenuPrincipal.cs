@@ -24,7 +24,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void NuevaPartida()
     {
-        SceneManager.LoadScene("Sala Inicial");
+        SceneManager.LoadScene("PantallaDeCarga");
     }
 
     public void Logros()
