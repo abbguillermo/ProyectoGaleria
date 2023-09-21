@@ -24,7 +24,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void NuevaPartida()
     {
-        SceneManager.LoadScene("PantallaDeCarga");
+        Invoke("Escenita", 0f);
     }
 
     public void Logros()
@@ -63,5 +63,15 @@ public class MenuPrincipal : MonoBehaviour
     public void Sala3()
     {
         SceneManager.LoadScene("Sala 3");
+    }
+
+    public void CambiarEscena(string nombreEscena)
+    {
+        nivelesManager.instance.LoadScene(nombreEscena);
+    }
+
+    public void Escenita()
+    {
+        CambiarEscena("Sala Inicial");
     }
 }

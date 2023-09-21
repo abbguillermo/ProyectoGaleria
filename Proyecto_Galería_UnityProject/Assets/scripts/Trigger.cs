@@ -249,10 +249,19 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "collider/CProxEsc1")
         {
-           
-            SceneManager.LoadScene("PantallaDeCarga");
+            Invoke("Escenita", 0f);
         }
 
+    }
+
+    public void Escenita()
+    {
+        CambiarEscena("Sala 1");
+    }
+
+    public void CambiarEscena(string nombreEscena)
+    {
+        nivelesManager.instance.LoadScene(nombreEscena);
     }
 
     private void OnTriggerExit(Collider other)
