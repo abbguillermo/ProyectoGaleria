@@ -126,6 +126,22 @@ public class FirstPersonController : MonoBehaviour
 
     #endregion
 
+    #region Footsteps
+    //Parámetros
+    [SerializeField] private float baseStepSpeed = 1f;
+    [SerializeField] private float crouchStepMultipler = 1.5f;
+    [SerializeField] private float sprintStepMultipler = 0.6f;
+    [SerializeField] private AudioSource footstepAudioSource = default;
+    //Lista de sonidos de cada terreno (se pueden agregar otros)
+    [SerializeField] private AudioClip[] woodClips = default;
+
+    private float footstepTimer = 0;
+    private float GetCurrentOffset => isCrouched ? baseStepSpeed * crouchStepMultipler : isSprinting ? baseStepSpeed * sprintStepMultipler : baseStepSpeed;
+
+    private Vector2 currentInput;
+
+    #endregion  
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -370,6 +386,10 @@ public class FirstPersonController : MonoBehaviour
 
         if (playerCanMove)
         {
+            HandleFootsteps();
+
+            currentInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
             // Calculate how fast we should be moving
             Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
@@ -527,9 +547,49 @@ public class FirstPersonController : MonoBehaviour
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
         }
     }
+
+    private void HandleFootsteps()
+    {
+        if (!isGrounded)
+        {
+            return;
+        }
+
+        if (currentInput == Vector2.zero)
+        {
+            return;
+        }
+
+        footstepTimer -= Time.deltaTime;
+
+        if (footstepTimer <= 0)
+        {
+            if (Physics.Raycast(rb.transform.position, Vector3.down, out RaycastHit hit, 3))
+            {
+                switch (hit.collider.tag)
+                {
+                    case "Footsteps/Wood":
+                        footstepAudioSource.PlayOneShot(woodClips[Random.Range(0, woodClips.Length - 1)]);
+                        break;
+                    //Ejemplos para otros
+                    /*case "Footsteps/Marble":
+                      footstepAudioSource.PlayOneShot(woodClips[Random.Range(0, woodClips.Length - 1)]);
+                        break;
+                    case "Footsteps/Grass":
+                    footstepAudioSource.PlayOneShot(woodClips[Random.Range(0, woodClips.Length - 1)]);
+                        break;*/
+                    default:
+                        footstepAudioSource.PlayOneShot(woodClips[Random.Range(0, woodClips.Length - 1)]);
+                        break;
+                }
+            }
+
+            footstepTimer = GetCurrentOffset;
+        }
+    }
 }
 
-
+/*
 
 // Custom Editor
 #if UNITY_EDITOR
@@ -729,8 +789,17 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
 
+        #region Footsteps
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        GUILayout.Label("Footsteps Setup", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
+        EditorGUILayout.Space();
+
+
+
+        #endregion
+
         //Sets any changes from the prefab
-        if(GUI.changed)
+        if (GUI.changed)
         {
             EditorUtility.SetDirty(fpc);
             Undo.RecordObject(fpc, "FPC Change");
@@ -740,4 +809,4 @@ public class FirstPersonController : MonoBehaviour
 
 }
 
-#endif
+#endif */

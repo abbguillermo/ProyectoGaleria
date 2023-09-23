@@ -791,6 +791,10 @@ PrefabInstance:
       value: piso_01 (68)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -1539,6 +1543,10 @@ PrefabInstance:
       value: piso_01 (69)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -2128,6 +2136,10 @@ PrefabInstance:
       value: piso_01 (66)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -2596,6 +2608,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_Name
       value: piso_01 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4833,6 +4849,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: baseStepSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: sprintCooldown
       value: 1.2
       objectReference: {fileID: 0}
@@ -4852,6 +4872,42 @@ PrefabInstance:
       propertyPath: mouseSensitivity
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: footstepAudioSource
+      value: 
+      objectReference: {fileID: 547022503}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: sprintStepMultipler
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: woodClips.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: woodClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5764c20544f53d14490c8631071a7c4f, type: 3}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: woodClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a167d811073f564c9f14fb86d3798e2, type: 3}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: woodClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 201a6392bdd265a458bf9ae436b77f0f, type: 3}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: woodClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: c8b9872057cabcf419b3a575e62a747b, type: 3}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: woodClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8d57f4ebcec72f44a82c18e6da67d083, type: 3}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: woodClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4183a9583c34d5f4da93a3341ae41e8c, type: 3}
     - target: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_Name
       value: FirstPersonController
@@ -6207,6 +6263,10 @@ PrefabInstance:
       value: piso_01 (70)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -6266,28 +6326,6 @@ MonoBehaviour:
   piezasenemigo: {fileID: 0}
   ManiquiFinal: {fileID: 0}
   ManiquiArmario: {fileID: 0}
---- !u!114 &547022501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547022499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873087f485741494e9d354258a502ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  steps:
-  - {fileID: 8300000, guid: 8e001351cd7065543a068386cde4c960, type: 3}
-  - {fileID: 8300000, guid: c41fb169b2991c247a5466e00faa6639, type: 3}
-  - {fileID: 8300000, guid: 76c66b3ae15685a45a334b0628d1edd1, type: 3}
-  - {fileID: 8300000, guid: cb9aa4db4b3a12147bf2fe3d88fee270, type: 3}
-  - {fileID: 8300000, guid: 2e832dbb2c7c9ba4e97fd3005fe850b7, type: 3}
-  - {fileID: 8300000, guid: 3af6e561e364a274aa306461461c386b, type: 3}
-  randomlist: []
-  walkingSpeed: 0.8
-  mixerOutput: {fileID: 0}
 --- !u!95 &547022502
 Animator:
   serializedVersion: 4
@@ -7836,6 +7874,10 @@ PrefabInstance:
       value: piso_01 (59)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -8879,6 +8921,10 @@ PrefabInstance:
       value: piso_01 (64)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -9887,6 +9933,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_Name
       value: piso_01 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11226,6 +11276,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_Name
       value: piso_01 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13449,6 +13503,10 @@ PrefabInstance:
       value: piso_01 (57)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -15095,6 +15153,10 @@ PrefabInstance:
       value: piso_01 (65)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -16267,6 +16329,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_Name
       value: piso_01 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19451,6 +19517,10 @@ PrefabInstance:
       value: piso_01 (62)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -20974,6 +21044,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_Name
       value: piso_01 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Wood
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6b6387a085e2ec4392aab0a7114bdf0, type: 3}
       propertyPath: m_StaticEditorFlags
