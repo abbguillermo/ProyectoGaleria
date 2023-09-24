@@ -24,9 +24,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     public GameObject sonidoenemigo;
 
     public AudioSource enemigoLevantandose;
-    /*public AudioSource audioSourceEnemigo3;
-    public AudioClip sfxEnemigoParandose;
-    public AudioClip sfxEnemigoDesplazandose;*/
+    public AudioSource audioSourceEnemigo3;
 
     public GameObject enemigo;
 
@@ -51,6 +49,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         if (puedemoverse)
         {
             enemigo.GetComponent<Animator>().SetBool("isWalking", true);
+            audioSourceEnemigo3.enabled = true;
 
             if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl) && (PJ.position.x >= -6 && PJ.position.x <= 8))
             {

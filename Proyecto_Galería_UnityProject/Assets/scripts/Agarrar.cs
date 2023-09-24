@@ -409,27 +409,27 @@ public class Agarrar : MonoBehaviour
     IEnumerator primerafase()
     {
         osito.SetActive(true);
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         yield return new WaitForSeconds(2f);
         hitmaniqui1.transform.gameObject.SetActive(false);
-        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         m_Volume.profile.TryGet(out ca);
         ca.postExposure.value = 2.5f;
     }
     IEnumerator segundafase()
     {
         cuchillo.SetActive(true);
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         yield return new WaitForSeconds(2f);
         hitmaniqui2.transform.gameObject.SetActive(false);
-        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         m_Volume.profile.TryGet(out ca);
         ca.postExposure.value = 2.5f;
     }
     IEnumerator tercerafase()
     {
         mecha.SetActive(true);
+        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         yield return new WaitForSeconds(2f);
         hitmaniqui3.transform.gameObject.SetActive(false);
-        sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxDesaparicionManiquies);
         m_Volume.profile.TryGet(out ca);
         ca.postExposure.value = 2.5f;
     }
