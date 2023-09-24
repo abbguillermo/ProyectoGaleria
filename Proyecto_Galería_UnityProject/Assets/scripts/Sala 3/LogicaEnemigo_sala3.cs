@@ -21,6 +21,13 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     public AudioSource sonidomuerte;
     public AudioClip grito;
 
+    public GameObject sonidoenemigo;
+
+    public AudioSource enemigoLevantandose;
+    /*public AudioSource audioSourceEnemigo3;
+    public AudioClip sfxEnemigoParandose;
+    public AudioClip sfxEnemigoDesplazandose;*/
+
     public GameObject enemigo;
 
     // Start is called before the first frame update
@@ -37,6 +44,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         if (sePuedeParar)
         {
             enemigo.GetComponent<Animator>().SetBool("isStanding", true);
+            enemigoLevantandose.enabled = true;
             StartCoroutine(Moverse());
         }
 
@@ -113,6 +121,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
     IEnumerator Moverse()
     {
+        
         yield return new WaitForSeconds(6.9f);
         puedemoverse = true;
     }
