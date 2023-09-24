@@ -16,9 +16,17 @@ public class menuPausa : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Cursor.lockState = CursorLockMode.None;
-            PausarJuego();
+            if(pausado)
+            {
+                Reanudar();
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                PausarJuego();
+            }
         }
+        
     }
 
     public void PausarJuego()
@@ -31,6 +39,8 @@ public class menuPausa : MonoBehaviour
 
     public void Reanudar()
     {
+        MenuOpciones.SetActive(false);
+        MenuCreditos.SetActive(false);
         MenuPausa.SetActive(false);
         Time.timeScale = 1f;
         AudioListener.pause = false;
