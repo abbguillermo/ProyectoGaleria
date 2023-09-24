@@ -31,6 +31,9 @@ public class puzzlesala3 : MonoBehaviour
     public GameObject pedestales;
     public GameObject puerta;
 
+    public AudioSource audioSourcePuertas3;
+    public AudioClip audioPuertas3;
+
     void Start()
     {
         FindObjectOfType<Agarrar>().distancia = 1f;
@@ -42,9 +45,11 @@ public class puzzlesala3 : MonoBehaviour
         Debug.Log(Objeto2bool);
         Debug.Log(Objeto3bool);
         Debug.Log(Objeto4bool);
+
         if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool)
         {
             puerta.GetComponent<Animator>().Play("AbrirPuertaF");
+            StartCoroutine(audioP());
             Objeto2bool = false;
         }
 
@@ -68,13 +73,17 @@ public class puzzlesala3 : MonoBehaviour
             }
         }
 
-        
-
         IEnumerator Apertura()
         {
             pedestales.transform.GetChild(0).GetComponent<AudioSource>().Play();
             c2activo = false;
             yield return new WaitForSeconds(0);
+        }
+
+        IEnumerator audioP()
+        {
+            audioSourcePuertas3.PlayOneShot(audioPuertas3);
+            yield return new WaitForSeconds(0f);
         }
     }
 }

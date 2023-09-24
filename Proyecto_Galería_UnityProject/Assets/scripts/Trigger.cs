@@ -69,6 +69,9 @@ public class Trigger : MonoBehaviour
     public GameObject ManiquiFinal;
     public GameObject ManiquiArmario;
 
+    //enemigo sala 3
+    public GameObject Enemigos3;
+
     private void OnTriggerEnter(Collider other)
     {
         //sala3
@@ -102,6 +105,7 @@ public class Trigger : MonoBehaviour
         {
             PuertaFinals3.GetComponent<Animator>().Play("CerrarPuertaF");
             PuertaFinals3.GetComponent<AudioSource>().Play();
+            Enemigos3.SetActive(false);
             Destroy(other);
         }
 
