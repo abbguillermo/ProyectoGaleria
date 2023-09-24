@@ -136,8 +136,8 @@ public class Agarrar : MonoBehaviour
 
                 if (hit.transform.gameObject.tag == "Sala3/atril1")
                 {
-                   
-                   
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
+
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
                     
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);

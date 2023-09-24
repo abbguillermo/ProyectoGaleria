@@ -44,9 +44,8 @@ public class puzzlesala3 : MonoBehaviour
         Debug.Log(Objeto4bool);
         if (Objeto1bool && Objeto2bool && Objeto3bool && Objeto4bool)
         {
-           
             puerta.GetComponent<Animator>().Play("AbrirPuertaF");
-
+            Objeto2bool = false;
         }
 
         if (c1activo == true && c2activo == true)

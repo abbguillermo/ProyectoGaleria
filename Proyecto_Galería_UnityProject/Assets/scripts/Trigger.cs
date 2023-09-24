@@ -45,17 +45,20 @@ public class Trigger : MonoBehaviour
     public GameObject encuentro4;
 
     //parlantes sala1
+    public GameObject parlantePasillo;
     public GameObject parlante1;
     public GameObject parlante2;
     public GameObject parlante3;
 
     //parlantes sala2
     public GameObject parlante1s2;
+    public GameObject parlante2s2;
 
     //parlantes sala3
     public GameObject parlante1s3;
 
     public GameObject PuertaFinal;
+    public GameObject PuertaInicioSala3;
     public GameObject PuertaFinals3;
     //puerta sala 1
     public GameObject puerta;
@@ -90,16 +93,17 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "trigs3/voz")
         {
-            /*parlante1s3.GetComponent<AudioSource>().Play();
-            Destroy(other);*/
+            parlante1s3.GetComponent<AudioSource>().Play();
+            PuertaInicioSala3.GetComponent<Animator>().Play("CerrarPuerta");
+            Destroy(other);
         }
 
-        /*if (other.tag == "trigs3/salida")
+        if (other.tag == "trigs3/salida")
         {
             PuertaFinals3.GetComponent<Animator>().Play("CerrarPuertaF");
             PuertaFinals3.GetComponent<AudioSource>().Play();
             Destroy(other);
-        }*/
+        }
 
         //sala 2
         if (other.tag == "trigs2/encuentros")
@@ -129,6 +133,12 @@ public class Trigger : MonoBehaviour
             ManiquiArmario.GetComponent<Animator>().Play("Asomado");
         }
 
+        if (other.tag == "trigs2/vozsalida")
+        {
+            parlante2s2.GetComponent<AudioSource>().Play();
+            Destroy(other);
+        }
+
         if (other.tag == "trigs2/salida")
         {
             PuertaFinal.GetComponent<Animator>().Play("CerrarPuertaF");
@@ -148,6 +158,12 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs2/CProxEsc3")
         {
             Invoke("EscenitaS3", 0f);
+        }
+
+        if (other.tag == "collider/vozpasillos1")
+        {
+            parlantePasillo.GetComponent<AudioSource>().Play();
+            Destroy(other);
         }
 
         if (other.tag == "collider/puertaS1")
