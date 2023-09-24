@@ -25,8 +25,10 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
     public AudioSource enemigoLevantandose;
     public AudioSource audioSourceEnemigo3;
+    public AudioSource audioSourceEnemigo3Persecusion;
 
     public GameObject enemigo;
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,18 +55,24 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
             if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl) && (PJ.position.x >= -6 && PJ.position.x <= 8))
             {
+                /*audioSourceEnemigo3.enabled = false;
+                audioSourceEnemigo3Persecusion.enabled = true;*/ //Cambio audio de normal a persecusion
                 agente.speed = 1.15f;
                 enemigo.GetComponent<Animator>().SetBool("isRunning", true);
                 agente.destination = PJ.position;
             }
             else
             {
+                /*audioSourceEnemigo3Persecusion.enabled = false;
+                audioSourceEnemigo3.enabled = true;*/ 
                 agente.speed = 1f;
                 enemigo.GetComponent<Animator>().SetBool("isRunning", false);
                 estacerca = false;
             }
             if ((Input.GetKey(KeyCode.LeftShift) || FindObjectOfType<deteccionruido>().ruidito) && (PJ.position.x >= -6 && PJ.position.x<=8))
             {
+                /*audioSourceEnemigo3.enabled = false;
+                audioSourceEnemigo3Persecusion.enabled = true;*/
                 enemigo.GetComponent<Animator>().SetBool("isRunning", true);
                 agente.destination = PJ.position;
             }
@@ -120,7 +128,6 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
     IEnumerator Moverse()
     {
-        
         yield return new WaitForSeconds(6.9f);
         puedemoverse = true;
     }
