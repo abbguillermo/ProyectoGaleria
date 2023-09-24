@@ -6,6 +6,7 @@ public class cambioAudio : MonoBehaviour
 {
     public AudioClip LatidoRapido;
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") || other.CompareTag("esconditeCamara"))
