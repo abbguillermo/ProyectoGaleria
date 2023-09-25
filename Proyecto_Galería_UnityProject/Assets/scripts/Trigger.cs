@@ -72,6 +72,13 @@ public class Trigger : MonoBehaviour
     //enemigo sala 3
     public GameObject Enemigos3;
 
+    //textos ingles UI
+    public GameObject textopasillos1;
+    public GameObject textopuzzle1s1;
+    public GameObject textopuzzle2s1;
+    public GameObject textopuzzle3s1;
+
+
     private void OnTriggerEnter(Collider other)
     {
         //sala3
@@ -167,11 +174,13 @@ public class Trigger : MonoBehaviour
         if (other.tag == "collider/vozpasillos1")
         {
             parlantePasillo.GetComponent<AudioSource>().Play();
+            textopasillos1.SetActive(true);
             Destroy(other);
         }
 
         if (other.tag == "collider/puertaS1")
         {
+            textopasillos1.SetActive(false);
             //animacion y sonido puerta
             puerta.GetComponent<Animator>().Play("CerrarPuerta");
             sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
@@ -186,6 +195,7 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle1());
             parlante1.GetComponent<AudioSource>().Play();
+            textopuzzle1s1.SetActive(true);
             piezasenemigo.SetActive(false);
             Destroy(other);
         }
@@ -194,6 +204,7 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle2());
             parlante2.GetComponent<AudioSource>().Play();
+            textopuzzle2s1.SetActive(true);
             Destroy(other);
         }
 
@@ -201,6 +212,7 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle3());
             parlante3.GetComponent<AudioSource>().Play();
+            textopuzzle3s1.SetActive(true);
             Destroy(other);
             //FindObjectOfType<LogicaEnemigo01>().enemigo.transform.position = FindObjectOfType<LogicaEnemigo01>().pos6;
         }
@@ -208,6 +220,7 @@ public class Trigger : MonoBehaviour
         if (other.tag == "collider/CP1OFF")
         {
             lucescomp1.SetActive(false);
+            textopuzzle1s1.SetActive(false);
             if (FindObjectOfType<Agarrar>().spriteNota)
             {
                 FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
@@ -216,10 +229,12 @@ public class Trigger : MonoBehaviour
         else if (other.tag == "collider/CP2OFF")
         {
             lucescomp2.SetActive(false);
+            textopuzzle2s1.SetActive(false);
         }
         else if (other.tag == "collider/CP3OFF")
         {
             lucescomp3.SetActive(false);
+            textopuzzle3s1.SetActive(false);
             //logro 1
             logrosManager.triggerLogro01 = true;
             FindObjectOfType<LogicaEnemigo01>().avanzatercertrigger = true;
