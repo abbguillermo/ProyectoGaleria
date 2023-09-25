@@ -75,8 +75,14 @@ public class Trigger : MonoBehaviour
     //textos ingles UI
     public GameObject textopasillos1;
     public GameObject textopuzzle1s1;
+    public GameObject textopuzzle1p2s1;
     public GameObject textopuzzle2s1;
     public GameObject textopuzzle3s1;
+
+    public GameObject textoentradas2;
+    public GameObject textosalidas2;
+
+    public GameObject textoentradas3;
 
 
     private void OnTriggerEnter(Collider other)
@@ -104,6 +110,7 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs3/voz")
         {
             parlante1s3.GetComponent<AudioSource>().Play();
+            StartCoroutine(MostrarTxtEntradaS3());
             PuertaInicioSala3.GetComponent<Animator>().Play("CerrarPuerta");
             Destroy(other);
         }
@@ -147,6 +154,7 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs2/vozsalida")
         {
             parlante2s2.GetComponent<AudioSource>().Play();
+            StartCoroutine(MostrarTxtSalidaS2());
             Destroy(other);
         }
 
@@ -163,6 +171,7 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs2/voz")
         {
             parlante1s2.GetComponent<AudioSource>().Play();
+            StartCoroutine(MostrarTxtEntradaS2());
             Destroy(other);
         }
 
@@ -174,13 +183,12 @@ public class Trigger : MonoBehaviour
         if (other.tag == "collider/vozpasillos1")
         {
             parlantePasillo.GetComponent<AudioSource>().Play();
-            textopasillos1.SetActive(true);
+            StartCoroutine(MostrarTxtPasillo());
             Destroy(other);
         }
 
         if (other.tag == "collider/puertaS1")
         {
-            textopasillos1.SetActive(false);
             //animacion y sonido puerta
             puerta.GetComponent<Animator>().Play("CerrarPuerta");
             sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
@@ -195,7 +203,7 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle1());
             parlante1.GetComponent<AudioSource>().Play();
-            textopuzzle1s1.SetActive(true);
+            StartCoroutine(MostrarTxtPuzzle1());
             piezasenemigo.SetActive(false);
             Destroy(other);
         }
@@ -204,7 +212,7 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle2());
             parlante2.GetComponent<AudioSource>().Play();
-            textopuzzle2s1.SetActive(true);
+            StartCoroutine(MostrarTxtPuzzle2());
             Destroy(other);
         }
 
@@ -212,7 +220,7 @@ public class Trigger : MonoBehaviour
         {
             StartCoroutine(LucesPuzzle3());
             parlante3.GetComponent<AudioSource>().Play();
-            textopuzzle3s1.SetActive(true);
+            StartCoroutine(MostrarTxtPuzzle3());
             Destroy(other);
             //FindObjectOfType<LogicaEnemigo01>().enemigo.transform.position = FindObjectOfType<LogicaEnemigo01>().pos6;
         }
@@ -220,7 +228,6 @@ public class Trigger : MonoBehaviour
         if (other.tag == "collider/CP1OFF")
         {
             lucescomp1.SetActive(false);
-            textopuzzle1s1.SetActive(false);
             if (FindObjectOfType<Agarrar>().spriteNota)
             {
                 FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
@@ -229,12 +236,10 @@ public class Trigger : MonoBehaviour
         else if (other.tag == "collider/CP2OFF")
         {
             lucescomp2.SetActive(false);
-            textopuzzle2s1.SetActive(false);
         }
         else if (other.tag == "collider/CP3OFF")
         {
             lucescomp3.SetActive(false);
-            textopuzzle3s1.SetActive(false);
             //logro 1
             logrosManager.triggerLogro01 = true;
             FindObjectOfType<LogicaEnemigo01>().avanzatercertrigger = true;
@@ -378,5 +383,58 @@ public class Trigger : MonoBehaviour
         luces11.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         luces12.SetActive(true);
+    }
+
+    IEnumerator MostrarTxtPasillo()
+    {
+        textopasillos1.SetActive(true);
+        yield return new WaitForSeconds(12f);
+        textopasillos1.SetActive(false);
+    }
+
+    IEnumerator MostrarTxtPuzzle1()
+    {
+        textopuzzle1s1.SetActive(true); 
+        yield return new WaitForSeconds(11f);
+        textopuzzle1s1.SetActive(false);
+        textopuzzle1p2s1.SetActive(true);
+        yield return new WaitForSeconds(9f);
+        textopuzzle1p2s1.SetActive(false);
+    }
+
+    IEnumerator MostrarTxtPuzzle2()
+    {
+        textopuzzle2s1.SetActive(true);
+        yield return new WaitForSeconds(10f);
+        textopuzzle2s1.SetActive(false);
+    }
+
+    IEnumerator MostrarTxtPuzzle3()
+    {
+        textopuzzle3s1.SetActive(true);
+        yield return new WaitForSeconds(11f);
+        textopuzzle3s1.SetActive(false);
+    }
+
+    IEnumerator MostrarTxtEntradaS2()
+    {
+        textoentradas2.SetActive(true);
+        yield return new WaitForSeconds(26f);
+        textoentradas2.SetActive(false);
+    }
+
+    IEnumerator MostrarTxtSalidaS2()
+    {
+        textosalidas2.SetActive(true);
+        yield return new WaitForSeconds(21f);
+        textosalidas2.SetActive(false);
+    }
+
+    IEnumerator MostrarTxtEntradaS3()
+    {
+        yield return new WaitForSeconds(1f);
+        textoentradas3.SetActive(true);
+        yield return new WaitForSeconds(16f);
+        textoentradas3.SetActive(false);
     }
 }

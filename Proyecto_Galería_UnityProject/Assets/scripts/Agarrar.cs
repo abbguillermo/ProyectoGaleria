@@ -46,6 +46,13 @@ public class Agarrar : MonoBehaviour
     public AudioSource audioSourceRadio;
     public AudioSource audioSourceQuejidos;
 
+    //Textos subtitulos
+    public GameObject textoradio1;
+    public GameObject textoradio2;
+    public GameObject textoradio3;
+    public GameObject textoradio4;
+    public GameObject textoradio5;
+
     public Volume m_Volume;
     public ColorAdjustments ca;
 
@@ -155,6 +162,7 @@ public class Agarrar : MonoBehaviour
                 {
                     audioSourceRadio.Play();
                     audioSourceQuejidos.Play();
+                    StartCoroutine(SubtitulosAudio());
                     FindObjectOfType<Logica_Gral>().gameObject.layer = 7;
                     radio.layer = 0;
                 }
@@ -406,6 +414,27 @@ public class Agarrar : MonoBehaviour
         FindObjectOfType<LogicaEnemigo01>().papel = true;
         FindObjectOfType<LogicaEnemigo01>().puedemov = true;
     }
+
+    IEnumerator SubtitulosAudio()
+    {
+        yield return new WaitForSeconds(4.5f);
+        textoradio1.SetActive(true);
+        yield return new WaitForSeconds(20.5f);
+        textoradio1.SetActive(false);
+        textoradio2.SetActive(true);
+        yield return new WaitForSeconds(8f);
+        textoradio2.SetActive(false);
+        textoradio3.SetActive(true);
+        yield return new WaitForSeconds(13f);
+        textoradio3.SetActive(false);
+        textoradio4.SetActive(true);
+        yield return new WaitForSeconds(15f);
+        textoradio4.SetActive(false);
+        textoradio5.SetActive(true);
+        yield return new WaitForSeconds(16f);
+        textoradio5.SetActive(false);
+    }
+
     IEnumerator primerafase()
     {
         osito.SetActive(true);
