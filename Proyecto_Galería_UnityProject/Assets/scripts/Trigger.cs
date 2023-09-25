@@ -123,6 +123,11 @@ public class Trigger : MonoBehaviour
             Destroy(other);
         }
 
+        if (other.tag == "trigs3/proxesc")
+        {
+            Invoke("EscenitaS4", 0f);
+        }
+
         //sala 2
         if (other.tag == "trigs2/encuentros")
         {
@@ -322,6 +327,16 @@ public class Trigger : MonoBehaviour
     }
 
     public void CambiarEscena3(string nombreEscena)
+    {
+        nivelesManager.instance.LoadScene(nombreEscena);
+    }
+
+    public void EscenitaS4()
+    {
+        CambiarEscena4("Sala 4");
+    }
+
+    public void CambiarEscena4(string nombreEscena)
     {
         nivelesManager.instance.LoadScene(nombreEscena);
     }
