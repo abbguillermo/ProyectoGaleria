@@ -122,7 +122,8 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     IEnumerator pasajeescena()
     {
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("Sala 3 respawn");
+        GameManager.Instance.guardarProgreso(transform.position, true);
+        SceneManager.LoadScene("Sala 3");
     }
 
     IEnumerator Moverse()

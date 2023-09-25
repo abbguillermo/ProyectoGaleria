@@ -36143,7 +36143,6 @@ MonoBehaviour:
   puerta: {fileID: 2141809451}
   audioSourcePuertas3: {fileID: 2141809453}
   audioPuertas3: {fileID: 8300000, guid: 3db53231538c54e4b8d202b112935584, type: 3}
-  pasaje: 0
 --- !u!1001 &1769802469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42204,6 +42203,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009490299}
   m_CullTransparentMesh: 1
+--- !u!1 &2011946759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2011946761}
+  - component: {fileID: 2011946760}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2011946760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011946759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb8252a1b01b2b4885320cf571c2068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2011946761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011946759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.72155714, y: 1.3809654, z: 9.896895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2012917872
 GameObject:
   m_ObjectHideFlags: 0

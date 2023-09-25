@@ -34,11 +34,11 @@ public class puzzlesala3 : MonoBehaviour
     public AudioSource audioSourcePuertas3;
     public AudioClip audioPuertas3;
 
-    public bool pasaje = false;
+    
 
     void Start()
     {
-        if (pasaje)
+        if (FindObjectOfType<GameManager>().progreso())
         {
             c1activo = true;
             c2activo = true;
