@@ -29,14 +29,15 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
 
     public GameObject enemigo;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
         enemigo.GetComponent<Animator>().SetBool("isIdle", true);
         agente = GetComponent<NavMeshAgent>();
-        //MoveToNextWaypoint();
-        
+        //MoveToNextWaypoint(); 
     }
 
     void Update()
@@ -100,7 +101,6 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         cambiarWP = true;
         if (cambiarWP)
         {
-
             Index = (Index + 1) % waypoints.Length;
             cambiarWP = false;
         }
@@ -117,13 +117,12 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
             entro += 1;
         }
         StartCoroutine(pasajeescena());
-
     }
+
     IEnumerator pasajeescena()
     {
         yield return new WaitForSeconds(5f);
-
-        SceneManager.LoadScene("Sala 3");
+        SceneManager.LoadScene("Sala 3 respawn");
     }
 
     IEnumerator Moverse()

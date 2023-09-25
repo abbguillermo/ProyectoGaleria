@@ -34,8 +34,16 @@ public class puzzlesala3 : MonoBehaviour
     public AudioSource audioSourcePuertas3;
     public AudioClip audioPuertas3;
 
+    public bool pasaje = false;
+
     void Start()
     {
+        if (pasaje)
+        {
+            c1activo = true;
+            c2activo = true;
+        }
+
         FindObjectOfType<Agarrar>().distancia = 1f;
     }
 
@@ -68,7 +76,6 @@ public class puzzlesala3 : MonoBehaviour
                 intobjeto4.layer = 7;
                 rejas.GetComponent<Animator>().Play("AbrirRejas");
                 FindObjectOfType<LogicaEnemigo_sala3>().sePuedeParar = true;
-                
                 StartCoroutine(Apertura());
             }
         }
