@@ -23,11 +23,12 @@ public class logrosManager : MonoBehaviour
     public GameObject logro02Img;
     public static bool triggerLogro02= false;
     public int logro02Codigo;
-    /*
+
     //Logro 3
     public GameObject logro03Img;
     public static bool triggerLogro03 = false;
     public int logro03Codigo;
+    /*
 
     //Logro 4
     public GameObject logro04Img;
@@ -64,6 +65,11 @@ public class logrosManager : MonoBehaviour
         {
             StartCoroutine(TriggerLogro02());
         }
+
+        if (triggerLogro03 == true && logro03Codigo != 14)
+        {
+            StartCoroutine(TriggerLogro03());
+        }
     }
 
     IEnumerator TriggerLogro01()
@@ -76,7 +82,7 @@ public class logrosManager : MonoBehaviour
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 1";
         logroNota.SetActive(true);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(5);
 
         //Reset
         logroNota.SetActive(false);
@@ -91,14 +97,14 @@ public class logrosManager : MonoBehaviour
     IEnumerator TriggerLogro02()
     {
         logroActivo = true;
-        logro01Codigo = 13;
+        logro02Codigo = 13;
         PlayerPrefs.SetInt("logro02", logro02Codigo);
         //logroSonido.Play();
         logro02Img.SetActive(true);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 2";
         logroNota.SetActive(true);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(5);
 
         //Reset
         logroNota.SetActive(false);
@@ -108,5 +114,27 @@ public class logrosManager : MonoBehaviour
         logroActivo = false;
 
         triggerLogro02 = false;
+    }
+
+    IEnumerator TriggerLogro03()
+    {
+        logroActivo = true;
+        logro03Codigo = 14;
+        PlayerPrefs.SetInt("logro02", logro02Codigo);
+        //logroSonido.Play();
+        logro03Img.SetActive(true);
+        logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
+        logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 3";
+        logroNota.SetActive(true);
+        yield return new WaitForSeconds(5);
+
+        //Reset
+        logroNota.SetActive(false);
+        logro03Img.SetActive(false);
+        logroTitulo.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+        logroActivo = false;
+
+        triggerLogro03 = false;
     }
 }

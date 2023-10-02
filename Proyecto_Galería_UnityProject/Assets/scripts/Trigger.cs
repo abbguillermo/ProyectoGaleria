@@ -120,6 +120,8 @@ public class Trigger : MonoBehaviour
             PuertaFinals3.GetComponent<Animator>().Play("CerrarPuertaF");
             PuertaFinals3.GetComponent<AudioSource>().Play();
             Enemigos3.SetActive(false);
+            //logro 3
+            logrosManager.triggerLogro03 = true;
             Destroy(other);
         }
 
