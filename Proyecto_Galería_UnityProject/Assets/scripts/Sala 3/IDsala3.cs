@@ -11,6 +11,11 @@ public class IDsala3 : MonoBehaviour
         FindObjectOfType<WPtrigger>().s3 = true;
     }
 
+    private void Update()
+    {
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<IDsala3>().num == gameObject.GetComponent<IDsala3>().num)
@@ -30,6 +35,7 @@ public class IDsala3 : MonoBehaviour
             if (other.tag == "Sala3/objeto4")
             {
                 FindObjectOfType<puzzlesala3>().Objeto4bool = true;
+                //luzobj1.GetComponent<Light>().color = new Color(0f, 1f, 1f, 1f);
             }
             /*if (other.tag == "Sala3/objeto5")
             {

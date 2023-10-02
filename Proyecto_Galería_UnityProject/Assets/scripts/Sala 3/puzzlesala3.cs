@@ -34,7 +34,11 @@ public class puzzlesala3 : MonoBehaviour
     public AudioSource audioSourcePuertas3;
     public AudioClip audioPuertas3;
 
-    
+    public GameObject luzobj1;
+    public GameObject luzobj2;
+    public GameObject luzobj3;
+    public GameObject luzobj4;
+
 
     void Start()
     {
@@ -78,6 +82,42 @@ public class puzzlesala3 : MonoBehaviour
                 FindObjectOfType<LogicaEnemigo_sala3>().sePuedeParar = true;
                 StartCoroutine(Apertura());
             }
+        }
+
+        if(Objeto1bool == true)
+        {
+            luzobj1.GetComponent<Light>().color = new Color(0.6f, 1f, 0f, 1f);
+        }
+        else
+        {
+            luzobj1.GetComponent<Light>().color = new Color(1f, 1f, 1f, 1f);
+        }
+
+        if (Objeto2bool == true)
+        {
+            luzobj2.GetComponent<Light>().color = new Color(0.6f, 1f, 0f, 1f);
+        }
+        else
+        {
+            luzobj2.GetComponent<Light>().color = new Color(1f, 1f, 1f, 1f);
+        }
+
+        if (Objeto3bool == true)
+        {
+            luzobj3.GetComponent<Light>().color = new Color(0.6f, 1f, 0f, 1f);
+        }
+        else
+        {
+            luzobj3.GetComponent<Light>().color = new Color(1f, 1f, 1f, 1f);
+        }
+
+        if (Objeto4bool == true)
+        {
+            luzobj4.GetComponent<Light>().color = new Color(0.6f, 1f, 0f, 1f);
+        }
+        else
+        {
+            luzobj4.GetComponent<Light>().color = new Color(1f, 1f, 1f, 1f);
         }
 
         IEnumerator Apertura()

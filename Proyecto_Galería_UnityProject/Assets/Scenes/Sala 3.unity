@@ -1332,7 +1332,7 @@ GameObject:
   - component: {fileID: 74961817}
   - component: {fileID: 74961816}
   m_Layer: 0
-  m_Name: Spot Light (4)
+  m_Name: Spot Light Obj 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26366,7 +26366,7 @@ GameObject:
   - component: {fileID: 1237078278}
   - component: {fileID: 1237078277}
   m_Layer: 0
-  m_Name: Spot Light (7)
+  m_Name: Spot Light Obj 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37502,6 +37502,10 @@ MonoBehaviour:
   puerta: {fileID: 2141809451}
   audioSourcePuertas3: {fileID: 2141809453}
   audioPuertas3: {fileID: 8300000, guid: 3db53231538c54e4b8d202b112935584, type: 3}
+  luzobj1: {fileID: 1807146305}
+  luzobj2: {fileID: 74961815}
+  luzobj3: {fileID: 1237078276}
+  luzobj4: {fileID: 2093591123}
 --- !u!1001 &1769802469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38312,7 +38316,7 @@ GameObject:
   - component: {fileID: 1807146307}
   - component: {fileID: 1807146306}
   m_Layer: 0
-  m_Name: Spot Light (5)
+  m_Name: Spot Light Obj 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45322,7 +45326,7 @@ GameObject:
   - component: {fileID: 2093591125}
   - component: {fileID: 2093591124}
   m_Layer: 0
-  m_Name: Spot Light (6)
+  m_Name: Spot Light Obj 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46688,7 +46692,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
