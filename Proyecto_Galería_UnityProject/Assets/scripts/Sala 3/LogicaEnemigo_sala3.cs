@@ -54,7 +54,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
             enemigo.GetComponent<Animator>().SetBool("isWalking", true);
             audioSourceEnemigo3.enabled = true;
 
-            if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl) && (PJ.position.x >= -6 && PJ.position.x <= 8))
+            if (puedeatacars3 == true && !Input.GetKey(KeyCode.LeftControl) && (PJ.position.x >= -6 && PJ.position.x <= 8)&& (PJ.position.z>=3))
             {
                 /*audioSourceEnemigo3.enabled = false;
                 audioSourceEnemigo3Persecusion.enabled = true;*/ //Cambio audio de normal a persecusion
@@ -70,7 +70,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
                 enemigo.GetComponent<Animator>().SetBool("isRunning", false);
                 estacerca = false;
             }
-            if ((Input.GetKey(KeyCode.LeftShift) || FindObjectOfType<deteccionruido>().ruidito) && (PJ.position.x >= -6 && PJ.position.x<=8))
+            if ((Input.GetKey(KeyCode.LeftShift) || FindObjectOfType<deteccionruido>().ruidito) && (PJ.position.x >= -6 && PJ.position.x<=8) && (PJ.position.z >= 3))
             {
                 /*audioSourceEnemigo3.enabled = false;
                 audioSourceEnemigo3Persecusion.enabled = true;*/
