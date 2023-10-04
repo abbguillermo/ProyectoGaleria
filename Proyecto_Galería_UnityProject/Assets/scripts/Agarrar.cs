@@ -53,6 +53,15 @@ public class Agarrar : MonoBehaviour
     public GameObject textoradio4;
     public GameObject textoradio5;
 
+    //sala4
+    public GameObject Reja;
+    public GameObject Reja2;
+    public GameObject palancas4;
+    public GameObject cuadros4;
+    public GameObject cuadros41;
+    int cont = 0;
+    int cont2 = 0;
+
     public Volume m_Volume;
     public ColorAdjustments ca;
 
@@ -65,7 +74,10 @@ public class Agarrar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(puedeagarrar2);
+        if (cont == 3&&cont2==3 && Reja2.transform.position.y<=2)
+        {
+            Reja2.transform.Translate(Vector3.up*0.2f*Time.deltaTime);
+        }
         Debug.DrawLine(transform.position, transform.position + transform.forward * distancia, Color.red, 0.5f);
         //notificacion interaccion
         
@@ -107,6 +119,46 @@ public class Agarrar : MonoBehaviour
 
             if(Physics.Raycast(transform.position, transform.forward, out hit, distancia, capainterac))
             {
+                //SALA4
+                if (hit.transform.gameObject.tag == "Sala4/objeto1")
+                {
+                    GameObject objeto = hit.transform.gameObject;
+
+                    objeto.transform.SetParent(puntodeagarre);
+
+                    objeto.transform.localPosition = Vector3.zero;
+                    objeto.transform.localRotation = Quaternion.identity;
+                    objeto.transform.gameObject.GetComponent<BoxCollider>().enabled = false;
+                }
+                if (hit.transform.gameObject.tag == "Sala4/atril1")
+                {
+                 
+
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
+
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.rotation = marcorot;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>().enabled = true;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.layer=0;
+                    GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).SetParent(null);
+                    
+                }
+                if (hit.transform.gameObject.tag == "Sala4/reja1")
+                {
+                    Reja.transform.Translate((Vector3.up * 10 * Time.deltaTime) );
+                    palancas4.layer = 0;
+                    StartCoroutine(tiemporeja());
+                }
+                if(hit.transform.gameObject.tag == "Sala4/reja2")
+                {
+                    cuadros4.transform.Rotate(0, 0, 22.5f);
+                    cont += 1;
+                }
+                if (hit.transform.gameObject.tag == "Sala4/reja2.2")
+                {
+                    cuadros41.transform.Rotate(0, 0, 22.5f);
+                    cont2 += 1;
+                }
                
                 //SALA3
                 if (puedeagarrar2==true)
@@ -433,6 +485,12 @@ public class Agarrar : MonoBehaviour
         textoradio5.SetActive(true);
         yield return new WaitForSeconds(16f);
         textoradio5.SetActive(false);
+    }
+    //sala4
+    IEnumerator tiemporeja()
+    {
+        yield return new WaitForSeconds(2f);
+        palancas4.layer = 7;
     }
 
     IEnumerator primerafase()
