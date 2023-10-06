@@ -146,6 +146,7 @@ public class Agarrar : MonoBehaviour
                 }
                 if (hit.transform.gameObject.tag == "Sala4/reja1")
                 {
+                    palancas4.GetComponent<Animator>().Play("BajarSubirPalanca");
                     Reja.transform.Translate((Vector3.up * 10 * Time.deltaTime) );
                     palancas4.layer = 0;
                     StartCoroutine(tiemporeja());
