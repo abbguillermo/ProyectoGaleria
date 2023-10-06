@@ -25,6 +25,8 @@ public class Logica_Enemigo4 : MonoBehaviour
     public GameObject cuadro5S4;
     public GameObject cuadro6S4;
 
+    public GameObject EnemigoA1;
+
     public GameObject reja1;
     public GameObject triggerPared2;
 
@@ -153,13 +155,11 @@ public class Logica_Enemigo4 : MonoBehaviour
             ca.postExposure.value -= 100f;
         }
         cuadro5S4.SetActive(false);
+        //cuadro 6
         cuadro6S4.SetActive(true);
+        EnemigoA1.SetActive(true);
         yield return new WaitForSeconds(1f);
         ca.postExposure.value = 2.5f;
-        yield return new WaitForSeconds(2f);
-        //cuadro 6
-        //aparece bicho
-        yield return new WaitForSeconds(1f);
     }
 
     /*IEnumerator bajarExposure()
