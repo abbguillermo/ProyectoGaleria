@@ -129,6 +129,7 @@ public class Agarrar : MonoBehaviour
                     objeto.transform.localPosition = Vector3.zero;
                     objeto.transform.localRotation = Quaternion.identity;
                     objeto.transform.gameObject.GetComponent<BoxCollider>().enabled = false;
+                    FindObjectOfType<Logica_Enemigo4>().muñecoAgarrado = true;
                 }
                 if (hit.transform.gameObject.tag == "Sala4/atril1")
                 {
@@ -158,6 +159,11 @@ public class Agarrar : MonoBehaviour
                 {
                     cuadros41.transform.Rotate(0, 0, 22.5f);
                     cont2 += 1;
+                }
+
+                if(hit.transform.gameObject.tag == "Sala4/cuadroInicio")
+                {
+                    FindObjectOfType<Logica_Enemigo4>().interactuoCuadro = true;
                 }
                
                 //SALA3

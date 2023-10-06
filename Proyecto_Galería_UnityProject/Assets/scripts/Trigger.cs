@@ -87,6 +87,25 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //sala4
+        if (other.tag == "trigs4/colliderteleportpared")
+        {
+            FindObjectOfType<Logica_Enemigo4>().teleportPared1 = true;
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/colliderteleportpared2")
+        {
+            FindObjectOfType<Logica_Enemigo4>().teleportPared2 = true;
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/colliderteleportpared3")
+        {
+            FindObjectOfType<Logica_Enemigo4>().teleportPared3 = true;
+            Destroy(other);
+        }
+
         //sala3
 
         if (other.tag == "trigs3/colliderinicio1")
