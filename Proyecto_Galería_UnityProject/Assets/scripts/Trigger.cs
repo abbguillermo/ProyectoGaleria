@@ -84,6 +84,9 @@ public class Trigger : MonoBehaviour
 
     public GameObject textoentradas3;
 
+    //puerta sala 4
+    public GameObject PuertaFS4;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -102,6 +105,8 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "trigs4/colliderteleportpared3")
         {
+            //sonidos puertas golpeadas
+            Invoke("AbrirPuertaFS4", 17f);
             FindObjectOfType<Logica_Enemigo4>().teleportPared3 = true;
             Destroy(other);
         }
@@ -372,6 +377,10 @@ public class Trigger : MonoBehaviour
         }
     }
 
+    public void AbrirPuertaFS4()
+    {
+        PuertaFS4.GetComponent<Animator>().Play("AbrirPuerta");
+    }
     IEnumerator LucesPasillo()
     {
         yield return new WaitForSeconds(0.2f);

@@ -18,6 +18,8 @@ public class Logica_Enemigo4 : MonoBehaviour
     public bool teleportPared3 = false;
     public bool muñecoAgarrado = false;
 
+    //public bool activarPalanca = false;
+
     public GameObject cuadroInicio;
     public GameObject cuadro2S4;
     public GameObject cuadro3S4;
@@ -155,6 +157,7 @@ public class Logica_Enemigo4 : MonoBehaviour
             cuadro6S4.SetActive(true);
             EnemigoA1.SetActive(true);
             avanza = true;
+            //activarPalanca = true;
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 1", true);
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 2", true);
             yield return new WaitForSeconds(0.5f);
