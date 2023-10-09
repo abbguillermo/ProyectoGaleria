@@ -33,6 +33,8 @@ public class Logica_Enemigo4 : MonoBehaviour
     public Volume m_Volume;
     public ColorAdjustments ca;
 
+    public float exposición_Oscuro = 7f;
+
 
     // Update is called once per frame
     void Update()
@@ -108,58 +110,105 @@ public class Logica_Enemigo4 : MonoBehaviour
 
     IEnumerator CambiarCuadros()
     {
+        /* m_Volume.profile.TryGet(out ca);
+         if (ca.postExposure.value > -5f)
+         {
+             ca.postExposure.value -= 5f;
+         }
+         interactuoCuadro = false;
+         cuadroInicio.SetActive(false);
+         cuadro2S4.SetActive(true);
+         yield return new WaitForSeconds(1f);
+         ca.postExposure.value = 2.5f;
+         yield return new WaitForSeconds(2f);
+         //cuadro 2
+         if (ca.postExposure.value > -5f)
+         {
+             ca.postExposure.value -= 100f;
+         }
+         cuadro2S4.SetActive(false);
+         cuadro3S4.SetActive(true);
+         yield return new WaitForSeconds(1f);
+         ca.postExposure.value = 2.5f;
+         yield return new WaitForSeconds(2f);
+         //cuadro 3
+         if (ca.postExposure.value > -5f)
+         {
+             ca.postExposure.value -= 100f;
+         }
+         cuadro3S4.SetActive(false);
+         cuadro4S4.SetActive(true);
+         yield return new WaitForSeconds(1f);
+         ca.postExposure.value = 2.5f;
+         yield return new WaitForSeconds(2f);
+         //cuadro 4
+         if (ca.postExposure.value > -5f)
+         {
+             ca.postExposure.value -= 100f;
+         }
+         cuadro4S4.SetActive(false);
+         cuadro5S4.SetActive(true);
+         yield return new WaitForSeconds(1f);
+         ca.postExposure.value = 2.5f;
+         yield return new WaitForSeconds(2f);
+         //cuadro 5
+         if (ca.postExposure.value > -5f)
+         {
+             ca.postExposure.value -= 100f;
+         }
+         cuadro5S4.SetActive(false);
+         //cuadro 6
+         cuadro6S4.SetActive(true);
+         EnemigoA1.SetActive(true);
+         yield return new WaitForSeconds(1f);
+         ca.postExposure.value = 2.5f;
+        */
         m_Volume.profile.TryGet(out ca);
         if (ca.postExposure.value > -5f)
         {
-            ca.postExposure.value -= 100f;
+            //cuadro 1
+            ca.postExposure.value -= exposición_Oscuro;
+            interactuoCuadro = false;
+            cuadroInicio.SetActive(false);
+            cuadro2S4.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            ca.postExposure.value = 2.5f;
+            yield return new WaitForSeconds(3f);
+
+            //cuadro 2
+            ca.postExposure.value -= exposición_Oscuro;
+            cuadro2S4.SetActive(false);
+            cuadro3S4.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            ca.postExposure.value = 2.5f;
+            yield return new WaitForSeconds(2f);
+
+            //cuadro 3
+            ca.postExposure.value -= exposición_Oscuro;
+            cuadro3S4.SetActive(false);
+            cuadro4S4.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            ca.postExposure.value = 2.5f;
+            yield return new WaitForSeconds(2f);
+
+            //cuadro 4
+            ca.postExposure.value -= exposición_Oscuro;
+            cuadro4S4.SetActive(false);
+            cuadro5S4.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            ca.postExposure.value = 2.5f;
+            yield return new WaitForSeconds(2f);
+
+            //cuadro 5
+            ca.postExposure.value -= exposición_Oscuro;
+            cuadro5S4.SetActive(false);
+
+            //cuadro 6
+            cuadro6S4.SetActive(true);
+            EnemigoA1.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            ca.postExposure.value = 2.5f;
         }
-        interactuoCuadro = false;
-        cuadroInicio.SetActive(false);
-        cuadro2S4.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        ca.postExposure.value = 2.5f;
-        yield return new WaitForSeconds(2f);
-        //cuadro 2
-        if (ca.postExposure.value > -5f)
-        {
-            ca.postExposure.value -= 100f;
-        }
-        cuadro2S4.SetActive(false);
-        cuadro3S4.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        ca.postExposure.value = 2.5f;
-        yield return new WaitForSeconds(2f);
-        //cuadro 3
-        if (ca.postExposure.value > -5f)
-        {
-            ca.postExposure.value -= 100f;
-        }
-        cuadro3S4.SetActive(false);
-        cuadro4S4.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        ca.postExposure.value = 2.5f;
-        yield return new WaitForSeconds(2f);
-        //cuadro 4
-        if (ca.postExposure.value > -5f)
-        {
-            ca.postExposure.value -= 100f;
-        }
-        cuadro4S4.SetActive(false);
-        cuadro5S4.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        ca.postExposure.value = 2.5f;
-        yield return new WaitForSeconds(2f);
-        //cuadro 5
-        if (ca.postExposure.value > -5f)
-        {
-            ca.postExposure.value -= 100f;
-        }
-        cuadro5S4.SetActive(false);
-        //cuadro 6
-        cuadro6S4.SetActive(true);
-        EnemigoA1.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        ca.postExposure.value = 2.5f;
     }
 
     /*IEnumerator bajarExposure()
