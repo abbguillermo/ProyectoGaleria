@@ -86,6 +86,7 @@ public class Logica_Enemigo4 : MonoBehaviour
             transform.position = new Vector3(4, transform.position.y, transform.position.z);
             teleportPared3 = false;
             avanza = false;
+            Invoke("EnemigoSale", 2f);
         }        
     }
     
@@ -110,59 +111,6 @@ public class Logica_Enemigo4 : MonoBehaviour
 
     IEnumerator CambiarCuadros()
     {
-        /* m_Volume.profile.TryGet(out ca);
-         if (ca.postExposure.value > -5f)
-         {
-             ca.postExposure.value -= 5f;
-         }
-         interactuoCuadro = false;
-         cuadroInicio.SetActive(false);
-         cuadro2S4.SetActive(true);
-         yield return new WaitForSeconds(1f);
-         ca.postExposure.value = 2.5f;
-         yield return new WaitForSeconds(2f);
-         //cuadro 2
-         if (ca.postExposure.value > -5f)
-         {
-             ca.postExposure.value -= 100f;
-         }
-         cuadro2S4.SetActive(false);
-         cuadro3S4.SetActive(true);
-         yield return new WaitForSeconds(1f);
-         ca.postExposure.value = 2.5f;
-         yield return new WaitForSeconds(2f);
-         //cuadro 3
-         if (ca.postExposure.value > -5f)
-         {
-             ca.postExposure.value -= 100f;
-         }
-         cuadro3S4.SetActive(false);
-         cuadro4S4.SetActive(true);
-         yield return new WaitForSeconds(1f);
-         ca.postExposure.value = 2.5f;
-         yield return new WaitForSeconds(2f);
-         //cuadro 4
-         if (ca.postExposure.value > -5f)
-         {
-             ca.postExposure.value -= 100f;
-         }
-         cuadro4S4.SetActive(false);
-         cuadro5S4.SetActive(true);
-         yield return new WaitForSeconds(1f);
-         ca.postExposure.value = 2.5f;
-         yield return new WaitForSeconds(2f);
-         //cuadro 5
-         if (ca.postExposure.value > -5f)
-         {
-             ca.postExposure.value -= 100f;
-         }
-         cuadro5S4.SetActive(false);
-         //cuadro 6
-         cuadro6S4.SetActive(true);
-         EnemigoA1.SetActive(true);
-         yield return new WaitForSeconds(1f);
-         ca.postExposure.value = 2.5f;
-        */
         m_Volume.profile.TryGet(out ca);
         if (ca.postExposure.value > -5f)
         {
@@ -206,21 +154,16 @@ public class Logica_Enemigo4 : MonoBehaviour
             //cuadro 6
             cuadro6S4.SetActive(true);
             EnemigoA1.SetActive(true);
+            avanza = true;
+            EnemigoA1.GetComponent<Animator>().SetBool("Parte 1", true);
+            EnemigoA1.GetComponent<Animator>().SetBool("Parte 2", true);
             yield return new WaitForSeconds(0.5f);
             ca.postExposure.value = 2.5f;
         }
     }
 
-    /*IEnumerator bajarExposure()
+    void EnemigoSale()
     {
-        ca.postExposure.value -= 0.5f;
-        yield return new WaitForSeconds(0.01f);
-        ca.postExposure.value -= 0.5f;
-        yield return new WaitForSeconds(0.01f);
-        ca.postExposure.value -= 0.5f;
-        yield return new WaitForSeconds(0.01f);
-        ca.postExposure.value -= 0.5f;
-        yield return new WaitForSeconds(0.01f);
-    }*/
-
+        EnemigoA1.GetComponent<Animator>().SetBool("Parte 3", true);
+    }
 }
