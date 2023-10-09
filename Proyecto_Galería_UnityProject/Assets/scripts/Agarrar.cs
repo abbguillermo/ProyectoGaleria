@@ -495,8 +495,7 @@ public class Agarrar : MonoBehaviour
     //sala4
     IEnumerator tiemporeja()
     {
-        palancas4.GetComponent<Animator>().SetTrigger("BajarSubirPalanca");
-        palancas4.GetComponent<Animator>().SetTrigger("Idle");
+        palancas4.GetComponent<Animator>().Play("BajarSubirPalanca");
         yield return new WaitForSeconds(2f);
         palancas4.layer = 7;
     }
