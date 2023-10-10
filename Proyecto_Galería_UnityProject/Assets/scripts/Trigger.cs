@@ -440,7 +440,7 @@ public class Trigger : MonoBehaviour
 
     IEnumerator SonidosPuertas()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         audioSourcePFrente.Play();
         audioSourcePIzquierda.Play();
         audioSourcePDerecha.Play();
