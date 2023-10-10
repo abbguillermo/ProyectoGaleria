@@ -157,7 +157,7 @@ public class Logica_Enemigo4 : MonoBehaviour
             cuadro6S4.SetActive(true);
             EnemigoA1.SetActive(true);
             avanza = true;
-            //activarPalanca = true;
+            FindObjectOfType<Agarrar>().palancas4.layer = 7;
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 1", true);
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 2", true);
             yield return new WaitForSeconds(0.5f);
