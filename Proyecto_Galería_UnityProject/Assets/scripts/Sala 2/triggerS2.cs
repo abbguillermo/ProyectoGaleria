@@ -26,6 +26,8 @@ public class triggerS2 : MonoBehaviour
     public AudioClip grito;
     private int entro = 0;
 
+    public GameObject enemigoCamMuerte;
+
     public GameObject PuertaFinal;
 
     public GameObject maniquiesfinal;
@@ -80,9 +82,10 @@ public class triggerS2 : MonoBehaviour
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
         camara_muerte.GetComponent<Animator>().SetTrigger("shake");
+        enemigoCamMuerte.GetComponent<Animator>().Play("Muerte2");
         if (entro == 0)
         {
-            sonidomuerte.PlayOneShot(grito);
+            //sonidomuerte.PlayOneShot(grito);
             entro += 1;
         }
         StartCoroutine(pasajeescena());

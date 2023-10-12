@@ -20,6 +20,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     int entro=0;
     public AudioSource sonidomuerte;
     public AudioClip grito;
+    public GameObject enemigoCamMuerte;
 
     public GameObject sonidoenemigo;
 
@@ -111,9 +112,10 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
         camara_muerte.GetComponent<Animator>().SetTrigger("shake");
+        enemigoCamMuerte.GetComponent<Animator>().Play("Muerte3");
         if (entro == 0)
         {
-            sonidomuerte.PlayOneShot(grito);
+            //sonidomuerte.PlayOneShot(grito);
             entro += 1;
         }
         StartCoroutine(pasajeescena());

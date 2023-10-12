@@ -24,7 +24,7 @@ public class Logica_Enemigo4 : MonoBehaviour
     private int entro = 0;
     public GameObject camara_jugador;
     public GameObject camara_muerte;
-   // public GameObject enemigoCamMuerte;
+    public GameObject enemigoCamMuerte;
     public GameObject personaje;
     public AudioSource audiomuerte;
     public AudioClip grito;
@@ -194,13 +194,13 @@ public class Logica_Enemigo4 : MonoBehaviour
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
         camara_muerte.GetComponent<Animator>().SetTrigger("shake");
-        //enemigoCamMuerte.GetComponent<Animator>().Play("Muerte");
+        enemigoCamMuerte.GetComponent<Animator>().Play("Muerte4");
         personaje.SetActive(false);
 
         if (entro == 0)
         {
 
-            audiomuerte.PlayOneShot(grito);
+            //audiomuerte.PlayOneShot(grito);
 
             entro += 1;
 
