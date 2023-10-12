@@ -38,6 +38,8 @@ public class LogicaEnemigo01 : MonoBehaviour
     public AudioClip grito;
     public GameObject colliderpos2;
 
+    public GameObject enemigoCamMuerte;
+
     public bool sonidito;
     private int entro = 0;
 
@@ -149,6 +151,7 @@ public class LogicaEnemigo01 : MonoBehaviour
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
         camara_muerte.GetComponent<Animator>().SetTrigger("shake");
+        enemigoCamMuerte.GetComponent<Animator>().Play("Muerte");
         personaje.SetActive(false);
         
         if (entro==0)

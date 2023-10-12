@@ -3147,6 +3147,10 @@ MonoBehaviour:
   textosalidas2: {fileID: 0}
   textoentradas3: {fileID: 0}
   PuertaFS4: {fileID: 0}
+  audioSourcePuertaAbrir: {fileID: 0}
+  audioSourcePFrente: {fileID: 0}
+  audioSourcePIzquierda: {fileID: 0}
+  audioSourcePDerecha: {fileID: 0}
 --- !u!95 &85554184
 Animator:
   serializedVersion: 4
@@ -38859,6 +38863,7 @@ MonoBehaviour:
   pasosEnemigo: {fileID: 8300000, guid: 67cbd5fd30afcee43a5cce4e6f7b8128, type: 3}
   grito: {fileID: 8300000, guid: 43797c4eee2e11c4f9eb58ef9eba17d4, type: 3}
   colliderpos2: {fileID: 594921840}
+  enemigoCamMuerte: {fileID: 268619805}
   sonidito: 1
 --- !u!82 &1189662806
 AudioSource:
@@ -43705,6 +43710,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1328162629
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268619805}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd94a51025f21ab469348f9aa10711ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1329783733
 GameObject:
   m_ObjectHideFlags: 0
