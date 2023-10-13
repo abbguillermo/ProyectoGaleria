@@ -85,7 +85,7 @@ public class triggerS2 : MonoBehaviour
         enemigoCamMuerte.GetComponent<Animator>().Play("Muerte2");
         if (entro == 0)
         {
-            //sonidomuerte.PlayOneShot(grito);
+            sonidomuerte.PlayOneShot(grito);
             entro += 1;
         }
         StartCoroutine(pasajeescena());

@@ -200,7 +200,7 @@ public class Logica_Enemigo4 : MonoBehaviour
         if (entro == 0)
         {
 
-            //audiomuerte.PlayOneShot(grito);
+            audiomuerte.PlayOneShot(grito);
 
             entro += 1;
 

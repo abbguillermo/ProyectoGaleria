@@ -115,7 +115,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
         enemigoCamMuerte.GetComponent<Animator>().Play("Muerte3");
         if (entro == 0)
         {
-            //sonidomuerte.PlayOneShot(grito);
+            sonidomuerte.PlayOneShot(grito);
             entro += 1;
         }
         StartCoroutine(pasajeescena());
