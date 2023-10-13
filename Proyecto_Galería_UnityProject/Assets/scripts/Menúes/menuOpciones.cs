@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class menuOpciones : MonoBehaviour
 {
@@ -14,24 +15,56 @@ public class menuOpciones : MonoBehaviour
     public AudioMixer audioMixerMusica;
     public AudioMixer audioMixerSFX;
 
+    public Slider musicaSlider;
+    public Slider sfxSlider;
+
     void Start()
     {
-        
-    }
+        if (PlayerPrefs.HasKey("volumenMusica"))
+        {
+            CargarVolumen();
+        }
+        else
+        {
+            Musica(0f);
+        }
 
-    void Update()
-    {
-        
+        if (PlayerPrefs.HasKey("volumenSFX"))
+        {
+            CargarVolumenSFX();
+        }
+        else
+        {
+            Audio(0f);
+        }
     }
 
     public void Musica(float volumen)
     {
         audioMixerMusica.SetFloat("volumenMusica", volumen);
+        PlayerPrefs.SetFloat("volumenMusica", volumen);
+    }
+
+    public void CargarVolumen()
+    {
+        float volumen = musicaSlider.value;
+        musicaSlider.value = PlayerPrefs.GetFloat("volumenMusica");
+        volumen = PlayerPrefs.GetFloat("volumenMusica");
+        Musica(volumen);
     }
 
     public void Audio(float volumenSFX)
     {
         audioMixerSFX.SetFloat("volumenSFX", volumenSFX);
+        PlayerPrefs.SetFloat("volumenSFX", volumenSFX);
+    }
+
+    public void CargarVolumenSFX()
+    {
+        float volumen = sfxSlider.value;
+        sfxSlider.value = PlayerPrefs.GetFloat("volumenSFX");
+        volumen = PlayerPrefs.GetFloat("volumenSFX");
+        Audio(volumen);
     }
 
     public void Idioma()
