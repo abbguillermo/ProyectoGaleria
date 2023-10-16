@@ -211,7 +211,7 @@ public class Logica_Enemigo4 : MonoBehaviour
 
     IEnumerator pasajeescena()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("Sala 4");
     }
 

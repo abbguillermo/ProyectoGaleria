@@ -168,7 +168,7 @@ public class LogicaEnemigo01 : MonoBehaviour
 
     IEnumerator pasajeescena()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("Sala 1");
     }
 

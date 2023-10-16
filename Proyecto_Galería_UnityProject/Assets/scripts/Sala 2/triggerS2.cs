@@ -93,7 +93,7 @@ public class triggerS2 : MonoBehaviour
     }
     IEnumerator pasajeescena()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
        
         SceneManager.LoadScene("Sala2respawn");
     }
