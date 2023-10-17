@@ -62,7 +62,12 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Sala3()
     {
-        SceneManager.LoadScene("Sala 3");
+        SceneManager.LoadScene("Sala 3 respawn");
+    }
+
+    public void Sala4()
+    {
+        SceneManager.LoadScene("Sala 4");
     }
 
     public void CambiarEscena(string nombreEscena)
