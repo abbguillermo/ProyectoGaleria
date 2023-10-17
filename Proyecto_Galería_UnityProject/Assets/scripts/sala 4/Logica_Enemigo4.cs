@@ -111,7 +111,7 @@ public class Logica_Enemigo4 : MonoBehaviour
             transform.position = new Vector3(4, transform.position.y, transform.position.z);
             teleportPared3 = false;
             avanza = false;
-            Invoke("EnemigoSale", 2f);
+            Invoke("EnemigoSale", 8.5f);
         }        
     }
     
@@ -218,5 +218,12 @@ public class Logica_Enemigo4 : MonoBehaviour
     void EnemigoSale()
     {
         EnemigoA1.GetComponent<Animator>().SetBool("Parte 3", true);
+        StartCoroutine(saltoenemigo());
+    }
+
+    IEnumerator saltoenemigo()
+    {
+        yield return new WaitForSeconds(1f);
+        gameObject.transform.GetChild(1).transform.Translate(Vector3.forward * 6000 * Time.deltaTime);
     }
 }
