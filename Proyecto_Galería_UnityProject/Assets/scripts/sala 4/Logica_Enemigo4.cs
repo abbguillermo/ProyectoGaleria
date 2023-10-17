@@ -11,6 +11,7 @@ public class Logica_Enemigo4 : MonoBehaviour
     public float distanciadeteccion = 10f;
     public bool sube = false;
     public bool avanza = false;
+    private bool semueve = false;
   
 
     public bool interactuoCuadro = false;
@@ -60,6 +61,8 @@ public class Logica_Enemigo4 : MonoBehaviour
             Derrota();
         }
     }
+   
+    
     // Update is called once per frame
     void Update()
     {
@@ -111,8 +114,13 @@ public class Logica_Enemigo4 : MonoBehaviour
             transform.position = new Vector3(4, transform.position.y, transform.position.z);
             teleportPared3 = false;
             avanza = false;
-            Invoke("EnemigoSale", 8.5f);
-        }        
+            Invoke("EnemigoSale", 7.5f);
+            StartCoroutine(saltoenemigo());
+        }
+        if (semueve)
+        {
+            gameObject.transform.GetChild(1).transform.Translate(Vector3.forward * 12 * Time.fixedDeltaTime);
+        }
     }
     
     bool deteccion()
@@ -189,7 +197,7 @@ public class Logica_Enemigo4 : MonoBehaviour
         }
     }
 
-    private void Derrota()
+    public void Derrota()
     {
         camara_jugador.SetActive(false);
         camara_muerte.SetActive(true);
@@ -218,12 +226,13 @@ public class Logica_Enemigo4 : MonoBehaviour
     void EnemigoSale()
     {
         EnemigoA1.GetComponent<Animator>().SetBool("Parte 3", true);
-        StartCoroutine(saltoenemigo());
+       // StartCoroutine(saltoenemigo());
     }
 
     IEnumerator saltoenemigo()
     {
-        yield return new WaitForSeconds(1f);
-        gameObject.transform.GetChild(1).transform.Translate(Vector3.forward * 6000 * Time.deltaTime);
+        yield return new WaitForSeconds(20f);
+        semueve = true;
+
     }
 }

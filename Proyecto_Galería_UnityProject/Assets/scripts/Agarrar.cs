@@ -74,7 +74,7 @@ public class Agarrar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cont == 3&&cont2==3 && Reja2.transform.position.y<=2)
+        if (cont == 5&&cont2==3 && Reja2.transform.position.y<=2)
         {
             Reja2.transform.Translate(Vector3.up*0.2f*Time.deltaTime);
         }
