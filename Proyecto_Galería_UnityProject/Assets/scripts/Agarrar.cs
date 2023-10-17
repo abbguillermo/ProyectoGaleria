@@ -72,7 +72,7 @@ public class Agarrar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (cont == 3&&cont2==3 && Reja2.transform.position.y<=2)
         {
@@ -146,7 +146,7 @@ public class Agarrar : MonoBehaviour
                 }
                 if (hit.transform.gameObject.tag == "Sala4/reja1")
                 {
-                    Reja.transform.Translate((Vector3.up * 15 * Time.deltaTime));
+                    Reja.transform.Translate((Vector3.up * 15 * Time.fixedDeltaTime));
                     palancas4.layer = 0;
                     StartCoroutine(tiemporeja());
                 }
