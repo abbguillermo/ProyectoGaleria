@@ -72,7 +72,7 @@ public class Agarrar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (cont == 3&&cont2==3 && Reja2.transform.position.y<=2)
         {
