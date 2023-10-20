@@ -66,9 +66,9 @@ public class objetivosManager : MonoBehaviour
         objetivoActivo = true;
         objetivo01Codigo = 12;
         //objetivoSonido.Play();
-        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Objetivo 1";
+        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Mire alrededor y use su CABEZA";
         objetivoPanel.SetActive(true);
-        objetivoPanel.transform.LeanMoveLocal(new Vector2(0, 0), 1).setEaseOutBack();
+        objetivoPanel.transform.LeanMoveLocal(new Vector2(-390, 150), 1).setEaseOutBack();
         yield return new WaitForSeconds(0);
     }
 
@@ -78,9 +78,9 @@ public class objetivosManager : MonoBehaviour
         objetivoActivo = true;
         objetivo02Codigo = 13;
         //objetivoSonido.Play();
-        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Objetivo 2";
+        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Ellos APUNTAN hacia mi objetivo";
         objetivoPanel.SetActive(true);
-        objetivoPanel.transform.LeanMoveLocal(new Vector2(0, 0), 1).setEaseOutBack();
+        objetivoPanel.transform.LeanMoveLocal(new Vector2(-390, 150), 1).setEaseOutBack();
         yield return new WaitForSeconds(0);
     }
 }
