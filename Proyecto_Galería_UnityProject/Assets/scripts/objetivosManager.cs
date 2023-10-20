@@ -68,17 +68,19 @@ public class objetivosManager : MonoBehaviour
         //objetivoSonido.Play();
         objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Objetivo 1";
         objetivoPanel.SetActive(true);
+        objetivoPanel.transform.LeanMoveLocal(new Vector2(0, 0), 1).setEaseOutBack();
         yield return new WaitForSeconds(0);
     }
 
     IEnumerator TriggerObjetivo02()
      {
         Debug.Log("entro obj 2");
-         objetivoActivo = true;
-         objetivo02Codigo = 13;
-         //objetivoSonido.Play();
-         objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Objetivo 2";
-         objetivoPanel.SetActive(true);
-         yield return new WaitForSeconds(0);
+        objetivoActivo = true;
+        objetivo02Codigo = 13;
+        //objetivoSonido.Play();
+        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Objetivo 2";
+        objetivoPanel.SetActive(true);
+        objetivoPanel.transform.LeanMoveLocal(new Vector2(0, 0), 1).setEaseOutBack();
+        yield return new WaitForSeconds(0);
     }
 }
