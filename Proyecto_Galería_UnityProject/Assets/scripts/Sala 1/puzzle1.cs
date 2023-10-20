@@ -33,6 +33,7 @@ public class puzzle1 : MonoBehaviour
             cam.GetComponent<Animator>().SetTrigger("shake");
             //sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuertaDeslizada);
             FindObjectOfType<Agarrar>().spriteNota.SetActive(false);
+            objetivosManager.objetivo01Complete = true;
         }
     }
 

@@ -243,6 +243,7 @@ public class Trigger : MonoBehaviour
             parlante1.GetComponent<AudioSource>().Play();
             StartCoroutine(MostrarTxtPuzzle1());
             piezasenemigo.SetActive(false);
+            objetivosManager.triggerObjetivo01 = true;
             Destroy(other);
         }
 
@@ -251,6 +252,7 @@ public class Trigger : MonoBehaviour
             StartCoroutine(LucesPuzzle2());
             parlante2.GetComponent<AudioSource>().Play();
             StartCoroutine(MostrarTxtPuzzle2());
+            objetivosManager.triggerObjetivo02 = true;
             Destroy(other);
         }
 

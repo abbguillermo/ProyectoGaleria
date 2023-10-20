@@ -47,6 +47,7 @@ public class puzzle2 : MonoBehaviour
             pared.transform.GetChild(0).GetComponent<AudioSource>().Play();
             pj.GetComponent<Animator>().SetTrigger("cambiarfov");
             cam.GetComponent<Animator>().SetTrigger("shake");
+            objetivosManager.objetivo02Complete = true;
         }
     }
 
