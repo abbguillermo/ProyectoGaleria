@@ -77,6 +77,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Escenita()
     {
-        CambiarEscena("Sala Inicial");
+        //CambiarEscena("Sala Inicial");
+        CambiarEscena("Sala 1");
     }
 }

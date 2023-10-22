@@ -35,6 +35,7 @@ public class puzzle3 : MonoBehaviour
             pared.transform.GetChild(0).GetComponent<AudioSource>().Play();
             //pj.GetComponent<Animator>().Play("cambiarfov");
             cam.GetComponent<Animator>().SetTrigger("shake");
+            objetivosManager.objetivo03Complete = true;
         }
 
     }

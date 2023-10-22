@@ -160,7 +160,6 @@ public class LogicaEnemigo01 : MonoBehaviour
             audiomuerte.PlayOneShot(grito);
             
             entro += 1;
-          
         }
         
         StartCoroutine(pasajeescena());

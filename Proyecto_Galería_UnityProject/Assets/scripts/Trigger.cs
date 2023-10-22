@@ -93,6 +93,7 @@ public class Trigger : MonoBehaviour
     public AudioSource audioSourcePIzquierda;
     public AudioSource audioSourcePDerecha;
 
+    public bool audioterminado = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -243,7 +244,6 @@ public class Trigger : MonoBehaviour
             parlante1.GetComponent<AudioSource>().Play();
             StartCoroutine(MostrarTxtPuzzle1());
             piezasenemigo.SetActive(false);
-            objetivosManager.triggerObjetivo01 = true;
             Destroy(other);
         }
 
@@ -252,7 +252,6 @@ public class Trigger : MonoBehaviour
             StartCoroutine(LucesPuzzle2());
             parlante2.GetComponent<AudioSource>().Play();
             StartCoroutine(MostrarTxtPuzzle2());
-            objetivosManager.triggerObjetivo02 = true;
             Destroy(other);
         }
 
@@ -463,6 +462,7 @@ public class Trigger : MonoBehaviour
         textopuzzle1p2s1.SetActive(true);
         yield return new WaitForSeconds(9f);
         textopuzzle1p2s1.SetActive(false);
+        objetivosManager.triggerObjetivo01 = true;
     }
 
     IEnumerator MostrarTxtPuzzle2()
@@ -470,6 +470,7 @@ public class Trigger : MonoBehaviour
         textopuzzle2s1.SetActive(true);
         yield return new WaitForSeconds(10f);
         textopuzzle2s1.SetActive(false);
+        objetivosManager.triggerObjetivo02 = true;
     }
 
     IEnumerator MostrarTxtPuzzle3()
@@ -477,6 +478,7 @@ public class Trigger : MonoBehaviour
         textopuzzle3s1.SetActive(true);
         yield return new WaitForSeconds(11f);
         textopuzzle3s1.SetActive(false);
+        objetivosManager.triggerObjetivo03 = true;
     }
 
     IEnumerator MostrarTxtEntradaS2()
@@ -484,6 +486,7 @@ public class Trigger : MonoBehaviour
         textoentradas2.SetActive(true);
         yield return new WaitForSeconds(26f);
         textoentradas2.SetActive(false);
+        objetivosManager.triggerObjetivo01S2 = true;
     }
 
     IEnumerator MostrarTxtSalidaS2()
