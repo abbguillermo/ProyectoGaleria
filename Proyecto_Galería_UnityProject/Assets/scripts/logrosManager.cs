@@ -82,7 +82,7 @@ public class logrosManager : MonoBehaviour
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 1";
         logroNota.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
 
         //Reset
         logroNota.SetActive(false);
@@ -104,7 +104,7 @@ public class logrosManager : MonoBehaviour
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 2";
         logroNota.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
 
         //Reset
         logroNota.SetActive(false);
@@ -126,7 +126,7 @@ public class logrosManager : MonoBehaviour
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 3";
         logroNota.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
 
         //Reset
         logroNota.SetActive(false);
