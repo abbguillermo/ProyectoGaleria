@@ -367,12 +367,12 @@ public class Agarrar : MonoBehaviour
                 //sala2
                 if (hit.transform.gameObject.tag == "palanca")
                 {
-                    FindObjectOfType<objetivosManager>().objetivoPanel.SetActive(false);
-                    objetivosManager.objetivo01S2Complete = true;
                     palanca.GetComponent<Animator>().Play("SubirPalanca");
                     FindObjectOfType<levantarparedes>().subir = true;
                     FindObjectOfType<levantarparedes>().TriggerBoxes.SetActive(true);
                     FindObjectOfType<levantarparedes>().Maniquies.SetActive(true);
+                    FindObjectOfType<objetivosManager>().objetivoPanel.SetActive(false);
+                    objetivosManager.objetivo01S2Complete = true;
                 }
 
                 if (FindObjectOfType<levantarparedes>().recolectables == true)
