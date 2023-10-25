@@ -93,7 +93,17 @@ public class Trigger : MonoBehaviour
     public AudioSource audioSourcePIzquierda;
     public AudioSource audioSourcePDerecha;
 
+    public GameObject triggerPared;
+
     public bool audioterminado = false;
+
+    public GameObject parlante1s4;
+    public AudioSource audioSourceEntrada1;
+    public AudioSource audioSourceEntrada2;
+    public GameObject parlante2s4;
+    public GameObject teles4;
+
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -116,6 +126,25 @@ public class Trigger : MonoBehaviour
             StartCoroutine(SonidosPuertas());
             Invoke("AbrirPuertaFS4", 17f);
             FindObjectOfType<Logica_Enemigo4>().teleportPared3 = true;
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/voz1")
+        {
+            audioSourceEntrada1.Play();
+            Invoke("colliderPared", 5);
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/voz2")
+        {
+            parlante2s4.GetComponent<AudioSource>().Play();
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/voz3")
+        {
+            teles4.GetComponent<AudioSource>().Play();
             Destroy(other);
         }
 
@@ -390,6 +419,12 @@ public class Trigger : MonoBehaviour
         PuertaFS4.GetComponent<Animator>().Play("AbrirPS4");
         audioSourcePuertaAbrir.Play();
     }
+
+    public void colliderPared()
+    {
+        triggerPared.SetActive(true);
+    }
+
     IEnumerator LucesPasillo()
     {
         yield return new WaitForSeconds(0.2f);

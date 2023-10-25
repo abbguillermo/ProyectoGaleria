@@ -182,6 +182,7 @@ public class Logica_Enemigo4 : MonoBehaviour
 
             //cuadro 5
             ca.postExposure.value -= exposición_Oscuro;
+            FindObjectOfType<Trigger>().audioSourceEntrada2.Play();
             cuadro5S4.SetActive(false);
 
             //cuadro 6
@@ -192,7 +193,7 @@ public class Logica_Enemigo4 : MonoBehaviour
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 1", true);
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 2", true);
             gameObject.GetComponent<BoxCollider>().enabled = true;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(3f);
             ca.postExposure.value = 2.5f;
         }
     }
