@@ -94,15 +94,16 @@ public class Trigger : MonoBehaviour
     public AudioSource audioSourcePDerecha;
 
     public GameObject triggerPared;
-
-    public bool audioterminado = false;
+    public GameObject triggerPuertaManiquies;
 
     public GameObject parlante1s4;
     public AudioSource audioSourceEntrada1;
     public AudioSource audioSourceEntrada2;
     public GameObject parlante2s4;
     public GameObject teles4;
-
+    public GameObject puertaManiquiesS4;
+    public GameObject puertaTeleS4;
+   
 
 
     private void OnTriggerEnter(Collider other)
@@ -145,6 +146,22 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs4/voz3")
         {
             teles4.GetComponent<AudioSource>().Play();
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/puertamaniquies")
+        {
+            //sonido puerta
+            puertaManiquiesS4.GetComponent<AudioSource>().Play();
+            puertaManiquiesS4.GetComponent<Animator>().Play("CerrarPS4");
+            triggerPuertaManiquies.SetActive(true);
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/puertatele")
+        {
+            puertaTeleS4.GetComponent<AudioSource>().Play();
+            puertaTeleS4.GetComponent<Animator>().Play("CerrarPS4");
             Destroy(other);
         }
 

@@ -14674,7 +14674,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673940931}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: b91cab0b09cbb6d4cbbcaaa7c5a03ed3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 811994bff1002234c976e24e951f5db2, type: 3}
@@ -42335,6 +42335,15 @@ MonoBehaviour:
   audioSourcePFrente: {fileID: 0}
   audioSourcePIzquierda: {fileID: 0}
   audioSourcePDerecha: {fileID: 0}
+  triggerPared: {fileID: 0}
+  triggerPuertaManiquies: {fileID: 0}
+  parlante1s4: {fileID: 0}
+  audioSourceEntrada1: {fileID: 0}
+  audioSourceEntrada2: {fileID: 0}
+  parlante2s4: {fileID: 0}
+  teles4: {fileID: 0}
+  puertaManiquiesS4: {fileID: 0}
+  puertaTeleS4: {fileID: 0}
 --- !u!82 &1511042321
 AudioSource:
   m_ObjectHideFlags: 0
