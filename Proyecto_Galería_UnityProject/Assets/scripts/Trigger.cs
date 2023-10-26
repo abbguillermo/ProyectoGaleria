@@ -101,9 +101,11 @@ public class Trigger : MonoBehaviour
     public AudioSource audioSourceEntrada2;
     public GameObject parlante2s4;
     public GameObject teles4;
+    public AudioSource aspuertaManiquiesS4;
     public GameObject puertaManiquiesS4;
     public GameObject puertaTeleS4;
-   
+    public AudioSource audioSourceManiquies;
+    public GameObject parlante3s4;
 
 
     private void OnTriggerEnter(Collider other)
@@ -143,16 +145,26 @@ public class Trigger : MonoBehaviour
             Destroy(other);
         }
 
+        if (other.tag == "trigs4/cerrarpuertap2")
+        {
+            PuertaFS4.GetComponent<Animator>().Play("CerrarP2PS4");
+            sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
+            //puertaTeleS4.GetComponent<AudioSource>().Play();
+            Destroy(other);
+        }
+
         if (other.tag == "trigs4/voz3")
         {
             teles4.GetComponent<AudioSource>().Play();
+            Invoke("enemigoFinal", 85f);
             Destroy(other);
         }
 
         if (other.tag == "trigs4/puertamaniquies")
         {
             //sonido puerta
-            puertaManiquiesS4.GetComponent<AudioSource>().Play();
+            aspuertaManiquiesS4.Play();
+            audioSourceManiquies.Play();
             puertaManiquiesS4.GetComponent<Animator>().Play("CerrarPS4");
             triggerPuertaManiquies.SetActive(true);
             Destroy(other);
@@ -160,8 +172,17 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "trigs4/puertatele")
         {
+            //se prende tele 
             puertaTeleS4.GetComponent<AudioSource>().Play();
             puertaTeleS4.GetComponent<Animator>().Play("CerrarPS4");
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs4/cerrarpuertatele")
+        {
+            //puertaTeleS4.GetComponent<AudioSource>().Play();
+            sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
+            puertaTeleS4.GetComponent<Animator>().Play("CerrarP2PS4");
             Destroy(other);
         }
 
@@ -440,6 +461,15 @@ public class Trigger : MonoBehaviour
     public void colliderPared()
     {
         triggerPared.SetActive(true);
+    }
+
+    public void enemigoFinal()
+    {
+        //se apaga tele set active al componente pantalla
+        parlante3s4.GetComponent<AudioSource>().Play();
+        //abre puerta
+        //aparece enemigo
+
     }
 
     IEnumerator LucesPasillo()

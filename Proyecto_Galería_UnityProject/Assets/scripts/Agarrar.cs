@@ -122,6 +122,7 @@ public class Agarrar : MonoBehaviour
                 //SALA4
                 if (hit.transform.gameObject.tag == "Sala4/objeto1")
                 {
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                     GameObject objeto = hit.transform.gameObject;
 
                     objeto.transform.SetParent(puntodeagarre);
@@ -133,8 +134,8 @@ public class Agarrar : MonoBehaviour
                 }
                 if (hit.transform.gameObject.tag == "Sala4/atril1")
                 {
-                 
 
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxObjetoS2);
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0);
 
                     GameObject.FindGameObjectWithTag("mano").gameObject.transform.GetChild(0).gameObject.transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, hit.transform.position.z);
@@ -153,11 +154,13 @@ public class Agarrar : MonoBehaviour
                 if(hit.transform.gameObject.tag == "Sala4/reja2")
                 {
                     cuadros4.transform.Rotate(0, 0, 22.5f);
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                     cont += 1;
                 }
                 if (hit.transform.gameObject.tag == "Sala4/reja2.2")
                 {
                     cuadros41.transform.Rotate(0, 0, 22.5f);
+                    sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                     cont2 += 1;
                 }
 
@@ -498,7 +501,7 @@ public class Agarrar : MonoBehaviour
     IEnumerator tiemporeja()
     {
         palancas4.GetComponent<Animator>().Play("BajarSubirPalanca");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         palancas4.layer = 7;
     }
 
