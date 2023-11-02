@@ -3092,7 +3092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23
+      value: 6.7
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3100,7 +3100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3529,6 +3529,9 @@ MonoBehaviour:
   puertaTeleS4: {fileID: 143240724}
   audioSourceManiquies: {fileID: 1194933225}
   parlante3s4: {fileID: 777531956}
+  luzmaniquies: {fileID: 427632444}
+  enemigoFinals4: {fileID: 905747355}
+  pantallaTele: {fileID: 1604393958}
 --- !u!114 &180265876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6565,7 +6568,7 @@ GameObject:
   - component: {fileID: 427632447}
   - component: {fileID: 427632446}
   m_Layer: 0
-  m_Name: Spot Light (1)
+  m_Name: Luz maniquies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6613,7 +6616,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427632444}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -23210,6 +23213,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019999998, y: 0.019999994, z: 2.7939671e-11}
   m_Center: {x: 0.009999999, y: -0.009999995, z: -1.3969836e-11}
+--- !u!1 &905747355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef82eec3faa4b394ba8a6c81d40c1f78, type: 3}
+  m_PrefabInstance: {fileID: 1595085403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &905747357
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905747355}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87d1173683323d44cab1da3102011dbb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &910043235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33039,7 +33067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ef82eec3faa4b394ba8a6c81d40c1f78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.838
+      value: 7.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ef82eec3faa4b394ba8a6c81d40c1f78, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33081,6 +33109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo4_Final
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ef82eec3faa4b394ba8a6c81d40c1f78, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef82eec3faa4b394ba8a6c81d40c1f78, type: 3}
 --- !u!1 &1604393958
@@ -33102,7 +33134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1604393959
 Transform:
   m_ObjectHideFlags: 0

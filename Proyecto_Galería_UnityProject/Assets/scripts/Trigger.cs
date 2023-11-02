@@ -106,6 +106,9 @@ public class Trigger : MonoBehaviour
     public GameObject puertaTeleS4;
     public AudioSource audioSourceManiquies;
     public GameObject parlante3s4;
+    public GameObject luzmaniquies;
+    public GameObject enemigoFinals4;
+    public GameObject pantallaTele;
 
 
     private void OnTriggerEnter(Collider other)
@@ -155,6 +158,7 @@ public class Trigger : MonoBehaviour
 
         if (other.tag == "trigs4/voz3")
         {
+            pantallaTele.SetActive(true);
             teles4.GetComponent<AudioSource>().Play();
             Invoke("enemigoFinal", 85f);
             Destroy(other);
@@ -163,6 +167,7 @@ public class Trigger : MonoBehaviour
         if (other.tag == "trigs4/puertamaniquies")
         {
             //sonido puerta
+            luzmaniquies.GetComponent<Light>().enabled = true;
             aspuertaManiquiesS4.Play();
             audioSourceManiquies.Play();
             puertaManiquiesS4.GetComponent<Animator>().Play("CerrarPS4");
@@ -465,11 +470,13 @@ public class Trigger : MonoBehaviour
 
     public void enemigoFinal()
     {
-        //se apaga tele set active al componente pantalla
+        pantallaTele.SetActive(false);
         parlante3s4.GetComponent<AudioSource>().Play();
-        //abre puerta
-        //aparece enemigo
 
+        enemigoFinals4.SetActive(true);
+        puertaTeleS4.GetComponent<Animator>().Play("CerrarPS4");
+        puertaTeleS4.GetComponent<AudioSource>().Play();
+        enemigoFinals4.GetComponent<Animator>().Play("MuerteFinal");
     }
 
     IEnumerator LucesPasillo()
