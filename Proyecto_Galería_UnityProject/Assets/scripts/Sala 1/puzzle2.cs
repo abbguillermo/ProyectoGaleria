@@ -25,6 +25,10 @@ public class puzzle2 : MonoBehaviour
     public GameObject marco2;
     public GameObject marco3;
     public GameObject marco4;
+    public int cont1;
+    public int cont2;
+    public int cont3;
+    public int cont4;
 
     private Quaternion cuadrorot1= Quaternion.Euler(0f, 270f, 180f);
     private Quaternion cuadrorot2 = Quaternion.Euler(0f,270f, 180f);
@@ -37,6 +41,23 @@ public class puzzle2 : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log(cont1);
+        if (cont3 >= 3)
+        {
+            marco1.layer = 0;
+        }
+        if (cont4 >= 5)
+        {
+            marco2.layer = 0;
+        }
+        if (cont1 >= 5)
+        {
+            marco3.layer = 0;
+        }
+        if (cont2 >= 7)
+        {
+            marco4.layer = 0;
+        }
         if (btn1==true&&btn2==true&&btn3==true&&btn4==true)
         {
             interruptor1.layer = 0;
@@ -54,20 +75,24 @@ public class puzzle2 : MonoBehaviour
     public void Rotarcuad1()
     {
         object1.Rotate(new Vector3(0,0, 45f));
+
+        cont1 += 1;
     }
     public void Rotarcuad2()
     {
 
         object2.Rotate(new Vector3(0, 0, 45f));
-        
+        cont2 += 1;
     }
     public void Rotarcuad3()
     {
         object3.Rotate(new Vector3(0, 0, 45f));
+        cont3 += 1;
     }
     public void Rotarcuad4()
     {
         object4.Rotate(new Vector3(0, 0, 45f));
+        cont4 += 1;
     }
    
     public void boton1()

@@ -82,6 +82,8 @@ public class logrosManager : MonoBehaviour
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 1";
         logroNota.SetActive(true);
+        PlayerPrefs.SetInt("activarlogro01", 1);
+        PlayerPrefs.Save();
         yield return new WaitForSeconds(3);
 
         //Reset

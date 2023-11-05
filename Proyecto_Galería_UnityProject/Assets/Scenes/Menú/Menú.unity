@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1690,6 +1690,7 @@ GameObject:
   - component: {fileID: 229614657}
   - component: {fileID: 229614659}
   - component: {fileID: 229614658}
+  - component: {fileID: 229614660}
   m_Layer: 0
   m_Name: "logrosMen\xFA"
   m_TagString: Untagged
@@ -1760,6 +1761,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229614656}
   m_CullTransparentMesh: 1
+--- !u!114 &229614660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229614656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80885190b838343ba155074a9e9731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imglogro1: {fileID: 0}
+  imglogro2: {fileID: 0}
+  imglogro3: {fileID: 0}
+  imglogro4: {fileID: 0}
+  imglogro5: {fileID: 0}
+  imglogro6: {fileID: 0}
+  imglogro7: {fileID: 0}
 --- !u!1 &238570118
 GameObject:
   m_ObjectHideFlags: 0
