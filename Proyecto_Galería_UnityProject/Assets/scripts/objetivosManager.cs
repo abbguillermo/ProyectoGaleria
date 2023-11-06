@@ -12,6 +12,10 @@ public class objetivosManager : MonoBehaviour
     public bool objetivoActivo = false;
     public GameObject objetivoDescripcion;
 
+    public GameObject objetivo1Descrip;
+    public GameObject objetivo2Descrip;
+    public GameObject objetivo3Descrip;
+
 
     //Obj 1 SALA1
     public static bool triggerObjetivo01 = false;
@@ -73,7 +77,8 @@ public class objetivosManager : MonoBehaviour
             //Reset
             objetivoPanel.transform.LeanMoveLocal(new Vector2(-700, 190), 1).setEaseOutSine();
             objetivoPanel.SetActive(false);
-            objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+            objetivo1Descrip.GetComponent<TextMeshProUGUI>().text = "";
+            objetivo1Descrip.SetActive(false);
             objetivoActivo = false;
             triggerObjetivo01 = false;
             objetivo01Complete = false;
@@ -84,7 +89,8 @@ public class objetivosManager : MonoBehaviour
             //Reset
             objetivoPanel.transform.LeanMoveLocal(new Vector2(-700, 190), 1).setEaseOutSine();
             objetivoPanel.SetActive(false);
-            objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+            objetivo2Descrip.GetComponent<TextMeshProUGUI>().text = "";
+            objetivo2Descrip.SetActive(false);
             objetivoActivo = false;
             triggerObjetivo02 = false;
             objetivo02Complete = false;
@@ -95,7 +101,8 @@ public class objetivosManager : MonoBehaviour
             //Reset
             objetivoPanel.transform.LeanMoveLocal(new Vector2(-700, 190), 1).setEaseOutSine();
             objetivoPanel.SetActive(false);
-            objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+            objetivo3Descrip.GetComponent<TextMeshProUGUI>().text = "";
+            objetivo3Descrip.SetActive(false);
             objetivoActivo = false;
             triggerObjetivo03 = false;
             objetivo03Complete = false;
@@ -118,7 +125,7 @@ public class objetivosManager : MonoBehaviour
         objetivoActivo = true;
         objetivo01Codigo = 12;
         //objetivoSonido.Play();
-        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Use su CABEZA";
+        objetivo1Descrip.GetComponent<TextMeshProUGUI>().text = "Use su CABEZA";
         objetivoPanel.SetActive(true);
         objetivoPanel.transform.LeanMoveLocal(new Vector2(-370, 190), 1).setEaseOutSine();
         yield return new WaitForSeconds(0);
@@ -126,11 +133,11 @@ public class objetivosManager : MonoBehaviour
 
     IEnumerator TriggerObjetivo02()
     {
-        Debug.Log("entro obj 2");
+        objetivo2Descrip.SetActive(true);
         objetivoActivo = true;
         objetivo02Codigo = 13;
         //objetivoSonido.Play();
-        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "Ellos APUNTAN hacia mi objetivo";
+        objetivo2Descrip.GetComponent<TextMeshProUGUI>().text = "Ellos APUNTAN hacia mi objetivo";
         objetivoPanel.SetActive(true);
         objetivoPanel.transform.LeanMoveLocal(new Vector2(-370, 190), 1).setEaseOutSine();
         yield return new WaitForSeconds(0);
@@ -138,11 +145,11 @@ public class objetivosManager : MonoBehaviour
 
     IEnumerator TriggerObjetivo03()
     {
-        Debug.Log("entro obj 3");
+        objetivo3Descrip.SetActive(true);
         objetivoActivo = true;
         objetivo03Codigo = 14;
         //objetivoSonido.Play();
-        objetivoDescripcion.GetComponent<TextMeshProUGUI>().text = "La mente de un NIÑO";
+        objetivo3Descrip.GetComponent<TextMeshProUGUI>().text = "La mente de un NIÑO";
         objetivoPanel.SetActive(true);
         objetivoPanel.transform.LeanMoveLocal(new Vector2(-370, 190), 1).setEaseOutSine();
         yield return new WaitForSeconds(0);

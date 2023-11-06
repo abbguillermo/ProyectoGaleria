@@ -28,6 +28,8 @@ public class levantarparedes : MonoBehaviour
 
     private void Start()
     {
+        FindObjectOfType<MenuPrincipal>().level_index = 2;
+        PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
         sala2 = true;
     }
 

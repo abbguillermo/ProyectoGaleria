@@ -50,8 +50,16 @@ public class Logica_Enemigo4 : MonoBehaviour
 
     public float exposición_Oscuro = 7f;
 
+    //sonidos
+    public AudioSource audioSourceEnemigo;
+    public AudioClip clipParte1;
+    public AudioClip clipParte2;
+    public AudioClip clipParte3;
+
     private void Start()
     {
+        FindObjectOfType<MenuPrincipal>().level_index = 4;
+        PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
         gameObject.GetComponent<BoxCollider>().enabled = false;
     }
     private void OnTriggerEnter(Collider other)
@@ -191,11 +199,20 @@ public class Logica_Enemigo4 : MonoBehaviour
             avanza = true;
             FindObjectOfType<Agarrar>().palancas4.layer = 7;
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 1", true);
+            Invoke("Audio2Enemigo", 21);
             EnemigoA1.GetComponent<Animator>().SetBool("Parte 2", true);
             gameObject.GetComponent<BoxCollider>().enabled = true;
             yield return new WaitForSeconds(3f);
+            audioSourceEnemigo.clip = clipParte1;
+            audioSourceEnemigo.Play();
             ca.postExposure.value = 2.5f;
         }
+    }
+
+    public void Audio2Enemigo()
+    {
+        audioSourceEnemigo.clip = clipParte2;
+        audioSourceEnemigo.Play();
     }
 
     public void Derrota()
@@ -227,7 +244,15 @@ public class Logica_Enemigo4 : MonoBehaviour
     void EnemigoSale()
     {
         EnemigoA1.GetComponent<Animator>().SetBool("Parte 3", true);
-       // StartCoroutine(saltoenemigo());
+        Invoke("Audio3Enemigo", 2f);
+
+        // StartCoroutine(saltoenemigo());
+    }
+
+    public void Audio3Enemigo()
+    {
+        audioSourceEnemigo.clip = clipParte3;
+        audioSourceEnemigo.Play();
     }
 
     IEnumerator saltoenemigo()

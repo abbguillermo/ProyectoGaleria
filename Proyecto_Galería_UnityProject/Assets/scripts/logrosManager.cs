@@ -51,7 +51,6 @@ public class logrosManager : MonoBehaviour
         PlayerPrefs.DeleteKey("activarlogro01");
     }
 
-    // Update is called once per frame
     void Update()
     {
         //logro01Codigo = PlayerPrefs.GetInt("logro01");
@@ -77,12 +76,12 @@ public class logrosManager : MonoBehaviour
             StartCoroutine(TriggerLogro04());
         }
 
-        if (triggerLogro05 == true && logro04Codigo != 16)
+        if (triggerLogro05 == true && logro05Codigo != 16)
         {
             StartCoroutine(TriggerLogro05());
         }
 
-        if (triggerLogro06 == true && logro04Codigo != 17)
+        if (triggerLogro06 == true && logro06Codigo != 17)
         {
             StartCoroutine(TriggerLogro06());
         }
@@ -107,6 +106,7 @@ public class logrosManager : MonoBehaviour
         logro01Img.SetActive(false);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcionAch6.GetComponent<TextMeshProUGUI>().text = "";
         logroActivo = false;
 
         triggerLogro01 = false;
@@ -129,6 +129,7 @@ public class logrosManager : MonoBehaviour
         logro02Img.SetActive(false);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcionAch6.GetComponent<TextMeshProUGUI>().text = "";
         logroActivo = false;
 
         triggerLogro02 = false;
@@ -151,6 +152,7 @@ public class logrosManager : MonoBehaviour
         logro03Img.SetActive(false);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcionAch6.GetComponent<TextMeshProUGUI>().text = "";
         logroActivo = false;
 
         triggerLogro03 = false;
@@ -172,6 +174,7 @@ public class logrosManager : MonoBehaviour
         logro04Img.SetActive(false);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcionAch6.GetComponent<TextMeshProUGUI>().text = "";
         logroActivo = false;
 
         triggerLogro04 = false;
@@ -192,6 +195,7 @@ public class logrosManager : MonoBehaviour
         logro05Img.SetActive(false);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcionAch6.GetComponent<TextMeshProUGUI>().text = "";
         logroActivo = false;
 
         triggerLogro05 = false;
@@ -215,8 +219,9 @@ public class logrosManager : MonoBehaviour
         logroNota.SetActive(false);
         logro06Img.SetActive(false);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcion.GetComponent<TextMeshProUGUI>().text = "";
         logroDescripcion.SetActive(true);
-        logroDescripcionAch6.GetComponent<TextMeshProUGUI>().text = "";
+        logroDescripcionAch6.SetActive(false);
         logroActivo = false;
 
         triggerLogro06 = false;

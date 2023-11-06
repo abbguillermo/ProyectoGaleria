@@ -42,6 +42,8 @@ public class puzzlesala3 : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<MenuPrincipal>().level_index = 3;
+        PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
         if (FindObjectOfType<GameManager>().progreso())
         {
             c1activo = true;

@@ -21,6 +21,12 @@ public class puzzle1 : MonoBehaviour
     public GameObject pj;
     public GameObject cam;
 
+    private void Start()
+    {
+        FindObjectOfType<MenuPrincipal>().level_index = 1;
+        PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
+    }
+
     void FixedUpdate()
     {
         if (cuad1==true && cuad2==true && cuad3==true && cuad4==true)

@@ -484,6 +484,7 @@ public class Trigger : MonoBehaviour
         puertaTeleS4.GetComponent<Animator>().Play("CerrarPS4");
         puertaTeleS4.GetComponent<AudioSource>().Play();
         enemigoFinals4.GetComponent<Animator>().Play("MuerteFinal");
+        //audiofinalenemigo
     }
 
     public void AudioDelays4()
