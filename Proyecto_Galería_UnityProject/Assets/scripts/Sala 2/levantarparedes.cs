@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class levantarparedes : MonoBehaviour
 {
-
+    public bool sala2 = false;
     public bool subir = false;
     public bool recolectables = false;
     public GameObject Laberinto;
@@ -28,7 +28,7 @@ public class levantarparedes : MonoBehaviour
 
     private void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
+        sala2 = true;
     }
 
     void Update()

@@ -153,6 +153,7 @@ public class Trigger : MonoBehaviour
             PuertaFS4.GetComponent<Animator>().Play("CerrarP2PS4");
             sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
             //puertaTeleS4.GetComponent<AudioSource>().Play();
+            logrosManager.triggerLogro04 = true;
             Destroy(other);
         }
 
@@ -226,6 +227,13 @@ public class Trigger : MonoBehaviour
             Enemigos3.SetActive(false);
             //logro 3
             logrosManager.triggerLogro03 = true;
+            Destroy(other);
+        }
+
+        if (other.tag == "trigs3/logro6")
+        {
+            //logro 6
+            logrosManager.triggerLogro06 = true;
             Destroy(other);
         }
 
@@ -471,12 +479,16 @@ public class Trigger : MonoBehaviour
     public void enemigoFinal()
     {
         pantallaTele.SetActive(false);
-        parlante3s4.GetComponent<AudioSource>().Play();
-
+        Invoke("AudioDelays4", 2);
         enemigoFinals4.SetActive(true);
         puertaTeleS4.GetComponent<Animator>().Play("CerrarPS4");
         puertaTeleS4.GetComponent<AudioSource>().Play();
         enemigoFinals4.GetComponent<Animator>().Play("MuerteFinal");
+    }
+
+    public void AudioDelays4()
+    {
+        parlante3s4.GetComponent<AudioSource>().Play();
     }
 
     IEnumerator LucesPasillo()

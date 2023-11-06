@@ -236,10 +236,10 @@ public class Agarrar : MonoBehaviour
                 //escondites
                 if (hit.transform.gameObject.tag == "escondites/escondite1")
                 {
-             
                     hit.transform.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                     escondite1_sala2.SetActive(false);
                     FindObjectOfType<Logicaenemigo_sala2>().puedeatacar = false;
+                    //logrosManager.triggerLogro05 = true;
                 }
 
                 //agarre puzzle 1

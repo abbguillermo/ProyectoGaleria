@@ -29,6 +29,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     public AudioSource audioSourceEnemigo3Persecusion;
 
     public GameObject enemigo;
+    public GameObject colliderLogro;
 
     
 
@@ -45,6 +46,7 @@ public class LogicaEnemigo_sala3 : MonoBehaviour
     {
         if (sePuedeParar)
         {
+            colliderLogro.SetActive(true);
             enemigo.GetComponent<Animator>().SetBool("isStanding", true);
             enemigoLevantandose.enabled = true;
             StartCoroutine(Moverse());

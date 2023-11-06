@@ -3185,6 +3185,9 @@ MonoBehaviour:
   puertaTeleS4: {fileID: 0}
   audioSourceManiquies: {fileID: 0}
   parlante3s4: {fileID: 0}
+  luzmaniquies: {fileID: 0}
+  enemigoFinals4: {fileID: 0}
+  pantallaTele: {fileID: 0}
 --- !u!95 &85554184
 Animator:
   serializedVersion: 4
@@ -31591,7 +31594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &943495036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34580,6 +34583,10 @@ MonoBehaviour:
   marco2: {fileID: 1363352485}
   marco3: {fileID: 731624540}
   marco4: {fileID: 1714221064}
+  cont1: 0
+  cont2: 0
+  cont3: 0
+  cont4: 0
   pj: {fileID: 85554142}
   cam: {fileID: 578634182}
 --- !u!4 &1030192313
@@ -42739,6 +42746,10 @@ MonoBehaviour:
   logro02Codigo: 0
   logro03Img: {fileID: 0}
   logro03Codigo: 0
+  logro04Img: {fileID: 0}
+  logro04Codigo: 0
+  logro05Img: {fileID: 0}
+  logro05Codigo: 0
 --- !u!1001 &1286021308
 PrefabInstance:
   m_ObjectHideFlags: 0

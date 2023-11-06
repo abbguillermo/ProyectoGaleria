@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Logica_Gral : MonoBehaviour
 {
+    public bool sala1 = false;
     public Transform object1;
     private Quaternion evaluar = Quaternion.Euler(-90f,0 , -180f);
     int cont=0;
@@ -12,6 +13,10 @@ public class Logica_Gral : MonoBehaviour
     public AudioSource audioSourcePuerta;
     public AudioClip audioPuerta;
 
+    private void Start()
+    {
+        sala1 = true;
+    }
     void Update()
     {
         if (cont == 3)
