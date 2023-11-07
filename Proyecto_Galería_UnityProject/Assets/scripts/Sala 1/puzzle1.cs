@@ -23,9 +23,7 @@ public class puzzle1 : MonoBehaviour
 
     public void Start()
     {
-        FindObjectOfType<MenuPrincipal>().level_index += 1;
-        PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
-        Debug.Log("lvinds" + FindObjectOfType<MenuPrincipal>().level_index);
+
     }
 
     void FixedUpdate()

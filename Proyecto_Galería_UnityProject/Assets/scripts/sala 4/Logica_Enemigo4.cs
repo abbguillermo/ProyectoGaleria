@@ -58,8 +58,6 @@ public class Logica_Enemigo4 : MonoBehaviour
 
     public void Start()
     {
-        FindObjectOfType<MenuPrincipal>().level_index = 4;
-        PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
         gameObject.GetComponent<BoxCollider>().enabled = false;
     }
     private void OnTriggerEnter(Collider other)

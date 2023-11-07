@@ -11,8 +11,6 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject MenuCreditos;
     public GameObject MenuLogros;
 
-    public int level_index;
-
 
     void Start()
     {
@@ -21,29 +19,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Continuar()
     {
-        level_index = PlayerPrefs.GetInt("guardadoSala");
-
-        if(level_index == 0)
-        {
-            Escenita();
-        }
-        else if(level_index == 1)
-        {
-            SceneManager.LoadScene("Sala 1");
-        }
-        else if(level_index == 2)
-        {
-            SceneManager.LoadScene("Sala2respawn");
-        }
-        else if (level_index == 3)
-        {
-            SceneManager.LoadScene("Sala 3 respawn");
-        }
-        else if (level_index == 4)
-        {
-            SceneManager.LoadScene("Sala 4");
-        }
-
+        //SceneManager.LoadScene("Sala 1");
     }
 
     public void NuevaPartida()

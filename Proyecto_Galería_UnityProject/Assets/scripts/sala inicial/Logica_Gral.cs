@@ -15,8 +15,6 @@ public class Logica_Gral : MonoBehaviour
 
     public void Start()
     {
-        FindObjectOfType<MenuPrincipal>().level_index = 0;
-        PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
         sala1 = true;
     }
     void Update()
