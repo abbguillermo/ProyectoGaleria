@@ -133,6 +133,8 @@ public class objetivosManager : MonoBehaviour
 
     IEnumerator TriggerObjetivo02()
     {
+        objetivo1Descrip.SetActive(false);
+        objetivo3Descrip.SetActive(false);
         objetivo2Descrip.SetActive(true);
         objetivoActivo = true;
         objetivo02Codigo = 13;
@@ -146,6 +148,8 @@ public class objetivosManager : MonoBehaviour
     IEnumerator TriggerObjetivo03()
     {
         objetivo3Descrip.SetActive(true);
+        objetivo1Descrip.SetActive(false);
+        objetivo2Descrip.SetActive(false);
         objetivoActivo = true;
         objetivo03Codigo = 14;
         //objetivoSonido.Play();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class compFinal : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class compFinal : MonoBehaviour
     {
         puerta.GetComponent<Animator>().Play("CerrarPuerta");
         sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxPuerta);
-        Invoke("Oscuro", 0.95f);
+        Invoke("Oscuro", 0.8f);
     }
 
     public void Oscuro()
@@ -46,5 +47,11 @@ public class compFinal : MonoBehaviour
         {
             ca.postExposure.value -= exposición_Oscuro;
         }
+        Invoke("Menu", 5f);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menú");
     }
 }

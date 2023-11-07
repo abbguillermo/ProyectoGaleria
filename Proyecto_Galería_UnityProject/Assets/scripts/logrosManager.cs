@@ -53,12 +53,12 @@ public class logrosManager : MonoBehaviour
 
     void Update()
     {
-        //logro01Codigo = PlayerPrefs.GetInt("logro01");
-        //logro02Codigo = PlayerPrefs.GetInt("logro02");
-        //logro03Codigo = PlayerPrefs.GetInt("logro02");
-        //logro04Codigo = PlayerPrefs.GetInt("logro02");
-        //logro05Codigo = PlayerPrefs.GetInt("logro02");
-        //logro06Codigo = PlayerPrefs.GetInt("logro02");
+        logro01Codigo = PlayerPrefs.GetInt("logro01");
+        logro02Codigo = PlayerPrefs.GetInt("logro02");
+        logro03Codigo = PlayerPrefs.GetInt("logro03");
+        logro04Codigo = PlayerPrefs.GetInt("logro04");
+        logro05Codigo = PlayerPrefs.GetInt("logro05");
+        logro06Codigo = PlayerPrefs.GetInt("logro06");
 
         if (triggerLogro01 == true && logro01Codigo != 12)
         {
