@@ -110,6 +110,17 @@ public class Trigger : MonoBehaviour
     public GameObject enemigoFinals4;
     public GameObject pantallaTele;
 
+    public AudioSource audioSourceEnemigo4;
+    public bool semueve = false;
+    public GameObject enemigo4;
+
+    private void Update()
+    {
+        if (semueve)
+        {
+            enemigo4.transform.Translate(Vector3.forward * 12 * Time.fixedDeltaTime);
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -484,14 +495,20 @@ public class Trigger : MonoBehaviour
         puertaTeleS4.GetComponent<Animator>().Play("CerrarPS4");
         puertaTeleS4.GetComponent<AudioSource>().Play();
         enemigoFinals4.GetComponent<Animator>().Play("MuerteFinal");
-        //audiofinalenemigo
+        audioSourceEnemigo4.Play();
+        StartCoroutine(saltoenemigo());
     }
 
     public void AudioDelays4()
     {
         parlante3s4.GetComponent<AudioSource>().Play();
     }
+    IEnumerator saltoenemigo()
+    {
+        yield return new WaitForSeconds(12f);
+        semueve = true;
 
+    }
     IEnumerator LucesPasillo()
     {
         yield return new WaitForSeconds(0.2f);

@@ -26,7 +26,7 @@ public class levantarparedes : MonoBehaviour
     //VARIABLE PARA ACTIVAR TRIGGER ENCUENTRO 2
     public bool pieza2 = false;
 
-    private void Start()
+    public void Start()
     {
         FindObjectOfType<MenuPrincipal>().level_index = 2;
         PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);

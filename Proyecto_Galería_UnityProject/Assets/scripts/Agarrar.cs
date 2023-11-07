@@ -62,10 +62,17 @@ public class Agarrar : MonoBehaviour
     int cont = 0;
     int cont2 = 0;
 
+    int cont1_rejas = 0;
+    int cont2_rejas = 0;
+
     public Volume m_Volume;
     public ColorAdjustments ca;
 
     public ControlScroll mano;
+
+    public AudioSource audioSourceReja1;
+    public AudioSource audioSourceRejas;
+    public AudioClip audioRejas;
     void Start()
     {
 
@@ -74,10 +81,19 @@ public class Agarrar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (cont1_rejas >= 5 && cont2_rejas >= 3)
+        {
+            StartCoroutine(audioReja());
+        }
+
         if (cont >= 5&&cont2>=3 && Reja2.transform.position.y<=2)
         {
+            
             Reja2.transform.Translate(Vector3.up*0.2f*Time.deltaTime);
+
         }
+
+
         Debug.DrawLine(transform.position, transform.position + transform.forward * distancia, Color.red, 0.5f);
         //notificacion interaccion
         
@@ -156,12 +172,14 @@ public class Agarrar : MonoBehaviour
                     cuadros4.transform.Rotate(0, 0, 22.5f);
                     sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                     cont += 1;
+                    cont1_rejas += 1;
                 }
                 if (hit.transform.gameObject.tag == "Sala4/reja2.2")
                 {
                     cuadros41.transform.Rotate(0, 0, 22.5f);
                     sfxManager.sfxInstance.Audio.PlayOneShot(sfxManager.sfxInstance.sfxRotadoCuadro);
                     cont2 += 1;
+                    cont2_rejas += 1;
                 }
 
                 if(hit.transform.gameObject.tag == "Sala4/cuadroInicio")
@@ -502,10 +520,17 @@ public class Agarrar : MonoBehaviour
     IEnumerator tiemporeja()
     {
         palancas4.GetComponent<Animator>().Play("BajarSubirPalanca");
+        audioSourceReja1.Play();
         yield return new WaitForSeconds(1f);
         palancas4.layer = 7;
     }
-
+    IEnumerator audioReja()
+    {
+        cont1_rejas = 1;
+        cont2_rejas = 1;
+        audioSourceRejas.PlayOneShot(audioRejas);
+        yield return new WaitForSeconds(0f);
+    }
     IEnumerator primerafase()
     {
         osito.SetActive(true);

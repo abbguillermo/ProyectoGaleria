@@ -6,20 +6,21 @@ public class IDsala4 : MonoBehaviour
 {
     public int num;
     public bool reja3=false;
+    public bool rejita = false;
     public GameObject Reja3;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource audioSourceReja3;
 
-    // Update is called once per frame
     void Update()
     {
         if (reja3&&Reja3.transform.position.y<=2)
         {
             Reja3.transform.Translate(Vector3.up * 0.2f * Time.deltaTime);
+        }
+
+        if (rejita)
+        {
+            StartCoroutine(Audio());
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -29,8 +30,16 @@ public class IDsala4 : MonoBehaviour
             if (other.tag == "Sala4/objeto1")
             {
                 reja3 = true;
+                rejita = true;
             }
         }
 
+    }
+
+    IEnumerator Audio()
+    {
+        rejita = false;
+        audioSourceReja3.Play();
+        yield return new WaitForSeconds(0f);
     }
 }

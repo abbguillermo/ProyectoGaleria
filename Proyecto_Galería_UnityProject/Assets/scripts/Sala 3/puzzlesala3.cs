@@ -40,7 +40,7 @@ public class puzzlesala3 : MonoBehaviour
     public GameObject luzobj4;
 
 
-    void Start()
+    public void Start()
     {
         FindObjectOfType<MenuPrincipal>().level_index = 3;
         PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);

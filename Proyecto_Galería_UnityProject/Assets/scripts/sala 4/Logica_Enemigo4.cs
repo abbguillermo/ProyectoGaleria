@@ -56,7 +56,7 @@ public class Logica_Enemigo4 : MonoBehaviour
     public AudioClip clipParte2;
     public AudioClip clipParte3;
 
-    private void Start()
+    public void Start()
     {
         FindObjectOfType<MenuPrincipal>().level_index = 4;
         PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);

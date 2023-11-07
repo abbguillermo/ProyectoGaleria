@@ -21,10 +21,11 @@ public class puzzle1 : MonoBehaviour
     public GameObject pj;
     public GameObject cam;
 
-    private void Start()
+    public void Start()
     {
-        FindObjectOfType<MenuPrincipal>().level_index = 1;
+        FindObjectOfType<MenuPrincipal>().level_index += 1;
         PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
+        Debug.Log("lvinds" + FindObjectOfType<MenuPrincipal>().level_index);
     }
 
     void FixedUpdate()

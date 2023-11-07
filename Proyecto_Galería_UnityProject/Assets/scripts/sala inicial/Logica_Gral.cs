@@ -13,7 +13,7 @@ public class Logica_Gral : MonoBehaviour
     public AudioSource audioSourcePuerta;
     public AudioClip audioPuerta;
 
-    private void Start()
+    public void Start()
     {
         FindObjectOfType<MenuPrincipal>().level_index = 0;
         PlayerPrefs.SetInt("guardadoSala", FindObjectOfType<MenuPrincipal>().level_index);
