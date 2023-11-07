@@ -1555,6 +1555,7 @@ Transform:
   - {fileID: 1512548853}
   - {fileID: 594921841}
   - {fileID: 800479076}
+  - {fileID: 1155447552}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38448,6 +38449,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2daa154da4167d64ba71e0d274447d92, type: 3}
   m_PrefabInstance: {fileID: 44443191}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1155447551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155447552}
+  - component: {fileID: 1155447554}
+  - component: {fileID: 1155447553}
+  m_Layer: 0
+  m_Name: colliderGuardado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1155447552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155447551}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -115.25, y: 0, z: 0}
+  m_LocalScale: {x: 0.31171, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 38834451}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155447553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155447551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29aac045043794db1917d546f57ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1155447554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155447551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.188942, y: 8.257862, z: 0.57799727}
+  m_Center: {x: 1.5944709, y: 3.628931, z: 0.0012338759}
 --- !u!1 &1157652575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd9bf60d8d8d1f4298864a8ce0410c7, type: 3}

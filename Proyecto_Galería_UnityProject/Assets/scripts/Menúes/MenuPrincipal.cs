@@ -19,6 +19,11 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Continuar()
     {
+        if (PlayerPrefs.HasKey("nivelGuardado"))
+        {
+            string levelToLoad = PlayerPrefs.GetString("nivelGuardado");
+            CambiarEscena(levelToLoad);
+        }
         //SceneManager.LoadScene("Sala 1");
     }
 
