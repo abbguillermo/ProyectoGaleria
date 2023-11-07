@@ -5,66 +5,69 @@ using UnityEngine;
 public class activarlogros : MonoBehaviour
 {
     public GameObject imglogro1;
+    public GameObject logro1desactivado;
+
     public GameObject imglogro2;
+    public GameObject logro2desactivado;
+
     public GameObject imglogro3;
+    public GameObject logro3desactivado;
+
     public GameObject imglogro4;
+    public GameObject logro4desactivado;
+
     public GameObject imglogro5;
+    public GameObject logro5desactivado;
+
     public GameObject imglogro6;
-    public GameObject imglogro7;
-    // Start is called before the first frame update
+    public GameObject logro6desactivado;
+
     void Start()
     {
-        imglogro1.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        int logro1 = PlayerPrefs.GetInt("activarlogro01");
-        Debug.Log(logro1);
-        if (logro1==1)
+        int logro1 = PlayerPrefs.GetInt("logro01");
+        if (logro1==12)
         {
+            logro1desactivado.SetActive(false);
             imglogro1.SetActive(true);
         }
-        int logro2 = PlayerPrefs.GetInt("activarlogro02");
-        
-        if (logro2 == 1)
+
+        int logro2 = PlayerPrefs.GetInt("logro02");
+        if (logro2 == 13)
         {
+            logro2desactivado.SetActive(false);
             imglogro2.SetActive(true);
         }
-        int logro3 = PlayerPrefs.GetInt("activarlogro03");
-        Debug.Log(logro1);
-        if (logro3 == 1)
+
+        int logro3 = PlayerPrefs.GetInt("logro03");
+        if (logro3 == 14)
         {
+            logro3desactivado.SetActive(false);
             imglogro3.SetActive(true);
         }
-        int logro4 = PlayerPrefs.GetInt("activarlogro04");
 
-        if (logro4 == 1)
+        int logro4 = PlayerPrefs.GetInt("logro04");
+        if (logro4 == 15)
         {
+            logro4desactivado.SetActive(false);
             imglogro4.SetActive(true);
         }
-        if (logro2 == 1)
+
+        int logro5 = PlayerPrefs.GetInt("logro05");
+        if (logro5 == 16)
         {
-            imglogro2.SetActive(true);
-        }
-        int logro5 = PlayerPrefs.GetInt("activarlogro05");
-        Debug.Log(logro1);
-        if (logro5 == 1)
-        {
+            logro5desactivado.SetActive(false);
             imglogro5.SetActive(true);
         }
-        int logro6 = PlayerPrefs.GetInt("activarlogro06");
 
-        if (logro6 == 1)
+        int logro6 = PlayerPrefs.GetInt("logro06");
+        if (logro6 == 17)
         {
+            logro6desactivado.SetActive(false);
             imglogro6.SetActive(true);
-        }
-        int logro7 = PlayerPrefs.GetInt("activarlogro07");
-
-        if (logro7 == 1)
-        {
-            imglogro7.SetActive(true);
         }
     }
 }

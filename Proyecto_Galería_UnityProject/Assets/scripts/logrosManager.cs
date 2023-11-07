@@ -48,13 +48,17 @@ public class logrosManager : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.DeleteKey("activarlogro01");
+        //PlayerPrefs.DeleteKey("activarlogro01");
     }
 
     void Update()
     {
         //logro01Codigo = PlayerPrefs.GetInt("logro01");
         //logro02Codigo = PlayerPrefs.GetInt("logro02");
+        //logro03Codigo = PlayerPrefs.GetInt("logro02");
+        //logro04Codigo = PlayerPrefs.GetInt("logro02");
+        //logro05Codigo = PlayerPrefs.GetInt("logro02");
+        //logro06Codigo = PlayerPrefs.GetInt("logro02");
 
         if (triggerLogro01 == true && logro01Codigo != 12)
         {
@@ -91,13 +95,13 @@ public class logrosManager : MonoBehaviour
     {
         logroActivo = true;
         logro01Codigo = 12;
-        //PlayerPrefs.SetInt("logro01", logro01Codigo);
+        PlayerPrefs.SetInt("logro01", logro01Codigo);
         //logroSonido.Play();
         logro01Img.SetActive(true);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
         logroDescripcion.GetComponent<TextMeshProUGUI>().text = "Completar sala 1";
         logroNota.SetActive(true);
-        PlayerPrefs.SetInt("activarlogro01", 1);
+        //PlayerPrefs.SetInt("activarlogro01", 1);
         PlayerPrefs.Save();
         yield return new WaitForSeconds(3);
 
@@ -116,7 +120,8 @@ public class logrosManager : MonoBehaviour
     {
         logroActivo = true;
         logro02Codigo = 13;
-        //PlayerPrefs.SetInt("logro02", logro02Codigo);
+        PlayerPrefs.SetInt("logro02", logro02Codigo);
+        PlayerPrefs.Save();
         //logroSonido.Play();
         logro02Img.SetActive(true);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
@@ -139,7 +144,8 @@ public class logrosManager : MonoBehaviour
     {
         logroActivo = true;
         logro03Codigo = 14;
-        //PlayerPrefs.SetInt("logro02", logro02Codigo);
+        PlayerPrefs.SetInt("logro03", logro03Codigo);
+        PlayerPrefs.Save();
         //logroSonido.Play();
         logro03Img.SetActive(true);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
@@ -162,6 +168,8 @@ public class logrosManager : MonoBehaviour
     {
         logroActivo = true;
         logro04Codigo = 15;
+        PlayerPrefs.SetInt("logro04", logro04Codigo);
+        PlayerPrefs.Save();
         //logroSonido.Play();
         logro04Img.SetActive(true);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
@@ -183,6 +191,8 @@ public class logrosManager : MonoBehaviour
     {
         logroActivo = true;
         logro05Codigo = 16;
+        PlayerPrefs.SetInt("logro05", logro05Codigo);
+        PlayerPrefs.Save();
         //logroSonido.Play();
         logro05Img.SetActive(true);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
@@ -206,6 +216,8 @@ public class logrosManager : MonoBehaviour
     {
         logroActivo = true;
         logro06Codigo = 17;
+        PlayerPrefs.SetInt("logro06", logro06Codigo);
+        PlayerPrefs.Save();
         //logroSonido.Play();
         logro06Img.SetActive(true);
         logroTitulo.GetComponent<TextMeshProUGUI>().text = "Logro desbloqueado";
